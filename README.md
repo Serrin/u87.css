@@ -7,7 +7,7 @@ For a demo page please check the [Celestra](https://github.com/Serrin/Celestra) 
 
 ## License
 
-https://opensource.org/licenses/MIT
+[https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)
 
 MIT License
 
