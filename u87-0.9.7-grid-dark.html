@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>u87.css grid testpage</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="Author" content="Czigler Ferenc"/>
+<meta name="Copyright" content="(C) Copyright Czigler Ferenc"/>
+<link rel="stylesheet" href="u87-0.9.7.css" type="text/css"/>
+<link rel="stylesheet" href="u87-0.9.7-dark.css" type="text/css"/>
+<style>
+
+/* for testing */
+[class*="container"] { border: 1px solid blue; }
+[class*="col-"] { border: 1px solid red; }
+/*h1,h2,h3,h4,h5,h6 { background-color: transparent; }*/
+
+</style>
+<script src="qsa.min.js"></script>
+</head>
+<body class="container">
+
+<div class="center">
+  <img src="U-87-Cyber-Combat-Unit.jpg" alt="U-87-Cyber-Combat-Unit" />
+</div>
+
+<header>
+  <h1>u87.css grid testpage</h1>
+  <nav><b>
+    <a href="#download">Download</a>
+    &nbsp;//&nbsp;
+    <a href="#functions">Functions</a>
+    &nbsp;//&nbsp;
+    <a href="#samples">Samples</a>
+    &nbsp;//&nbsp;
+    <a href="#license">License</a>
+    &nbsp;//&nbsp;
+    <a href="#footer">Contact</a>
+  </b></nav>
+</header>
+
+<h2 id="download">Download</h2>
+
+<p>Tested on desktop browsers (latest Chrome, latest Firefox, latest Edge, IE11) and mobile devices (iOS Safari, Chrome, Firefox and Android Chrome, Samsung Internet, Firefox and W10M Edge).</p>
+<p>Latest version: 1.0.1</p>
+
+<p>Development version: <a href="qsa.js" target="_blank">qsa.js</a> (1205 byte)</p>
+<p>Minimal version: <a href="qsa.min.js" target="_blank">qsa.min.js</a> (874 byte)</p>
+
+<p>Based on Celestra v1.20.5: <a href="https://github.com/Serrin/Celestra/" target="_blank">https://github.com/Serrin/Celestra/</a></p>
+
+<p>qsa cheatsheet: <a href="qsa-cheatsheet.pdf" target="_blank">qsa-cheatsheet.pdf</a></p>
+
+<p>Bricks demo game: <a href="testgame.html" target="_blank">testgame.html</a></p>
+
+<h2 id="functions">Functions</h2>
+
+<div hidden>hidden</div>
+<div class="hidden">.hidden</div>
+
+<p><b>b</b></p>
+<p><span class="b">.b</span></p>
+
+<p><strong>strong</strong></p>
+<p><span class="strong">.strong</span></p>
+
+<p><i>i</i></p>
+<p><span class="i">.i</span></p>
+
+<p><em>em</em></p>
+<p><span class="em">.em</span></p>
+
+<p>normal<small>small</small></p>
+<p>normal<span class="small">.small</span></p>
+
+<p>normal<span class="big">.big</span></p>
+
+<p>normal<span class="tt">.tt</span></p>
+
+<p><code>code</code></p>
+<p><span class="code">.code</span></p>
+
+<p><output>output</output></p>
+<p><span class="output">.output</span></p>
+
+<p><kbd>kbd</kbd></p>
+<p><span class="kbd">.kbd</span></p>
+
+<p><samp>samp</samp></p>
+<p><span class="samp">.samp</span></p>
+
+<p><var>var</var></p>
+<p><span class="var">.var</span></p>
+
+<pre>pre
+line 2
+line 3</pre>
+
+<div class="pre">.pre
+line 2
+line 3</div>
+
+<p><mark>mark</mark></p>
+<p><span class="mark">.mark</span></p>
+
+
+<h3>Polyfills</h3>
+
+<div>
+  <table>
+    <tr>
+      <td><code>Array.from()</code></td>
+      <td>The Array.from() method creates a new Array instance from an array-like or iterable object. For more information please read the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from?v=example" target="_blank">MDN Article!</a></td>
+    </tr>
+    <tr>
+      <td><code>Array.of()</code></td>
+      <td>The Array.of() method creates a new Array instance with a variable number of arguments, regardless of number or type of the arguments. For more information please read the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/of?v=example" target="_blank">MDN Article!</a></td>
+    </tr>
+    <tr>
+      <td><code>NodeList.prototype.forEach()</code></td>
+      <td>The forEach() method of the NodeList interface calls the callback given in parameter once for each value pair in the list, in insertion order. For more information please read the <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList/forEach" target="_blank">MDN Article</a>!</td>
+    </tr>    
+  </table>
+</div>
+
+<h3>Basic API</h3>
+
+<div>
+  <table>
+    <tr>
+      <td><code>qsa(&#60;selector&#62;[,context]);</code></td>
+      <td>Get matched HTML elements in an array. The context is optional and can be an element or a selector string.</td>
+    </tr>
+    <tr>
+      <td><code>qsa(&#60;selector&#62;[,context]).each( function (el, i) { el.arguments; } );</code></td>
+      <td>Exec a function on all elements.</td>
+    </tr>
+    <tr>
+      <td><code>qs(&#60;selector&#62;[,context]).argument;</code></td>
+      <td>Get the first matched HTML element. The context is optional and can be an element or a selector string.</td>
+    </tr>
+    <tr>
+      <td><code>domReady(&#60;function&#62;);</code></td>
+      <td>Set the document ready (content fully loaded) event.</td>
+    </tr>
+  </table>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12"><h1>col-12 container-fluid</h1></div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12"><h2>col-1 -> col-12</h2></div>
+  </div>
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-2">2 of 12</div>
+    <div class="col-2">2 of 12</div>
+    <div class="col-2">2 of 12</div>
+    <div class="col-2">2 of 12</div>
+    <div class="col-2">2 of 12</div>
+    <div class="col-2">2 of 12</div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-6">6 of 12</div>
+    <div class="col-6">6 of 12</div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-1">1 of 12</div>
+    <div class="col-1">1 of 12</div>
+    <div class="col-1">1 of 12</div>
+    <div class="col-1">1 of 12</div>
+    <div class="col-1">1 of 12</div>
+    <div class="col-1">1 of 12</div>
+    <div class="col-1">1 of 12</div>
+    <div class="col-1">1 of 12</div>
+    <div class="col-1">1 of 12</div>
+    <div class="col-1">1 of 12</div>
+    <div class="col-1">1 of 12</div>
+    <div class="col-1">1 of 12</div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-4 nopadding">4 of 12 + nopadding</div>
+    <div class="col-4 nopadding">4 of 12 + nopadding</div>
+    <div class="col-4 nopadding">4 of 12 + nopadding</div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-3">3 of 12</div>
+    <div class="col-3">3 of 12</div>
+    <div class="col-3">3 of 12</div>
+    <div class="col-3">3 of 12</div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-3">3 of 12</div>
+    <div class="col-9">9 of 12</div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-1-1"><h2>col-X-Y</h2></div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-1-8">col-1-8</div>
+    <div class="col-1-8">col-1-8</div>
+    <div class="col-1-8">col-1-8</div>
+    <div class="col-1-8">col-1-8</div>
+    <div class="col-1-8">col-1-8</div>
+    <div class="col-1-8">col-1-8</div>
+    <div class="col-1-8">col-1-8</div>
+    <div class="col-1-8">col-1-8</div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-1-2">col-1-2</div>
+    <div class="col-1-2">col-1-2</div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-1-1">col-1-1</div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-1-3 nopadding">col-1-3 + nopadding</div>
+    <div class="col-1-3 nopadding">col-1-3 + nopadding</div>
+    <div class="col-1-3 nopadding">col-1-3 + nopadding</div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-1-4">col-1-4</div>
+    <div class="col-1-4">col-1-4</div>
+    <div class="col-1-4">col-1-4</div>
+    <div class="col-1-4">col-1-4</div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-1-3">col-1-3</div>
+    <div class="col-2-3">col-2-3</div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-1-4 hide-on-mobile">col-1-4 hide-on-mobile</div>
+    <div class="col-3-4 hide-on-mobile">col-3-4 hide-on-mobile</div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-1-4">col-1-4</div>
+    <div class="col-3-4">col-3-4</div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-1-5">col-1-5</div>
+    <div class="col-1-5">col-1-5</div>
+    <div class="col-1-5">col-1-5</div>
+    <div class="col-1-5">col-1-5</div>
+    <div class="col-1-5">col-1-5</div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-1-5 hide-on-desktop">col-1-5 hide-on-desktop</div>
+    <div class="col-1-5 hide-on-desktop">col-1-5 hide-on-desktop</div>
+    <div class="col-1-5 hide-on-desktop">col-1-5 hide-on-desktop</div>
+    <div class="col-1-5 hide-on-desktop">col-1-5 hide-on-desktop</div>
+    <div class="col-1-5 hide-on-desktop">col-1-5 hide-on-desktop</div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-1-1"><h2>Break in lines</h2></div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-1-5">col-1-5</div>
+    <div class="col-2-5">col-2-5</div>
+    <div class="col-3-5">col-3-5</div>
+    <div class="col-4-5">col-4-5</div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-1-1">
+      <h1>Header 1</h1>
+      <h2>Header 2</h2>
+      <h3>Header 3</h3>
+      <h4>Header 4</h4>
+      <h5>Header 5</h5>
+      <h6>Header 6</h6>
+      <p>Header 6 - Paragraph</p>
+    </div>
+  </div>
+</div>
+
+<h2 id="samples">Samples</h2>
+
+<div id="div1">
+  <p><b>This is the #div1</b></p>
+  <p id="div1p1">This is the #div1p1</p>
+  <p id="div1p2">This is the #div1p2</p>
+  <p id="div1p3">This is the #div1p3</p>
+</div>
+
+<div id="div2">
+  <p><b>This is the #div2</b></p>
+  <p id="div2p1">This is the #div2p1</p>
+  <p id="div2p2">This is the #div2p2</p>
+  <p id="div2p3">This is the #div2p3</p>
+</div>
+
+<p><b>domReady: </b><code>domReady(function(){ qsa("#div1 > p").each( function (e) { e.style.color="green"; } ); });</code></p>
+
+<p><button onclick='qs("#div1").style.fontWeight="bold";'>try qs</button></p>
+<p><code>qs("#div1").style.fontWeight="bold";</code></p>
+
+<p><button onclick='qsa("#div1 > p").each( function (e) { e.style.color="red"; } );'>try qsa</button></p>
+<p><code>qsa("#div1 > p").each( function (e) { e.style.color="red"; } );</code></p>
+
+<p><button onclick='document.querySelectorAll("#div1 > p").forEach( function (e) { e.style.color="blue"; } );'>try NodeList.prototype.forEach</button></p>
+<p><code>document.querySelectorAll("#div1 > p").forEach( function (e) { e.style.color="blue"; } );</code></p>
+
+<p><button onclick='alert( Array.isArray( Array.from(document.querySelectorAll("#div1 > p")) ) );'>try Array.from</button></p>
+<p><code>alert( Array.isArray( Array.from(document.querySelectorAll("#div1 > p")) ) );</code></p>
+
+<p><button onclick='alert( Array.isArray( Array.of(1,2,3) ) );'>try Array.of</button></p>
+<p><code>alert( Array.isArray( Array.of(1,2,3) ) );</code></p>
+
+<script>
+domReady(function(){ qsa("#div1 > p").each( function (e) { e.style.color="green"; } ); });
+</script>
+
+<h2 id="license">License</h2>
+
+<div>
+  <p><a href="https://opensource.org/licenses/MIT" target="_blank">https://opensource.org/licenses/MIT</a></p>
+
+  <h3>MIT License</h3>
+
+  <p><b>SPDX short identifier: MIT</b></p>
+
+  <p>Copyright (c) 2018 Ferenc Czigler</p>
+
+  <p>Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:</p>
+
+  <p>The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.</p>
+
+  <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.</p>
+</div>
+
+<hr/>
+
+<footer id="footer"><small>
+  <p>
+    <a href="#download">Download</a>
+    &nbsp;//&nbsp;
+    <a href="#functions">Functions</a>
+    &nbsp;//&nbsp;
+    <a href="#samples">Samples</a>
+    &nbsp;//&nbsp;
+    <a href="#license">License</a>
+    &nbsp;//&nbsp;
+    <a href="http://github.com/Serrin" target="_blank">Github</a>
+  </p>
+  <p>&copy; Copyright 2018 Ferenc Czigler</p>
+</small></footer>
+
+</body>
+</html>
