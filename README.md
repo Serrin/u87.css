@@ -6,6 +6,10 @@ This is the default css for my code documentations.
 
 For a demo page please check the [Celestra](https://github.com/Serrin/Celestra) project!
 
+__v0.9.10:__ New design.
+
+__v0.9.11:__ New themes (blue, dark, light) and new flexbox based grid.
+
 
 ## License
 
