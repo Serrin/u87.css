@@ -10,6 +10,8 @@ __v0.9.10:__ New design.
 
 __v0.9.11:__ New themes (blue, dark, light) and new flexbox based grid.
 
+__v0.9.12:__ New utility classes and fixes in grid and `flex-w-*` classes.
+
 
 ## License
 

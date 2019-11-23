@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/**
+ * @name u87-next.css
+ * @version 0.9.12.next-20191030
+ * @see https://github.com/Serrin/u87.css
+ * @license MIT https://opensource.org/licenses/MIT
+ * <link rel="stylesheet" href="u87.css" type="text/css" />
+ *
+ * Only for testing, don't use in production!
+ */
+
+.round-5 { border-radius: 5px; }
+.round-20 { border-radius: 20px; }
+.circle { border-radius: 50%; } /* width and height have to be equal */
+.noround { border-radius: 0 !important; }
+
+.header {
+  display: block;
+  margin: 0 0 2rem 0;
+  padding: 3rem 2rem;
+  background-color: #eeeeee;
+  text-align: center;
+  border-radius: 5px;
+}
+
+[disabled], :disabled, .disabled {
+  opacity: 0.7;
+  pointer-events: none;
+  cursor: not-allowed;
+}
