@@ -5,7 +5,7 @@
 
 This is the default css for my code documentations.
 
-For a demo page please check testpages of the versions the [Celestra](https://github.com/Serrin/Celestra) project!
+For a demo page please check the testpages of the versions and the [Celestra](https://github.com/Serrin/Celestra) project!
 
 __v0.9.10:__ New design.
 
