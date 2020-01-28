@@ -15,7 +15,7 @@ __v0.9.12:__ New utility classes and fixes in the grid and `flex-w-*` classes.
 
 __v0.9.13:__ New utility classes, new print styles and many fixes in the grid (_restructured to "mobile first"_).
 
-__v0.9.14 (20K):__ _This is the last version which supports the IE11._ New utility classes, default text color changed to black from #333333, new print styles, fixes in themes, `-ms` vendor prefixed flex values have been removed (used only in IE10) and many fixes in the flex grid. The `.row` (`.flex`) and `.col-XX` (`.flex-XX`) aliases have been removed from the __flex grid__. __CSS GRID__ classes has been added as experimental tools in the __u87-0.9.14-cssgrid.css__ file.
+__v0.9.14 (Toaster):__ _This is the last version which supports the IE11._ New utility classes, default text color changed to black from #333333, new print styles, fixes in themes, `-ms` vendor prefixed flex values have been removed (used only in IE10) and many fixes in the flex grid. The `.row` (`.flex`) and `.col-XX` (`.flex-XX`) aliases have been removed from the __flex grid__. __CSS GRID__ classes has been added as experimental tools in the __u87-0.9.14-cssgrid.css__ file.
 
 
 ## License
