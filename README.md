@@ -7,15 +7,17 @@ This is the default css for my code documentations.
 
 For a demo page please check the testpages of the versions and the [Celestra](https://github.com/Serrin/Celestra) project!
 
-__v0.9.10:__ New design.
+__u87.css v0.9.9 (Toaster):__ _This is the last version with the original design._
 
-__v0.9.11:__ New themes (blue, dark, light) and new flexbox based grid.
+__u87.css v0.9.10:__ New design.
 
-__v0.9.12:__ New utility classes and fixes in the grid and `flex-w-*` classes.
+__u87.css v0.9.11:__ New themes (blue, dark, light) and new flexbox based grid.
 
-__v0.9.13:__ New utility classes, new print styles and many fixes in the grid (_restructured to "mobile first"_).
+__u87.css v0.9.12:__ New utility classes and fixes in the grid and `.flex-w-*` classes.
 
-__v0.9.14 (Toaster):__ _This is the last version which supports the IE11._ New utility classes, default text color changed to black from #333333, new print styles, fixes in themes, `-ms` vendor prefixed flex values have been removed (used only in IE10) and many fixes in the flex grid. The `.row` (`.flex`) and `.col-XX` (`.flex-XX`) aliases have been removed from the __flex grid__. __CSS GRID__ classes has been added as experimental tools in the __u87-0.9.14-cssgrid.css__ file.
+__u87.css v0.9.13:__ New utility classes, new print styles and many fixes in the grid (_restructured to "mobile first"_).
+
+__u87.css v0.9.14 (Cython):__ _This is the last version with IE11 support._ New utility classes, default text color changed to black from #333333, new print styles, fixes in themes, `-ms` vendor prefixed flex values have been removed (used only in IE10) and many fixes in the flex grid. The `.row` (`.flex`) and `.col-XX` (`.flex-XX`) aliases have been removed from the __flex grid__. __CSS GRID__ classes has been added as experimental tools in the __u87-0.9.14-cssgrid.css__ file.
 
 
 ## License
