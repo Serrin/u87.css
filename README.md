@@ -7,17 +7,44 @@ This is the default css for my code documentations.
 
 For a demo page please check the testpages of the versions and the [Celestra](https://github.com/Serrin/Celestra) project!
 
-__u87.css v0.9.9 (Toaster):__ _This is the last version with the original design._
 
-__u87.css v0.9.10:__ New design.
+## Versions
 
-__u87.css v0.9.11:__ New themes (blue, dark, light) and new flexbox based grid.
+### __u87.css v0.9.9 (Toaster):__
+- _float grid v0.8.0_
+- _This is the last version with the original design._
 
-__u87.css v0.9.12:__ New utility classes and fixes in the grid and `.flex-w-*` classes.
+### u87.css v0.9.10
+- _float grid v0.8.0_
+- New design.
 
-__u87.css v0.9.13:__ New utility classes, new print styles and many fixes in the grid (_restructured to "mobile first"_).
+### u87.css v0.9.11
 
-__u87.css v0.9.14 (Cython):__ _This is the last version with IE11 support._ New utility classes, default text color changed to black from #333333, new print styles, fixes in themes, `-ms` vendor prefixed flex values have been removed (used only in IE10) and many fixes in the flex grid. The `.row` (`.flex`) and `.col-XX` (`.flex-XX`) aliases have been removed from the __flex grid__. __CSS GRID__ classes has been added as experimental tools in the __u87-0.9.14-cssgrid.css__ file.
+- _(flex grid v0.9.0)_
+- New themes (blue, dark, light).
+- New flexbox based grid.
+
+### u87.css v0.9.12
+- _flex grid v0.9.1_
+- New utility classes.
+- Fixes in the grid and `.flex-w-*` classes.
+
+### u87.css v0.9.13
+
+- _flex grid v0.9.2_
+- New utility classes, new print styles and many fixes in the grid (_restructured to "mobile first"_).
+
+### u87.css v0.9.14 (Cython)
+
+- _grid v0.9.3, flex grid v0.9.3, css grid v0.8.1_
+- _This is the last version with IE11 support._
+- New utility classes.
+- Default text color changed to black from #333333.
+- New print styles.
+- Fixes in themes.
+- `-ms` vendor prefixed flex values have been removed (used only in IE10) and many fixes in the flex grid.
+- The `.row` (`.flex`) and `.col-XX` (`.flex-XX`) aliases have been removed from the __flex grid__.
+- __CSS GRID__ classes has been added as experimental tools in the __u87-0.9.14-cssgrid.css__ file.
 
 
 ## License
