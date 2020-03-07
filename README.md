@@ -10,7 +10,7 @@ For a demo page please check the testpages of the versions and the [Celestra](ht
 
 ## Versions
 
-### __u87.css v0.9.9 (Toaster):__
+### __u87.css v0.9.9 (Toaster)__
 - _float grid v0.8.0_
 - _This is the last version with the original design._
 
@@ -19,7 +19,6 @@ For a demo page please check the testpages of the versions and the [Celestra](ht
 - New design.
 
 ### u87.css v0.9.11
-
 - _(flex grid v0.9.0)_
 - New themes (blue, dark, light).
 - New flexbox based grid.
@@ -30,12 +29,10 @@ For a demo page please check the testpages of the versions and the [Celestra](ht
 - Fixes in the grid and `.flex-w-*` classes.
 
 ### u87.css v0.9.13
-
 - _flex grid v0.9.2_
 - New utility classes, new print styles and many fixes in the grid (_restructured to "mobile first"_).
 
 ### u87.css v0.9.14 (Cython)
-
 - _grid v0.9.3, flex grid v0.9.3, css grid v0.8.1_
 - _This is the last version with IE11 support._
 - New utility classes.
@@ -45,6 +42,20 @@ For a demo page please check the testpages of the versions and the [Celestra](ht
 - `-ms` vendor prefixed flex values have been removed (used only in IE10) and many fixes in the flex grid.
 - The `.row` (`.flex`) and `.col-XX` (`.flex-XX`) aliases have been removed from the __flex grid__.
 - __CSS GRID__ classes has been added as experimental tools in the __u87-0.9.14-cssgrid.css__ file.
+
+### u87.css v0.9.15
+- _grid v0.9.4, flex grid v0.9.5 - flex grid 2 implemented, css grid v0.8.2 - experimental_
+- Added a grid cheatsheet.
+- New utility classes (colors, fonts, etc.).
+- New container classes added (`.container-sm`, `.container-md`,  `.container`, `.container-lg`, `.container-xl`, `.container`).
+- New hide classes added (`.hide-xs`, `.hide-sm`, `.hide-md`, `.hide-lg`, `.hide-xl`, `.hide`).
+- New container classes added in the __flex grid__ (`.flex-xs`, `.inline-flex-xs`, `.flex-sm`, .`inline-flex-sm`, `.flex-md`, `.inline-flex-md`, `.flex`, `.inline-flex`, `.flex-lg`, .`inline-flex-lg`, `.flex-xl`, `.inline-flex-xl`).
+- New flex item classes added in the __flex grid__ (`.flex-w-xs-XX`, `.flex-w-XX`, `.flex-w-sm-XX`, `.flex-w-md-XX`, `.flex-w-lg-XX`, `.flex-w-xl-XX`).
+- The old flex item `.flex-XX` classes (1-24, not the `.flex-w-XX`) have been renamed to `.flex-f-XX`.
+- New grid container classes added in the __css grid__ (`.grid-xs`, `.inline-grid-xs`, `.grid-sm`, `.inline-grid-sm`, `.grid-md`, `.inline-grid-md`, `.grid`, `.inline-grid`, `.grid-lg`, `.inline-grid-lg`, `.grid-xl`, `.inline-grid-xl`).
+- New cell classes added in the __css grid__ (`.cell`, `.cell-rows-xs-XX`, `.cell-rows-XX`, `.cell-rows-sm-XX`, `.cell-rows-md-XX`, `.cell-rows-lg-XX`, `.cell-rows-xl-XX`, `.cell-cols-xs-XX`, `.cell-cols-XX`, `.cell-cols-sm-XX`, `.cell-cols-md-XX`, `.cell-cols-lg-XX`, `.cell-cols-xl-XX`).
+- Many cell classes have been renamed in the __css grid__ (`.ms-cell-row-XX` -> `.ms-cell-start-row-XX`, `.ms-cell-col-XX` -> `.ms-cell-start-col-XX`, `.cell-row-start-XX` -> `.cell-start-row-XX`, `.cell-row-end-XX` -> `.cell-end-row-XX`, `.cell-col-start-XX` -> `.cell-start-col-XX`, `.cell-col-end-XX` -> `.cell-end-col-XX`).
+- The old `.cell-row-XX` and `.cell-col-XX` cell classes have been removed in the __css grid__.
 
 
 ## License
