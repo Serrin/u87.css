@@ -69,8 +69,7 @@ For a demo page please check the testpages of the versions and the [Celestra](ht
 
 ### u87.css v0.9.17 (Djerba Centurion - u87.next)
 - _grid v0.9.6, flex grid v0.9.7, css grid v0.9.0_
-- The breakpoints are based on the __CSS Variables__.
-- all of the `.ms-*` classes and `-ms-*` properties have been removed in the __css grid__.
+- All of the `.ms-*` classes and `-ms-*` properties have been removed in the __css grid__.
 - The __u87.css__ and __u87-cssgrid.css__ files have been merged.
 
 
