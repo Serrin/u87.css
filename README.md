@@ -67,11 +67,6 @@ For a demo page please check the testpages of the versions and the [Celestra](ht
 - New font classes: `.font-fantasy`, `.font-cursive`, `.font-italic`, `.font-more-bolder`, `.font-hairline`, `.font-100`, `.font-200`, `.font-300`, `.font-400`, `.font-500`, `.font-600`, `.font-700`, `.font-800`, `.font-900`, `.font-950`, `.font-1000`
 - Removed classes: `.heading-a`, `.heading-b`, `.heading-c`, `.heading-d`
 
-### u87.css v0.9.17 (Cython - u87.next)
-- _grid v0.9.6, flex grid v0.9.7, css grid v0.9.0_
-- All of the `.ms-*` classes and `-ms-*` properties have been removed in the __css grid__.
-- The __u87.css__ and __u87-cssgrid.css__ files have been merged.
-
 
 ## License
 
