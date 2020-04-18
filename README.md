@@ -60,7 +60,7 @@ For a demo page please check the testpages of the versions and the [Celestra](ht
 - _grid v0.9.5, flex grid v0.9.6, css grid v0.8.3 - experimental_
 - _This is the last version with IE11 and Edge 12-18 support._
 - Many changes in the padding settings (in grids and elements too), but without class names amendation.
-- - The `font-family` properties are based on the __CSS Variables__ with fallbacks.
+- The `font-family` properties are based on the __CSS Variables__ with fallbacks.
 - The scrollbar color settings have been removed, but readded the Firefox properties in the new classes.
 - New classes: `.break-all`, `.break-word` _- same as the HTML element_, `.nobreak`, `.hyphens-auto`, `.hyphens-manual`, `.nohyphens`
 - New scrollbar classes: `scrollbar-auto`, `.scrollbar-thin`, `.scrollbar-none`, `.scrollbar-dark`, `.scrollbar-blue`, `.scrollbar-light`
