@@ -1,0 +1,3643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>u87.css testpage</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="Author" content="Czigler Ferenc"/>
+<meta name="Copyright" content="(C) Copyright Czigler Ferenc"/>
+<link rel="stylesheet" href="u87-0.9.16.css" type="text/css"/>
+<link rel="stylesheet" href="u87-0.9.16-cssgrid.css" type="text/css"/>
+<script src="celestra.min.js"></script>
+<style type="text/css">
+
+.test {
+  border: 1px solid #663399 !important;
+  background-color: lightblue !important;
+  color: #000 !important;
+}
+
+.test-flex,
+.flex-xs, .inline-flex-xs,
+.flex-sm, .inline-flex-sm,
+.flex-md, .inline-flex-md, .flex, .inline-flex,
+.flex-lg, .inline-flex-lg,
+.flex-xl, .inline-flex-xl {
+  border: 1px solid red; background-color: #F0F8FF; color: #fff;
+}
+
+.test-flex-item,
+[class^="flex-f-"], [class^="flex-w-"] {
+  border: 1px solid red; background-color: #DCDCDC; color: #000;
+}
+
+.test-grid,
+.grid-xs, .inline-grid-xs,
+.grid-sm, .inline-grid-sm,
+.grid-md, .inline-grid-md, .grid, .inline-grid,
+.grid-lg, .inline-grid-lg,
+.grid-xl, .inline-grid-xl {
+  border: 1px solid black; background-color: #4682B4; color: #fff;
+}
+
+.test-cell, .cell {
+  border: 1px solid black; background-color: #EEE8AA; color: #000;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container"> <!-- container header -->
+  <div class="center">
+    <img src="U-87-Cyber-Combat-Unit.jpg" alt="U-87-Cyber-Combat-Unit" />
+  </div>
+
+  <header class="header center">
+    <h1>u87.css testpage</h1>
+    <nav><b>
+      <a href="#footer">Contact</a>
+      &nbsp;//&nbsp;
+      <a href="#" onclick=" _.importStyle('u87-0.9.16-dark.css'); "><i>Dark</i></a>
+      &nbsp;/&nbsp;
+      <a href="#" onclick=" _.importStyle('u87-0.9.16-blue.css'); "><i>Blue</i></a>
+      &nbsp;/&nbsp;
+      <a href="#" onclick=" _.importStyle('u87-0.9.16-light.css'); "><i>Light</i></a>
+    </b></nav>
+    <span class="font-xx-small">.header</span>
+  </header>
+</div> <!-- /container header -->
+
+<div class="container"> <!-- container 1 -->
+
+<h1>Heading level 1</h1>
+<h2>Heading level 2</h2>
+<h3>Heading level 3</h3>
+<h4>Heading level 4</h4>
+<h5>Heading level 5</h5>
+<h6>Heading level 6</h6>
+<p>p - Paragraph</p>
+
+
+<hr/>
+
+<h1 class="ha">.ha</h1>
+<h1 class="hb">.hb</h1>
+<h1 class="hc">.hc</h1>
+<h1 class="hd">.hd</h1>
+<div class="h1">.h1</div>
+<div class="h2">.h2</div>
+<div class="h3">.h3</div>
+<div class="h4">.h4</div>
+<div class="h5">.h5</div>
+<div class="h6">.h6</div>
+<p>p - Paragraph</p>
+
+
+<hr/>
+<h2>HTML elements</h2>
+
+<table>
+  <tr>
+    <td><b>normal</b></td>
+    <td><b>element</b></td>
+    <td><b>class</b></td>
+    <td><b>notes</b></td>
+  </tr>
+  <tr>
+    <td>normal</td>
+    <td><a href="testgame.html" target="_blank">link</a></td>
+    <td>no class</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>button</td>
+    <td><button onclick="alert('clicked');">button</button></td>
+    <td>no class</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>normal</td>
+    <td>
+      text:
+      <br/>      
+      <input type="text" value="text"/>
+      <br/>
+      number: 
+      <br/>
+      <input type="number" value="3.14"/>
+      <br/>
+      date:
+      <br/>
+      <input type="date"/>
+      <br/>
+      time:
+      <br/>
+      <input type="time"/>
+      <br/>
+      color:
+      <br/>
+      <input type="color"/>
+      <br/>
+      file:
+      <br/>
+      <input type="file"/>
+      <br/>
+      textarea:
+      <br/>
+      <textarea>textarea</textarea>
+      <br/>
+    </td>
+    <td>no class</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>hidden</td>
+    <td><div hidden>hidden</div></td>
+    <td><div class="hidden">.hidden</div></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>template</td>
+    <td><template>template hidden</template></td>
+    <td>no class</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>noframes</td>
+    <td><noframes>noframes hidden</noframes></td>
+    <td>no class</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>normal</td>
+    <td><b>b</b></td>
+    <td><span class="b">.b</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>normal</td>
+    <td><strong>strong</strong></td>
+    <td><span class="strong">.strong</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>normal</td>
+    <td><i>i</i></td>
+    <td><span class="i">.i</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>normal</td>
+    <td><em>em</em></td>
+    <td><span class="em">.em</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>normal</td>
+    <td><dfn>dfn</dfn></td>
+    <td><span class="dfn">.dfn</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>normal</td>
+    <td><small>small</small></td>
+    <td><span class="small">.small</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>normal</td>
+    <td><big>big</big></td>
+    <td><span class="big">.big</span></td>
+    <td><span class="removed">Obsolete since HTML5</span></td>
+  </tr>
+  <tr>
+    <td>normal</td>
+    <td><mark>mark</mark></td>
+    <td><span class="mark">.mark</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>normal</td>
+    <td><ins>ins</ins></td>
+    <td><span class="ins">.ins</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>normal</td>
+    <td><u>u</u></td>
+    <td><span class="u">.u</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>normal</td>
+    <td><del>del</del></td>
+    <td><span class="del">.del</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>normal</td>
+    <td><s>s</s></td>
+    <td><span class="s">.s</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>normal</td>
+    <td><strike>strike</strike></td>
+    <td><span class="strike">.strike</span></td>
+    <td><span class="removed">Obsolete since HTML5</span></td>
+  </tr>
+  <tr>
+    <td>sup</td>
+    <td>normal<sup>sup</sup></td>
+    <td>normal<span class="sup">.sup</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>sub</td>
+    <td>normal<sub>sub</sub></td>
+    <td>normal<span class="sub">.sub</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>cite</td>
+    <td><cite>cite</cite></td>
+    <td><span class="cite">.cite</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>q</td>
+    <td><q>q</q></td>
+    <td><span class="q">.q</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>normal</td>
+    <td><tt>tt</tt></td>
+    <td><span class="tt">.tt</span></td>
+    <td><span class="removed">Obsolete since HTML5</span></td>
+  </tr>
+  <tr>
+    <td>normal</td>
+    <td><code>code</code></td>
+    <td><span class="code">.code</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>normal</td>
+    <td><output>output</output></td>
+    <td><span class="output">.output</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>normal</td>
+    <td><kbd>kbd</kbd></td>
+    <td><span class="kbd">.kbd</span></td>
+    <td><kbd>CTRL + C</kbd> <kbd><kbd>CTRL</kbd> + <kbd>C</kbd></kbd></td>
+  </tr>
+  <tr>
+    <td>normal</td>
+    <td><samp>samp</samp></td>
+    <td><span class="samp">.samp</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>normal</td>
+    <td><var>var</var></td>
+    <td><span class="var">.var</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><span disabled onclick="alert('x');">[disabled]</span></td>
+    <td>none</td>
+    <td><span class="disabled" onclick="alert('x');">.disabled</span></td>
+    <td></td>
+  </tr>
+</table>
+
+
+<hr/>
+<h2>Color classes</h2>
+
+<p><b>shorthands</b></p>
+<div class="flex nogap nopadding noborder nobg">
+  <div class="flex-w-20 noborder nobg"><span class="removed">.removed</span></div>
+  <div class="flex-w-20 noborder nobg"><span class="danger">.danger</span></div>
+  <div class="flex-w-20 noborder nobg"><span class="deprecated">.deprecated</span></div>
+  <div class="flex-w-20 noborder nobg"><span class="warning">.warning</span></div>
+  <div class="flex-w-20 noborder nobg"><span class="info">.info</span></div>
+  <div class="flex-w-20 noborder nobg"><span class="success">.success</span></div>
+</div>
+
+<p><b>.label samples</b></p>
+<div class="flex nogap nopadding noborder nobg">
+  <div class="flex-w-20 noborder nobg"><span class="label bg-default">.label .bg-default</span></div>
+  <div class="flex-w-20 noborder nobg"><span class="label bg-inverse">.label .bg-inverse</span></div>
+  <div class="flex-w-20 noborder nobg"><span class="label bg-black">.label .bg-black</span></div>
+  <div class="flex-w-20 noborder nobg"><span class="label bg-white">.label .bg-white</span></div>
+  <div class="flex-w-20 noborder nobg"><span class="label bg-green">.label .bg-green</span></div>
+  <div class="flex-w-20 noborder nobg"><span class="label bg-red">.label .bg-red</span></div>
+  <div class="flex-w-20 noborder nobg"><span class="label bg-orange">.label .bg-orange</span></div>
+  <div class="flex-w-20 noborder nobg"><span class="label bg-lightblue">.label .bg-lightblue</span></div>
+  <div class="flex-w-20 noborder nobg"><span class="label bg-three">.label .bg-three</span></div>
+  <div class="flex-w-20 noborder nobg"><span class="label bg-three-inverse">.label .bg-three-inverse</span></div>
+  <div class="flex-w-20 noborder nobg"><mark class="label">mark .label</mark></div>
+</div>
+
+<p><b>.bg-XX</b></p>
+<div class="flex nogap nopadding noborder nobg">
+  <div class="flex-w-20 noborder nobg"><span class="bg-default">.bg-default</span></div>
+  <div class="flex-w-20 noborder nobg"><span class="bg-inverse">.bg-inverse</span></div>
+  <div class="flex-w-20 noborder nobg"><span class="bg-black">.bg-black</span></div>
+  <div class="flex-w-20 noborder nobg"><span class="bg-white">.bg-white</span></div>
+  <div class="flex-w-20 noborder nobg"><span class="bg-green">.bg-green</span></div>
+  <div class="flex-w-20 noborder nobg"><span class="bg-red">.bg-red</span></div>
+  <div class="flex-w-20 noborder nobg"><span class="bg-orange">.bg-orange</span></div>
+  <div class="flex-w-20 noborder nobg"><span class="bg-lightblue">.bg-lightblue</span></div>
+  <div class="flex-w-20 noborder nobg"><span class="bg-three">.bg-three</span></div>
+  <div class="flex-w-20 noborder nobg"><span class="bg-three-inverse">.bg-three-inverse</span></div>
+</div>
+
+<p><b>.text-XX</b></p>
+<div class="flex nogap nopadding noborder nobg">
+  <div class="flex-w-20 noborder nobg"><span class="text-default">.text-default</span></div>
+  <div class="flex-w-20 noborder nobg"><span class="text-inverse">.text-inverse</span></div>
+  <div class="flex-w-20 noborder nobg"><span class="text-black">.text-black</span></div>
+  <div class="flex-w-20 noborder nobg"><span class="text-white">.text-white</span></div>
+  <div class="flex-w-20 noborder nobg"><span class="text-green">.text-green</span></div>
+  <div class="flex-w-20 noborder nobg"><span class="text-red">.text-red</span></div>
+  <div class="flex-w-20 noborder nobg"><span class="text-orange">.text-orange</span></div>
+  <div class="flex-w-20 noborder nobg"><span class="text-lightblue">.text-lightblue</span></div>
+  <div class="flex-w-20 noborder nobg"><span class="bg-default text-default">.bg-default .text-default</span></div>
+  <div class="flex-w-20 noborder nobg"><span class="bg-inverse text-inverse">.bg-inverse .text-inverse</span></div>
+  <div class="flex-w-20 noborder nobg"><span class="text-three">.text-three</span></div>
+  <div class="flex-w-20 noborder nobg"><span class="text-three-inverse">.text-three-inverse</span></div>
+</div>
+
+
+<hr/>
+<h2>Utility classes</h2>
+
+<table>
+  <tr>
+    <td>.noopacity</td>
+    <td><span class="noopacity">lorem ipsum</span></td>
+  </tr>
+  <tr>
+    <td>.opacity-100</td>
+    <td><span class="opacity-100">lorem ipsum</span></td>
+  </tr>
+  <tr>
+    <td>.opacity-75</td>
+    <td><span class="opacity-75">lorem ipsum</span></td>
+  </tr>
+  <tr>
+    <td>.opacity-50</td>
+    <td><span class="opacity-50">lorem ipsum</span></td>
+  </tr>
+  <tr>
+    <td>.opacity-25</td>
+    <td><span class="opacity-25">lorem ipsum</span></td>
+  </tr>
+  <tr>
+    <td>.opacity-0</td>
+    <td><span class="opacity-0">lorem ipsum</span></td>
+  </tr>
+  <tr>
+    <td>.margin</td>
+    <td><span class="margin test">.margin</span></td>
+  </tr>
+  <tr>
+    <td>.margin-top</td>
+    <td><span class="margin-top test">.margin-top</span></td>
+  </tr>
+  <tr>
+    <td>.margin-bottom</td>
+    <td><span class="margin-bottom test">.margin-bottom</span></td>
+  </tr>
+  <tr>
+    <td>.margin-left</td>
+    <td><span class="margin-left test">.margin-left</span></td>
+  </tr>
+  <tr>
+    <td>.margin-right</td>
+    <td><span class="margin-right test">.margin-right</span></td>
+  </tr>
+  <tr>
+    <td>.margin-right<br/>.margin-bottom</td>
+    <td><span class="margin-right margin-bottom test">class</span></td>
+  </tr>
+  <tr>
+    <td>.nomargin</td>
+    <td><span class="margin nomargin test">.margin .nomargin</span></td>
+  </tr>
+  <tr>
+    <td>.nomargin-top</td>
+    <td class="margin">
+      <span class="margin nomargin-top test">.margin .nomargin-top</span>
+    </td>
+  </tr>
+  <tr>
+    <td>.nomargin-bottom</td>
+    <td class="margin">
+      <span class="margin nomargin-bottom test">.margin .nomargin-bottom</span>
+    </td>
+  </tr>
+  <tr>
+    <td>.nomargin-left</td>
+    <td class="margin">
+      <span class="margin nomargin-left test">.margin .nomargin-left</span>
+    </td>
+  </tr>
+  <tr>
+    <td>.nomargin-right</td>
+    <td class="margin">
+      <span class="margin nomargin-right test">.margin .nomargin-right</span>
+    </td>
+  </tr>
+  <tr>
+    <td>.nomargin-right<br/>.nomargin-bottom</td>
+    <td>
+      <span class="test margin nomargin-right nomargin-bottom">class</span>
+    </td>
+  </tr>
+  <tr>
+    <td>.padding</td>
+    <td class="padding"><span class="padding test">.padding</span></td>
+  </tr>
+  <tr>
+    <td>.padding-top</td>
+    <td><span class="padding-top test">.padding-top</span></td>
+  </tr>
+  <tr>
+    <td>.padding-bottom</td>
+    <td><span class="padding-bottom test">.padding-bottom</span></td>
+  </tr>
+  <tr>
+    <td>.padding-left</td>
+    <td><span class="padding-left test">.padding-left</span></td>
+  </tr>
+  <tr>
+    <td>.padding-right</td>
+    <td><span class="padding-right test">.padding-right</span></td>
+  </tr>
+  <tr>
+    <td>.padding-right<br/>.padding-bottom</td>
+    <td><span class="padding-right padding-bottom test">class</span></td>
+  </tr>
+  <tr>
+    <td>.nopadding</td>
+    <td class="padding">
+      <span class="padding nopadding test">.padding .nopadding</span>
+    </td>
+  </tr>
+  <tr>
+    <td>.nopadding-top</td>
+    <td class="padding">
+      <span class="padding nopadding-top test">.padding .nopadding-top</span>
+    </td>
+  </tr>
+  <tr>
+    <td>.nopadding-bottom</td>
+    <td class="padding">
+      <span class="padding nopadding-bottom test">.padding .nopadding-bottom</span>
+    </td>
+  </tr>
+  <tr>
+    <td>.nopadding-left</td>
+    <td class="padding">
+      <span class="padding nopadding-left test">.padding .nopadding-left</span>
+    </td>
+  </tr>
+  <tr>
+    <td>.nopadding-right</td>
+    <td class="padding">
+      <span class="padding nopadding-right test">.padding .nopadding-right</span>
+    </td>
+  </tr>
+  <tr>
+    <td>.nopadding-right<br/>.nopadding-bottom</td>
+    <td>
+      <span class="test padding nopadding-right nopadding-bottom">class</span>
+    </td>
+  </tr>
+  <tr>
+    <td>.border</td>
+    <td><span class="border">.border</span></td>
+  </tr>
+  <tr>
+    <td>.border-top</td>
+    <td><span class="border-top">.border-top</span></td>
+  </tr>
+  <tr>
+    <td>.border-bottom</td>
+    <td><span class="border-bottom">.border-bottom</span></td>
+  </tr>
+  <tr>
+    <td>.border-left</td>
+    <td><span class="border-left">.border-left</span></td>
+  </tr>
+  <tr>
+    <td>.border-right</td>
+    <td><span class="border-right">.border-right</span></td>
+  </tr>
+  <tr>
+    <td>.border-right<br/>.border-bottom</td>
+    <td><span class="border-right border-bottom">class</span></td>
+  </tr>
+  <tr>
+    <td>.noborder</td>
+    <td><span class="border noborder">.border .noborder</span></td>
+  </tr>
+  <tr>
+    <td>.noborder-top</td>
+    <td class="padding">
+      <span class="border noborder-top test">.border .noborder-top</span>
+    </td>
+  </tr>
+  <tr>
+    <td>.noborder-bottom</td>
+    <td class="padding">
+      <span class="border noborder-bottom test">.border .noborder-bottom</span>
+    </td>
+  </tr>
+  <tr>
+    <td>.noborder-left</td>
+    <td class="padding">
+      <span class="border noborder-left test">.border .noborder-left</span>
+    </td>
+  </tr>
+  <tr>
+    <td>.noborder-right</td>
+    <td class="padding">
+      <span class="border noborder-right test">.border .noborder-right</span>
+    </td>
+  </tr>
+  <tr>
+    <td>.noborder-right<br/>.noborder-bottom</td>
+    <td><span class="test noborder-right noborder-bottom">class</span></td>
+  </tr>
+  <tr>
+    <td>.outline<br/>.offset</td>
+    <td style="padding: 1rem;">
+      <span class="border outline offset">.outline .border .offset</span>
+    </td>
+  </tr>
+  <tr>
+    <td>.nooutline<br/>.nooffset</td>
+    <td class="padding">
+      <span class="outline nooutline offset nooffset">
+        .outline .nooutline .offset .nooffset
+      </span>
+    </td>
+  </tr>
+</table>
+
+
+<hr/>
+<h2>pre</h2>
+
+<pre>pre
+line 2
+line 3</pre>
+
+<div class="pre">.pre
+line 2
+line 3</div>
+
+
+<hr/>
+<h2>lists</h2>
+
+<h4>ul</h4>
+<ul>
+  <li>li 1</li>
+  <li>li 2</li>
+  <li>li 3</li>
+</ul>
+<ul class="test">
+  <li class="test">li 1</li>
+  <li class="test">li 2</li>
+  <li class="test">li 3</li>
+</ul>
+
+<h4>ol</h4>
+<ol>
+  <li>li 1</li>
+  <li>li 2</li>
+  <li>li 3</li>
+</ol>
+<ol class="test">
+  <li class="test">li 1</li>
+  <li class="test">li 2</li>
+  <li class="test">li 3</li>
+</ol>
+
+<h4>dl</h4>
+<dl>
+  <dt>dt 1</dt>
+  <dd>dd 1</dd>
+  <dt>dt 2</dt>
+  <dd>dd 2</dd>
+  <dt>dt 3</dt>
+  <dd>dd 3</dd>
+</dl>
+<dl class="test">
+  <dt class="test">dt 1</dt>
+  <dd class="test">dd 1</dd>
+  <dt class="test">dt 2</dt>
+  <dd class="test">dd 2</dd>
+  <dt class="test">dt 3</dt>
+  <dd class="test">dd 3</dd>
+</dl>
+
+
+<hr/>
+<h2>scrollable</h2>
+
+<p><code>.scrollable .padding</code></p>
+<div class="test scrollable padding" style="height: 200px;">
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+  <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
+  <p>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.</p>
+  <p>Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla.</p>
+  <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus.</p>
+</div>
+
+<p><code>.scrollable-x .padding</code></p>
+<div class="test scrollable-x padding" style="height: 200px;">
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+  <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
+  <p>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.</p>
+  <p>Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla.</p>
+  <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus.</p>
+</div>
+
+<p><code>.scrollable-y .padding</code></p>
+<div class="test scrollable-y padding" style="height: 200px;">
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+  <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
+  <p>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.</p>
+  <p>Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla.</p>
+  <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus.</p>
+</div>
+
+
+<hr/>
+<h2>scrollbar in Firefox</h2>
+
+<p><code>.scrollable-y .scrollbar-none .padding</code></p>
+<div class="test scrollable-y scrollbar-none padding" style="height: 200px;">
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+  <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
+  <p>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.</p>
+  <p>Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla.</p>
+  <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus.</p>
+</div>
+
+<p><code>.scrollable-y .scrollbar-auto .scrollbar-dark .padding</code></p>
+<div class="test scrollable-y scrollbar-auto scrollbar-dark padding" style="height: 200px;">
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+  <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
+  <p>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.</p>
+  <p>Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla.</p>
+  <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus.</p>
+</div>
+
+<p><code>.scrollable-y .scrollbar-thin .scrollbar-dark .padding</code></p>
+<div class="test scrollable-y scrollbar-thin scrollbar-dark padding" style="height: 200px;">
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+  <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
+  <p>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.</p>
+  <p>Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla.</p>
+  <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus.</p>
+</div>
+
+<p><code>.scrollable-y .scrollbar-auto .scrollbar-blue .padding</code></p>
+<div class="test scrollable-y scrollbar-auto scrollbar-blue padding" style="height: 200px;">
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+  <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
+  <p>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.</p>
+  <p>Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla.</p>
+  <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus.</p>
+</div>
+
+<p><code>.scrollable-y .scrollbar-thin .scrollbar-blue .padding</code></p>
+<div class="test scrollable-y scrollbar-thin scrollbar-blue padding" style="height: 200px;">
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+  <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
+  <p>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.</p>
+  <p>Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla.</p>
+  <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus.</p>
+</div>
+
+<p><code>.scrollable-y .scrollbar-auto .scrollbar-light padding</code></p>
+<div class="test scrollable-y scrollbar-auto scrollbar-light padding" style="height: 200px;">
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+  <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
+  <p>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.</p>
+  <p>Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla.</p>
+  <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus.</p>
+</div>
+
+<p><code>.scrollable-y .scrollbar-thin .scrollbar-light padding</code></p>
+<div class="test scrollable-y scrollbar-thin scrollbar-light padding" style="height: 200px;">
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+  <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
+  <p>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.</p>
+  <p>Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla.</p>
+  <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus.</p>
+</div>
+
+
+<hr/>
+<h2>blockquote</h2>
+
+<blockquote>
+  <p>This a "p" tag in a "blockquote".</p>
+  <footer>This is a "footer" tag in a "blockquote".</footer>
+</blockquote>
+<blockquote><p>This a "p" tag in a "blockquote".</p></blockquote>
+<blockquote>This a text in a "blockquote".</blockquote>
+
+<div class="blockquote">
+  <p>This a "p" tag in a ".blockquote".</p>
+  <footer>This is a "footer" tag in a ".blockquote".</footer>
+</div>
+<div class="blockquote"><p>This a "p" tag in a ".blockquote".</p></div>
+<div class="blockquote">This a text in a ".blockquote".</div>
+
+
+<hr/>
+<h2>Word break test</h2>
+<pre>.nobreak</pre>
+<p class="nobreak" style="width: 300px;">Honorificabilitudinitatibus califragilisticexpialidocious <b>Taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitanatahu</b> 次の単語グレートブリテンおよび北アイルランド連合王国で本当に大きな言葉</p>
+<pre>/*doc before v0.9.15*/
+.break-all</pre>
+<p class="break-all" style="width: 300px;">Honorificabilitudinitatibus califragilisticexpialidocious <b>Taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitanatahu</b> 次の単語グレートブリテンおよび北アイルランド連合王国で本当に大きな言葉</p>
+<pre>/*from v0.9.16*/
+.break-word</pre>
+<p class="break-word" style="width: 300px;">Honorificabilitudinitatibus califragilisticexpialidocious <b>Taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitanatahu</b> 次の単語グレートブリテンおよび北アイルランド連合王国で本当に大きな言葉</p>
+<pre>no class</pre>
+<p style="width: 300px;">Honorificabilitudinitatibus califragilisticexpialidocious <b>Taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitanatahu</b> 次の単語グレートブリテンおよび北アイルランド連合王国で本当に大きな言葉</p>
+<pre>.nobreak .hyphens-auto</pre>
+<p class="nobreak hyphens-auto" style="width: 300px;">Honorificabilitudinitatibus califragilisticexpialidocious <b>Taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitanatahu</b> 次の単語グレートブリテンおよび北アイルランド連合王国で本当に大きな言葉</p>
+<pre>.nobreak .hyphens-auto .nohyphens</pre>
+<p class="nobreak hyphens-auto nohyphens" style="width: 300px;">Honorificabilitudinitatibus califragilisticexpialidocious <b>Taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitanatahu</b> 次の単語グレートブリテンおよび北アイルランド連合王国で本当に大きな言葉</p>
+
+
+<hr/>
+<h2>.center-flex</h2>
+
+<p><code>style="width: 100%; height: 50vh; background-color: #eee;"</code></p>
+
+<div class="center-flex border margin-top margin-bottom" style="width: 100%; height: 50vh; background-color: #eee;">
+  <div class="padding test" style="width: 50%; max-width: 50%; height: 25vh; max-height: 25vh;">
+    <code>width: 50%; max-width: 50%; height: 25vh; max-height: 25vh;</code>
+  </div>
+</div>
+
+<div class="center-flex border margin-top margin-bottom" style="width: 100%; height: 50vh; background-color: #eee;">
+  <div class="padding test" style="width: 50%; max-width: 50%; max-height: 25vh;">
+    <code>style="width: 50%; max-width: 50%; max-height: 25vh;"</code>
+  </div>
+  <div class="padding test" style="width: 50%; max-width: 50%; height: 25vh; max-height: 25vh;">
+    <code>style="width: 50%; max-width: 50%; height: 25vh; max-height: 25vh;"</code>
+  </div>
+  <div class="padding test" style="width: 50%; max-width: 50%; max-height: 25vh;">
+    <code>style="width: 50%; max-width: 50%; max-height: 25vh;"</code>
+  </div>
+</div>
+
+<p><b>Another way, but works exactly only with one item.</b></p>
+<p><code>style="display: flex; width: 100%; height: 50vh; background-color: #eee;"</code></p>
+<div class="border margin-top margin-bottom" style="display: flex; width: 100%; height: 50vh; background-color: #eee;">
+  <div class="padding test" style="margin: auto; width: 50%; max-width: 50%; height: 25vh; max-height: 25vh;">
+    <code>style="margin: auto; width: 50%; max-width: 50%; height: 25vh; max-height: 25vh;"</code>
+  </div>
+</div>
+
+
+<hr/>
+<h2>.center-inline-flex</h2>
+
+<div class="margin-top margin-bottom">
+  <div>
+    <span class="test" style="width: 45%;">span 45%</span>
+    <div class="center-inline-flex" style="width: 45%; height: 50vh; background-color: #eee;">
+      <div class="padding test" style="width: 50%; max-width: 50%; height: 25vh; max-height: 25vh;">
+        <code>width: 50%; max-width: 50%; height: 25vh; max-height: 25vh;</code>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="margin-top margin-bottom">
+  <div>
+    <span class="test" style="width: 45%;">span 45%</span>
+    <div class="center-inline-flex" style="width: 45%; height: 50vh; background-color: #eee;">
+      <div class="padding test" style="width: 50%; max-width: 50%; max-height: 25vh;">
+        <code>style="width: 50%; max-width: 50%; max-height: 25vh;"</code>
+      </div>
+      <div class="padding test" style="width: 50%; max-width: 50%; height: 25vh; max-height: 25vh;">
+        <code>style="width: 50%; max-width: 50%; height: 25vh; max-height: 25vh;"</code>
+      </div>
+      <div class="padding test" style="width: 50%; max-width: 50%; max-height: 25vh;">
+        <code>style="width: 50%; max-width: 50%; max-height: 25vh;"</code>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p><b>Another way, but works exactly only with one item.</b></p>
+<p><code>style="display: inline-flex; width: 45%; height: 50vh; background-color: #eee;"</code></p>
+<div class="margin-top margin-bottom">
+  <div>
+    <span class="test" style="width: 45%;">span 45%</span>
+    <div style="display: inline-flex; width: 45%; height: 50vh; background-color: #eee;">
+      <div class="padding test" style="margin: auto; width: 50%; max-width: 50%; height: 25vh; max-height: 25vh;">
+        <code>style="margin: auto; width: 50%; max-width: 50%; height: 25vh; max-height: 25vh;"</code>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<hr/>
+<h2>Text aligns</h2>
+<div class="left test">.left</div>
+<div class="text-left test">.text-left</div>
+<div class="right test">.right</div>
+<div class="text-right test">.text-right</div>
+<center class="test"><span class="removed">center tag - Obsolete since HTML5</span></center>
+<div class="center test">.center</div>
+<div class="text-center test">.text-center</div>
+<div class="justify test">.justify</div>
+<div class="text-justify test">.text-justify</div>
+<div class="nowrap test">.nowrap</div>
+<div class="text-nowrap test">.text-nowrap</div>
+
+
+<hr/>
+<h2>.object-fit-XX</h2>
+<p><b>With test border:</b></p>
+<p>Used on all images: <code>style="width: 200px; height: 200px;"</code></p>
+<div style="padding: 1rem; border: 1px solid navy;">
+  <img src="U-87-Cyber-Combat-Unit.jpg" alt="U-87-Cyber-Combat-Unit" style="width: 200px; height: 200px; border: 1px solid red;" />
+  <img src="U-87-Cyber-Combat-Unit.jpg" alt="U-87-Cyber-Combat-Unit" style="width: 200px; height: 200px;" />
+  without <code>.object-fit-XX</code>
+</div>
+<div style="padding: 1rem; border: 1px solid navy;">
+  <div style="width: 200px; height: 200px; border: 1px solid red;">
+    <img src="U-87-Cyber-Combat-Unit.jpg" alt="U-87-Cyber-Combat-Unit"/>
+  </div>
+  <p>with a <code>&#60;div style="padding: 1rem; border: 1px solid navy;"&#62;</code></p>
+  <p>and without <code>.object-fit-XX</code></p>
+</div>
+<div style="padding: 1rem; border: 1px solid navy;">
+  <img src="U-87-Cyber-Combat-Unit.jpg" alt="U-87-Cyber-Combat-Unit" class="object-fit-contain" style="width: 200px; height: 200px; border: 1px solid red;" />
+  <img src="U-87-Cyber-Combat-Unit.jpg" alt="U-87-Cyber-Combat-Unit" class="object-fit-contain" style="width: 200px; height: 200px;" />
+  <code>.object-fit-contain</code>
+</div>
+<div style="padding: 1rem; border: 1px solid navy;">
+  <img src="U-87-Cyber-Combat-Unit.jpg" alt="U-87-Cyber-Combat-Unit" class="object-fit-scale-down" style="width: 200px; height: 200px; border: 1px solid red;" />
+  <img src="U-87-Cyber-Combat-Unit.jpg" alt="U-87-Cyber-Combat-Unit" class="object-fit-scale-down" style="width: 200px; height: 200px;" />
+<code>.object-fit-scale-down</code>
+</div>
+<div style="padding: 1rem; border: 1px solid navy;">
+  <img src="U-87-Cyber-Combat-Unit.jpg" alt="U-87-Cyber-Combat-Unit" class="object-fit-fill" style="width: 200px; height: 200px; border: 1px solid red;" />
+  <img src="U-87-Cyber-Combat-Unit.jpg" alt="U-87-Cyber-Combat-Unit" class="object-fit-fill" style="width: 200px; height: 200px;" />
+  <code>.object-fit-fill</code>
+</div>
+<div style="padding: 1rem; border: 1px solid navy;">
+  <img src="U-87-Cyber-Combat-Unit.jpg" alt="U-87-Cyber-Combat-Unit" class="object-fit-cover" style="width: 200px; height: 200px; border: 1px solid red;" />
+  <img src="U-87-Cyber-Combat-Unit.jpg" alt="U-87-Cyber-Combat-Unit" class="object-fit-cover" style="width: 200px; height: 200px;" />
+  <code>.object-fit-cover</code>
+</div>
+<div style="padding: 1rem; border: 1px solid navy;">
+  <img src="U-87-Cyber-Combat-Unit.jpg" alt="U-87-Cyber-Combat-Unit" class="object-fit-none" style="width: 200px; height: 200px; border: 1px solid red;" />
+  <img src="U-87-Cyber-Combat-Unit.jpg" alt="U-87-Cyber-Combat-Unit" class="object-fit-none" style="width: 200px; height: 200px;" />
+  <code>.object-fit-none</code>
+</div>
+
+
+<hr/>
+<h2>Font</h2>
+
+<table>
+  <tr>
+    <td><b>class</b></td>
+    <td><b>sample</b></td>
+    <td><b>notes</b></td>
+  </tr>
+  <tr>
+    <td>.font-serif</td>
+    <td><span class="font-serif">lorem ipsum</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>.font-sans-serif</td>
+    <td><span class="font-sans-serif">lorem ipsum</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>.font-monospace</td>
+    <td><span class="font-monospace">lorem ipsum</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>.font-cursive</td>
+    <td><span class="font-cursive">lorem ipsum</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>.font-fantasy</td>
+    <td><span class="font-fantasy">lorem ipsum</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>.font-italic</td>
+    <td><span class="font-italic">lorem ipsum</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>.uppercase</td>
+    <td><span class="uppercase">loREm IpSUm</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>.lowercase</td>
+    <td><span class="lowercase">loREm IpSUm</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>.capitalize</td>
+    <td><span class="capitalize">lorem ipsum</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>.smallcaps</td>
+    <td><span class="smallcaps">Lorem Ipsum<br/>lorem ipsum</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>.underline</td>
+    <td><span class="underline">.underline</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>.nounderline</td>
+    <td><span class="underline nounderline">.underline .nounderline</span></td>
+    <td></td>
+  </tr>
+</table>
+
+<div>
+  <h3>Classes from the HTML elements</h3>
+  <p>
+    <span class="b">.b</span>
+    <span class="strong">.strong</span>
+    <span class="i">.i</span>
+    <span class="em">.em</span>
+    <span class="dfn">.dfn</span>
+    <span class="small">.small</span>
+    <span class="big">.big</span>
+    <span class="mark">.mark</span>
+    <span class="ins">.ins</span>
+    <span class="u">.u</span>
+    <span class="del">.del</span>
+    <span class="s">.s</span>
+    <span class="strike">.strike</span>
+    <span class="sup">.sup</span>
+    <span class="sub">.sub</span>
+    <span class="cite">.cite</span>
+    <span class="q">.q</span>
+    <span class="tt">.tt</span>
+    <span class="code">.code</span>
+    <span class="output">.output</span>
+    <span class="kbd">.kbd</span>
+    <span class="samp">.samp</span>
+    <span class="var">.var</span>
+  </p>
+</div>
+
+<h3>Font weights</h3>
+<table>
+  <tr>
+    <td><b>class</b></td>
+    <td><b>sample</b></td>
+    <td><b>with</b> <code>.font-more-bolder</code></td>
+    <td><b>notes</b></td>
+  </tr>
+  <tr>
+    <td>.font-lighter</td>
+    <td><span class="font-lighter">lorem ipsum</span></td>
+    <td><span class="font-lighter font-more-bolder">lorem ipsum</span></td>
+    <td>relative</td>
+  </tr>
+  <tr>
+    <td>.font-bolder</td>
+    <td><span class="font-bolder">lorem ipsum</span></td>
+    <td><span class="font-bolder font-more-bolder">lorem ipsum</span></td>
+    <td>relative</td>
+  </tr>
+  <tr>
+    <td>.font-100</td>
+    <td><span class="font-100">lorem ipsum</span></td>
+    <td><span class="font-100 font-more-bolder">lorem ipsum</span></td>
+    <td>100</td>
+  </tr>
+  <tr>
+    <td>.font-thin</td>
+    <td><span class="font-thin">lorem ipsum</span></td>
+    <td><span class="font-ultrablack font-more-bolder">lorem ipsum</span></td>
+    <td>100</td>
+  </tr>
+  <tr>
+    <td>.font-hairline</td>
+    <td><span class="font-hairline">lorem ipsum</span></td>
+    <td><span class="font-hairline font-more-bolder">lorem ipsum</span></td>
+    <td>100</td>
+  </tr>
+  <tr>
+    <td>.font-200</td>
+    <td><span class="font-200">lorem ipsum</span></td>
+    <td><span class="font-200 font-more-bolder">lorem ipsum</span></td>
+    <td>200</td>
+  </tr>
+  <tr>
+    <td>.font-extralight</td>
+    <td><span class="font-extralight">lorem ipsum</span></td>
+    <td><span class="font-extralight font-more-bolder">lorem ipsum</span></td>
+    <td>200</td>
+  </tr>
+  <tr>
+    <td>.font-ultralight</td>
+    <td><span class="font-ultralight">lorem ipsum</span></td>
+    <td><span class="font-ultralight font-more-bolder">lorem ipsum</span></td>
+    <td>200</td>
+  </tr>
+  <tr>
+    <td>.font-300</td>
+    <td><span class="font-300">lorem ipsum</span></td>
+    <td><span class="font-300 font-more-bolder">lorem ipsum</span></td>
+    <td>300</td>
+  </tr>
+  <tr>
+    <td>.font-light</td>
+    <td><span class="font-light">lorem ipsum</span></td>
+    <td><span class="font-light font-more-bolder">lorem ipsum</span></td>
+    <td>300</td>
+  </tr>
+  <tr>
+    <td>.font-400</td>
+    <td><span class="font-400">lorem ipsum</span></td>
+    <td><span class="font-400 font-more-bolder">lorem ipsum</span></td>
+    <td>400</td>
+  </tr>
+  <tr>
+    <td>.font-normal</td>
+    <td><span class="font-normal">lorem ipsum</span></td>
+    <td><span class="font-normal font-more-bolder">lorem ipsum</span></td>
+    <td>400</td>
+  </tr>
+  <tr>
+    <td>.font-regular</td>
+    <td><span class="font-regular">lorem ipsum</span></td>
+    <td><span class="font-regular font-more-bolder">lorem ipsum</span></td>
+    <td>400</td>
+  </tr>
+  <tr>
+    <td>.font-book</td>
+    <td><span class="font-book">lorem ipsum</span></td>
+    <td><span class="font-book font-more-bolder">lorem ipsum</span></td>
+    <td>400</td>
+  </tr>
+  <tr>
+    <td>.font-roman</td>
+    <td><span class="font-roman">lorem ipsum</span></td>
+    <td><span class="font-roman font-more-bolder">lorem ipsum</span></td>
+    <td>400</td>
+  </tr>
+  <tr>
+    <td>.font-500</td>
+    <td><span class="font-500">lorem ipsum</span></td>
+    <td><span class="font-500 font-more-bolder">lorem ipsum</span></td>
+    <td>500</td>
+  </tr>
+  <tr>
+    <td>.font-medium</td>
+    <td><span class="font-medium">lorem ipsum</span></td>
+    <td><span class="font-medium font-more-bolder">lorem ipsum</span></td>
+    <td>500</td>
+  </tr>
+  <tr>
+    <td>.font-600</td>
+    <td><span class="font-600">lorem ipsum</span></td>
+    <td><span class="font-600 font-more-bolder">lorem ipsum</span></td>
+    <td>600</td>
+  </tr>
+  <tr>
+    <td>.font-semibold</td>
+    <td><span class="font-semibold">lorem ipsum</span></td>
+    <td><span class="font-semibold font-more-bolder">lorem ipsum</span></td>
+    <td>600</td>
+  </tr>
+  <tr>
+    <td>.font-demibold</td>
+    <td><span class="font-demibold">lorem ipsum</span></td>
+    <td><span class="font-demibold font-more-bolder">lorem ipsum</span></td>
+    <td>600</td>
+  </tr>
+  <tr>
+    <td>.font-700</td>
+    <td><span class="font-700">lorem ipsum</span></td>
+    <td><span class="font-700 font-more-bolder">lorem ipsum</span></td>
+    <td>700</td>
+  </tr>
+  <tr>
+    <td>.font-bold</td>
+    <td><span class="font-bold">lorem ipsum</span></td>
+    <td><span class="font-bold font-more-bolder">lorem ipsum</span></td>
+    <td>700</td>
+  </tr>
+  <tr>
+    <td>.font-800</td>
+    <td><span class="font-800">lorem ipsum</span></td>
+    <td><span class="font-800 font-more-bolder">lorem ipsum</span></td>
+    <td>800</td>
+  </tr>
+  <tr>
+    <td>.font-extrabold</td>
+    <td><span class="font-extrabold">lorem ipsum</span></td>
+    <td><span class="font-extrabold font-more-bolder">lorem ipsum</span></td>
+    <td>800</td>
+  </tr>
+  <tr>
+    <td>.font-ultrabold</td>
+    <td><span class="font-ultrabold">lorem ipsum</span></td>
+    <td><span class="font-ultrabold font-more-bolder">lorem ipsum</span></td>
+    <td>800</td>
+  </tr>
+  <tr>
+    <td>.font-900</td>
+    <td><span class="font-900">lorem ipsum</span></td>
+    <td><span class="font-900 font-more-bolder">lorem ipsum</span></td>
+    <td>900</td>
+  </tr>
+  <tr>
+    <td>.font-black</td>
+    <td><span class="font-black">lorem ipsum</span></td>
+    <td><span class="font-black font-more-bolder">lorem ipsum</span></td>
+    <td>900</td>
+  </tr>
+  <tr>
+    <td>.font-heavy</td>
+    <td><span class="font-heavy">lorem ipsum</span></td>
+    <td><span class="font-heavy font-more-bolder">lorem ipsum</span></td>
+    <td>900</td>
+  </tr>
+  <tr>
+    <td>.font-950</td>
+    <td><span class="font-950">lorem ipsum</span></td>
+    <td><span class="font-950 font-more-bolder">lorem ipsum</span></td>
+    <td><ins>900</ins> <del>950 (not in IE11)</del></td>
+  </tr>
+  <tr>
+    <td>.font-extrablack</td>
+    <td><span class="font-extrablack">lorem ipsum</span></td>
+    <td><span class="font-extrablack font-more-bolder">lorem ipsum</span></td>
+    <td><ins>900</ins> <del>950 (not in IE11)</del></td>
+  </tr>
+  <tr>
+    <td>.font-ultrablack</td>
+    <td><span class="font-ultrablack">lorem ipsum</span></td>
+    <td><span class="font-ultrablack font-more-bolder">lorem ipsum</span></td>
+    <td><ins>900</ins> <del>950 (not in IE11)</del></td>
+  </tr>
+  <tr>
+    <td>.font-1000</td>
+    <td><span class="font-1000">lorem ipsum</span></td>
+    <td><span class="font-1000 font-more-bolder">lorem ipsum</span></td>
+    <td>1000 (not in IE11)</td>
+  </tr>
+</table>
+
+<table class="table-striped">
+  <tr class="b">
+    <td>Font weight</td>
+    <td>usWeightClass</td>
+    <td>Bolder</td>
+    <td>Lighter</td>
+  </tr>
+  <tr>
+    <td>Thin (Hairline)</td>
+    <td>100</td>
+    <td>400</td>
+    <td>100</td>
+  </tr>
+  <tr>
+    <td>Extra Light (Ultra Light)</td>
+    <td>200</td>
+    <td>400</td>
+    <td>100</td>
+  </tr>
+  <tr>
+    <td>Light</td>
+    <td>300</td>
+    <td>400</td>
+    <td>100</td>
+  </tr>
+  <tr>
+    <td>Normal (Regular, Book, Roman)</td>
+    <td>400</td>
+    <td>700</td>
+    <td>100</td>
+  </tr>
+  <tr>
+    <td>Medium</td>
+    <td>500</td>
+    <td>700</td>
+    <td>100</td>
+  </tr>
+  <tr>
+    <td>Semi Bold (Demi Bold)</td>
+    <td>600</td>
+    <td>900</td>
+    <td>400</td>
+  </tr>
+  <tr>
+    <td>Bold</td>
+    <td>700</td>
+    <td>900</td>
+    <td>400</td>
+  </tr>
+  <tr>
+    <td>Extra Bold (Ultra Bold)</td>
+    <td>800</td>
+    <td>900</td>
+    <td>700</td>
+  </tr>
+  <tr>
+    <td>Black (Heavy)</td>
+    <td>900</td>
+    <td>900</td>
+    <td>700</td>
+  </tr>
+  <tr>
+    <td><a href="https://docs.microsoft.com/en-us/dotnet/api/system.windows.fontweights?view=netframework-4.8#remarks" target="_blank">Extra Black (Ultra Black)</a></td>
+    <td>950</td>
+    <td></td>
+    <td></td>
+  <tr>
+</table>
+
+
+<h3>Font sizes</h3>
+
+<p>
+  More info about the font sizes:
+  <a href="https://www.w3.org/TR/css-fonts-3/#font-size-prop" target="_blank">
+    https://www.w3.org/TR/css-fonts-3/#font-size-prop
+  </a>
+</p>
+
+<table>
+  <tr>
+    <td><b>CSS absolute-size values</b></td>
+    <td><b>scaling factor</b></td>
+    <td><b>HTML headings</b></td>
+    <td><b>HTML font sizes</b></td>
+  </tr>
+  <tr>
+    <td><b>xx-small</b></td>
+    <td>3/5 (0.6em)</td>
+    <td>h6</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td><b>x-small</b></td>
+    <td>3/4 (0.75em)</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><b>small</b></td>
+    <td>8/9 (0.888em)</td>
+    <td>h5</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td><b>medium</b></td>
+    <td>1 (1em)</td>
+    <td>h4</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td><b>large</b></td>
+    <td>6/5 (1.2em)<br/>md: 1.25em</td>
+    <td>h3</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td><b>x-large</b></td>
+    <td>3/2 (1.5em)</td>
+    <td>h2</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td><b>xx-large</b></td>
+    <td>2/1 (2em)</td>
+    <td>h1</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td><b>xxx-large<sup>1</sup></b></td>
+    <td>3/1 (3em)</td>
+    <td></td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td colspan="4"><small>
+      <b>1 -</b> The name <code>xxx-large</code> is new in 2019 and not supported in all browsers. In the u87 class the <code>3rem</code> value is used, so will work in every modern browsers (IE11+).
+    </small></td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td><b>class</b></td>
+    <td><b>sample</b></td>
+    <td><b>notes</b></td>
+  </tr>
+  <tr>
+    <td>.font-smaller</td>
+    <td><span class="font-smaller">lorem ipsum</span></td>
+    <td>relative</td>
+  </tr>
+  <tr>
+    <td>.font-larger</td>
+    <td><span class="font-larger">lorem ipsum</span></td>
+    <td>relative</td>
+  </tr>
+  <tr>
+    <td>.font-xx-small</td>
+    <td><span class="font-xx-small">lorem ipsum</span></td>
+    <td>absolute (0.6rem)<br/>old HTML code: <code>&#60;font size="1"&#62;</code></td>
+  </tr>
+  <tr>
+    <td>.font-xxs</td>
+    <td><span class="font-xxs">lorem ipsum</span></td>
+    <td>absolute (0.6rem)<br/>old HTML code: <code>&#60;font size="1"&#62;</code></td>
+  </tr>
+  <tr>
+    <td>.font-x-small</td>
+    <td><span class="font-x-small">lorem ipsum</span></td>
+    <td>absolute (0.75rem)</td>
+  </tr>
+  <tr>
+    <td>.font-xs</td>
+    <td><span class="font-xs">lorem ipsum</span></td>
+    <td>absolute (0.75rem)</td>
+  </tr>
+  <tr>
+    <td>.font-small</td>
+    <td><span class="font-small">lorem ipsum</span></td>
+    <td>absolute (0.88rem)<br/>old HTML code: <code>&#60;font size="2"&#62;</code></td>
+  </tr>
+  <tr>
+    <td>.font-s</td>
+    <td><span class="font-s">lorem ipsum</span></td>
+    <td>absolute (0.88rem)<br/>old HTML code: <code>&#60;font size="2"&#62;</code></td>
+  </tr>
+  <tr>
+    <td>.font-medium</td>
+    <td><span class="font-medium">lorem ipsum</span></td>
+    <td>default size, absolute (1rem)<br/>old HTML code: <code>&#60;font size="3"&#62;</code></td>
+  </tr>
+  <tr>
+    <td>.font-m</td>
+    <td><span class="font-m">lorem ipsum</span></td>
+    <td>default size, absolute (1rem)<br/>old HTML code: <code>&#60;font size="3"&#62;</code></td>
+  </tr>
+  <tr>
+    <td>.font-large</td>
+    <td><span class="font-large">lorem ipsum</span></td>
+    <td>absolute (1.125rem)<br/>old HTML code: <code>&#60;font size="4"&#62;</code></td>
+  </tr>
+  <tr>
+    <td>.font-l</td>
+    <td><span class="font-l">lorem ipsum</span></td>
+    <td>absolute (1.125rem)<br/>old HTML code: <code>&#60;font size="4"&#62;</code></td>
+  </tr>
+  <tr>
+    <td>.font-x-large</td>
+    <td><span class="font-x-large">lorem ipsum</span></td>
+    <td>absolute (1.5rem)<br/>old HTML code: <code>&#60;font size="5"&#62;</code></td>
+  </tr>
+  <tr>
+    <td>.font-xl</td>
+    <td><span class="font-xl">lorem ipsum</span></td>
+    <td>absolute (1.5rem)<br/>old HTML code: <code>&#60;font size="5"&#62;</code></td>
+  </tr>
+  <tr>
+    <td>.font-xx-large</td>
+    <td><span class="font-xx-large">lorem ipsum</span></td>
+    <td>absolute (2rem)<br/>old HTML code: <code>&#60;font size="6"&#62;</code></td>
+  </tr>
+  <tr>
+    <td>.font-xxl</td>
+    <td><span class="font-xxl">lorem ipsum</span></td>
+    <td>absolute (2rem)<br/>old HTML code: <code>&#60;font size="6"&#62;</code></td>
+  </tr>
+  <tr>
+    <td>.font-xxx-large</td>
+    <td><span class="font-xxx-large">lorem ipsum</span></td>
+    <td>absolute (3rem) - new in 2019<br/>old HTML code: <code>&#60;font size="7"&#62;</code></td>
+  </tr>
+  <tr>
+    <td>.font-xxxl</td>
+    <td><span class="font-xxxl">lorem ipsum</span></td>
+    <td>absolute (3rem) - 2019<br/>old HTML code: <code>&#60;font size="7"&#62;</code></td>
+  </tr>
+  <tr>
+    <td>.font-h6</td>
+    <td><span class="font-h6">lorem ipsum</span></td>
+    <td>default size, absolute (1rem)</td>
+  </tr>
+  <tr>
+    <td>.font-h5</td>
+    <td><span class="font-h5">lorem ipsum</span></td>
+    <td>absolute (1.25rem)</td>
+  </tr>
+  <tr>
+    <td>.font-h4</td>
+    <td><span class="font-h4">lorem ipsum</span></td>
+    <td>absolute (1.5rem)</td>
+  </tr>
+  <tr>
+    <td>.font-h3</td>
+    <td><span class="font-h3">lorem ipsum</span></td>
+    <td>absolute (1.75rem)</td>
+  </tr>
+  <tr>
+    <td>.font-h2</td>
+    <td><span class="font-h2">lorem ipsum</span></td>
+    <td>absolute (2rem)</td>
+  </tr>
+  <tr>
+    <td>.font-h1</td>
+    <td><span class="font-h1">lorem ipsum</span></td>
+    <td>absolute (2.5rem)</td>
+  </tr>
+  <tr>
+    <td>.font-hd</td>
+    <td><span class="font-hd">lorem</span></td>
+    <td>absolute (3.5rem)</td>
+  </tr>
+  <tr>
+    <td>.font-hc</td>
+    <td><span class="font-hc">lorem</span></td>
+    <td>absolute (4.5rem)</td>
+  </tr>
+  <tr>
+    <td>.font-hb</td>
+    <td><span class="font-hb">lorem</span></td>
+    <td>absolute (5.5rem)</td>
+  </tr>
+  <tr>
+    <td>.font-ha</td>
+    <td><span class="font-ha">lorem</span></td>
+    <td>absolute (6.5rem)</td>
+  </tr>
+</table>
+
+<div class="deprecated d-block">
+  <p class="h3 smallcaps removed d-block">Only for testing! Don't use this!</p>
+  <h2>OBSOLETE HTML FONT SIZES</h2>
+  <p><font size=1>font size 1</font></p>
+  <p><font size=2>font size 2</font></p>
+  <p><font size=3>font size 3</font></p>
+  <p><font size=4>font size 4</font></p>
+  <p><font size=5>font size 5</font></p>
+  <p><font size=6>font size 6</font></p>
+  <p><font size=7>font size 7</font></p>
+  <p class="center">
+    <a href="goto.png" target="_blank"><img src="goto.png"/></a>
+  </p>
+</div>
+
+
+<hr/>
+<h2>Table</h2>
+
+<p><b>Full length table</b></p>
+<table>
+  <tr>
+    <td><b>Array.from()</b></td>
+    <td>The Array.from() method creates a new Array instance from an array-like or iterable object. For more information please read the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from?v=example" target="_blank">MDN Article!</a></td>
+  </tr>
+  <tr>
+    <td><b>Array.of()</b></td>
+    <td>The Array.of() method creates a new Array instance with a variable number of arguments, regardless of number or type of the arguments. For more information please read the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/of?v=example" target="_blank">MDN Article!</a></td>
+  </tr>
+</table>
+
+<pre>.table-striped</pre>
+<table class="table-striped">
+  <tr>
+    <td><b>Array.from()</b></td>
+    <td>The Array.from() method creates a new Array instance from an array-like or iterable object. For more information please read the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from?v=example" target="_blank">MDN Article!</a></td>
+  </tr>
+  <tr>
+    <td><b>Array.of()</b></td>
+    <td>The Array.of() method creates a new Array instance with a variable number of arguments, regardless of number or type of the arguments. For more information please read the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/of?v=example" target="_blank">MDN Article!</a></td>
+  </tr>
+  <tr>
+    <td><b>Array.from()</b></td>
+    <td>The Array.from() method creates a new Array instance from an array-like or iterable object. For more information please read the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from?v=example" target="_blank">MDN Article!</a></td>
+  </tr>
+  <tr>
+    <td><b>Array.of()</b></td>
+    <td>The Array.of() method creates a new Array instance with a variable number of arguments, regardless of number or type of the arguments. For more information please read the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/of?v=example" target="_blank">MDN Article!</a></td>
+  </tr>
+  <tr>
+    <td><b>Array.from()</b></td>
+    <td>The Array.from() method creates a new Array instance from an array-like or iterable object. For more information please read the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from?v=example" target="_blank">MDN Article!</a></td>
+  </tr>
+  <tr>
+    <td><b>Array.of()</b></td>
+    <td>The Array.of() method creates a new Array instance with a variable number of arguments, regardless of number or type of the arguments. For more information please read the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/of?v=example" target="_blank">MDN Article!</a></td>
+  </tr>
+</table>
+
+<pre>.table-shadow</pre>
+<table class="table-shadow">
+  <tr>
+    <td><b>Array.from()</b></td>
+    <td>The Array.from() method creates a new Array instance from an array-like or iterable object. For more information please read the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from?v=example" target="_blank">MDN Article!</a></td>
+  </tr>
+  <tr>
+    <td><b>Array.of()</b></td>
+    <td>The Array.of() method creates a new Array instance with a variable number of arguments, regardless of number or type of the arguments. For more information please read the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/of?v=example" target="_blank">MDN Article!</a></td>
+  </tr>
+</table>
+
+<pre>.w-100</pre>
+<table class="w-100">
+  <tr>
+    <td><b>Array.from()</b></td>
+    <td>The Array.from() method creates a new Array instance from an array-like or iterable object.</td>
+  </tr>
+  <tr>
+    <td><b>Array.of()</b></td>
+    <td>The Array.of() method creates a new Array instance with a variable number of arguments.</td>
+  </tr>
+</table>
+
+<pre>.table-hover-tr</pre>
+<table class="table-hover-tr">
+  <tr>
+    <td><b>Array.from()</b></td>
+    <td>The Array.from() method creates a new Array instance from an array-like or iterable object. For more information please read the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from?v=example" target="_blank">MDN Article!</a></td>
+  </tr>
+  <tr>
+    <td><b>Array.of()</b></td>
+    <td>The Array.of() method creates a new Array instance with a variable number of arguments, regardless of number or type of the arguments. For more information please read the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/of?v=example" target="_blank">MDN Article!</a></td>
+  </tr>
+</table>
+
+<pre>.table-hover-cell</pre>
+<table class="table-hover-cell">
+  <tr>
+    <td><b>Array.from()</b></td>
+    <td>The Array.from() method creates a new Array instance from an array-like or iterable object. For more information please read the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from?v=example" target="_blank">MDN Article!</a></td>
+  </tr>
+  <tr>
+    <td><b>Array.of()</b></td>
+    <td>The Array.of() method creates a new Array instance with a variable number of arguments, regardless of number or type of the arguments. For more information please read the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/of?v=example" target="_blank">MDN Article!</a></td>
+  </tr>
+</table>
+
+<h3>.table-responsive-XX</h3>
+
+<pre>.table-responsive-xs</pre>
+<table class="table-responsive-xs">
+  <tr>
+    <td><b>Array.from()</b></td>
+    <td>The Array.from() method creates a new Array instance from an array-like or iterable object. For more information please read the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from?v=example" target="_blank">MDN Article!</a></td>
+  </tr>
+  <tr>
+    <td><b>Array.of()</b></td>
+    <td>The Array.of() method creates a new Array instance with a variable number of arguments, regardless of number or type of the arguments. For more information please read the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/of?v=example" target="_blank">MDN Article!</a></td>
+  </tr>
+</table>
+
+<pre>.table-responsive-sm</pre>
+<table class="table-responsive-sm">
+  <tr>
+    <td><b>Array.from()</b></td>
+    <td>The Array.from() method creates a new Array instance from an array-like or iterable object. For more information please read the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from?v=example" target="_blank">MDN Article!</a></td>
+  </tr>
+  <tr>
+    <td><b>Array.of()</b></td>
+    <td>The Array.of() method creates a new Array instance with a variable number of arguments, regardless of number or type of the arguments. For more information please read the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/of?v=example" target="_blank">MDN Article!</a></td>
+  </tr>
+</table>
+
+<pre>.table-responsive-md</pre>
+<table class="table-responsive-md">
+  <tr>
+    <td><b>Array.from()</b></td>
+    <td>The Array.from() method creates a new Array instance from an array-like or iterable object. For more information please read the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from?v=example" target="_blank">MDN Article!</a></td>
+  </tr>
+  <tr>
+    <td><b>Array.of()</b></td>
+    <td>The Array.of() method creates a new Array instance with a variable number of arguments, regardless of number or type of the arguments. For more information please read the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/of?v=example" target="_blank">MDN Article!</a></td>
+  </tr>
+</table>
+
+<pre>.table-responsive</pre>
+<table class="table-responsive">
+  <tr>
+    <td><b>Array.from()</b></td>
+    <td>The Array.from() method creates a new Array instance from an array-like or iterable object. For more information please read the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from?v=example" target="_blank">MDN Article!</a></td>
+  </tr>
+  <tr>
+    <td><b>Array.of()</b></td>
+    <td>The Array.of() method creates a new Array instance with a variable number of arguments, regardless of number or type of the arguments. For more information please read the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/of?v=example" target="_blank">MDN Article!</a></td>
+  </tr>
+</table>
+
+<pre>.table-responsive-lg</pre>
+<table class="table-responsive-lg">
+  <tr>
+    <td><b>Array.from()</b></td>
+    <td>The Array.from() method creates a new Array instance from an array-like or iterable object. For more information please read the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from?v=example" target="_blank">MDN Article!</a></td>
+  </tr>
+  <tr>
+    <td><b>Array.of()</b></td>
+    <td>The Array.of() method creates a new Array instance with a variable number of arguments, regardless of number or type of the arguments. For more information please read the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/of?v=example" target="_blank">MDN Article!</a></td>
+  </tr>
+</table>
+
+<pre>.table-responsive-xl</pre>
+<table class="table-responsive-xl">
+  <tr>
+    <td><b>Array.from()</b></td>
+    <td>The Array.from() method creates a new Array instance from an array-like or iterable object. For more information please read the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from?v=example" target="_blank">MDN Article!</a></td>
+  </tr>
+  <tr>
+    <td><b>Array.of()</b></td>
+    <td>The Array.of() method creates a new Array instance with a variable number of arguments, regardless of number or type of the arguments. For more information please read the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/of?v=example" target="_blank">MDN Article!</a></td>
+  </tr>
+</table>
+
+
+<hr/>
+<h2>.round-xx</h2>
+
+<span class="test round-circle center margin noround" style="width: 100px; height: 100px;">.round-circle .noround</span>
+<span class="test round-circle center margin round-0" style="width: 100px; height: 100px;">.round-circle .round-0</span>
+<span class="test center margin round-25" style="width: 100px; height: 100px;">.round-25</span>
+<span class="test center margin round-50" style="width: 100px; height: 100px;">.round-50</span>
+<span class="test center margin round-75" style="width: 100px; height: 100px;">.round-75</span>
+<span class="test center margin round-100" style="width: 100px; height: 100px;">.round-100</span>
+<span class="test center margin round-200" style="width: 100px; height: 100px;">.round-200</span>
+<span class="test center margin round-300" style="width: 100px; height: 100px;">.round-300</span>
+<span class="test center margin round-400" style="width: 100px; height: 100px;">.round-400</span>
+<span class="test center margin round-500" style="width: 100px; height: 100px;">.round-500</span>
+<span class="test center margin round-circle" style="width: 100px; height: 100px;">.round-circle</span>
+<span class="test center margin round-pill" style="width: 100px; height: 100px;">.round-pill</span>
+<span class="test center margin round-pill-left" style="width: 100px; height: 100px;">.round-pill-left</span>
+<span class="test center margin round-pill-right" style="width: 100px; height: 100px;">.round-pill-right</span>
+
+<hr/>
+
+<span class="test round-circle center margin noround" style="width: 200px; height: 100px;">.round-circle .noround</span>
+<span class="test round-circle center margin round-0" style="width: 200px; height: 100px;">.round-circle .round-0</span>
+<span class="test center margin round-25" style="width: 200px; height: 100px;">.round-25</span>
+<span class="test center margin round-50" style="width: 200px; height: 100px;">.round-50</span>
+<span class="test center margin round-75" style="width: 200px; height: 100px;">.round-75</span>
+<span class="test center margin round-100" style="width: 200px; height: 100px;">.round-100</span>
+<span class="test center margin round-200" style="width: 200px; height: 100px;">.round-200</span>
+<span class="test center margin round-300" style="width: 200px; height: 100px;">.round-300</span>
+<span class="test center margin round-400" style="width: 200px; height: 100px;">.round-400</span>
+<span class="test center margin round-500" style="width: 200px; height: 100px;">.round-500</span>
+<span class="test center margin round-circle" style="width: 200px; height: 100px;">.round-circle</span>
+<span class="test center margin round-pill" style="width: 200px; height: 100px;">.round-pill</span>
+<span class="test center margin round-pill-left" style="width: 200px; height: 100px;">.round-pill-left</span>
+<span class="test center margin round-pill-right" style="width: 200px; height: 100px;">.round-pill-right</span>
+
+<hr/>
+
+<span class="test round-circle center margin noround" style="width: 100px; height: 200px;">.round-circle .noround</span>
+<span class="test round-circle center margin round-0" style="width: 100px; height: 200px;">.round-circle .round-0</span>
+<span class="test center margin round-25" style="width: 100px; height: 200px;">.round-25</span>
+<span class="test center margin round-50" style="width: 100px; height: 200px;">.round-50</span>
+<span class="test center margin round-75" style="width: 100px; height: 200px;">.round-75</span>
+<span class="test center margin round-100" style="width: 100px; height: 200px;">.round-100</span>
+<span class="test center margin round-200" style="width: 100px; height: 200px;">.round-200</span>
+<span class="test center margin round-300" style="width: 100px; height: 200px;">.round-300</span>
+<span class="test center margin round-400" style="width: 100px; height: 200px;">.round-400</span>
+<span class="test center margin round-500" style="width: 100px; height: 200px;">.round-500</span>
+<span class="test center margin round-circle" style="width: 100px; height: 200px;">.round-circle</span>
+<span class="test center margin round-pill" style="width: 100px; height: 200px;">.round-pill</span>
+<span class="test center margin round-pill-left" style="width: 100px; height: 200px;">.round-pill-left</span>
+<span class="test center margin round-pill-right" style="width: 100px; height: 200px;">.round-pill-right</span>
+
+
+<hr/>
+<h2>Width: .w-XX</h2>
+<div><span class="w-auto test">.w-auto</span></div>
+<div><span class="w-0 test"></span> <span> .w-0 (0%)</span></div>
+<div><span class="w-6 test">.w-6 (1/16, 6.25%)</span></div>
+<div><span class="w-8 test">.w-8 (1/12, 8.3333%)</span></div>
+<div><span class="w-12 test">.w-12 (1/8, 12.5%)</span></div>
+<div><span class="w-14 test">.w-14 (1/7, 14.2857%)</span></div>
+<div><span class="w-16 test">.w-16 (1/6, 16.6666%)</span></div>
+<div><span class="w-20 test">.w-20 (1/5, 20%)</span></div>
+<div><span class="w-25 test">.w-25 (1/4, 25%)</span></div>
+<div><span class="w-33 test">.w-33 (1/3, 33.3333%)</span></div>
+<div><span class="w-40 test">.w-40 (2/5, 40%)</span></div>
+<div><span class="w-50 test">.w-50 (1/2, 50%)</span></div>
+<div><span class="w-60 test">.w-60 (3/5, 60%)</span></div>
+<div><span class="w-66 test">.w-66 (2/3, 66.6667%)</span></div>
+<div><span class="w-75 test">.w-75 (3/4, 75%)</span></div>
+<div><span class="w-80 test">.w-80 (4/5, 80%)</span></div>
+<div><span class="w-100 test">.w-100 (1/1, 100%)</span></div>
+
+
+<hr/>
+<h2>Max-width: .max-w-XX</h2>
+<p>Same percent values as in the <code>.w-XX</code>.</p>
+<div><span class="max-w-none test">.max-w-none</span></div>
+<div><span class="w-100 max-w-0 test"></span> <span>.max-w-0 (0%)</span></div>
+<div><span class="w-100 max-w-6 test">.max-w-6 (1/16, 6.25%)</span></div>
+<div><span class="w-100 max-w-8 test">.max-w-8 (1/12, 8.3333%)</span></div>
+<div><span class="w-100 max-w-12 test">.max-w-12 (1/8, 12.5%)</span></div>
+<div><span class="w-100 max-w-14 test">.max-w-14 (1/7, 14.2857%)</span></div>
+<div><span class="w-100 max-w-16 test">.max-w-16 (1/6, 16.6666%)</span></div>
+<div><span class="w-100 max-w-20 test">.max-w-20 (1/5, 20%)</span></div>
+<div><span class="w-100 max-w-25 test">.max-w-25 (1/4, 25%)</span></div>
+<div><span class="w-100 max-w-33 test">.max-w-33 (1/3, 33.3333%)</span></div>
+<div><span class="w-100 max-w-40 test">.max-w-40 (2/5, 40%)</span></div>
+<div><span class="w-100 max-w-50 test">.max-w-50 (1/2, 50%)</span></div>
+<div><span class="w-100 max-w-60 test">.max-w-60 (3/5, 60%)</span></div>
+<div><span class="w-100 max-w-66 test">.max-w-66 (2/3, 66.6667%)</span></div>
+<div><span class="w-100 max-w-75 test">.max-w-75 (3/4, 75%)</span></div>
+<div><span class="w-100 max-w-80 test">.max-w-80 (4/5, 80%)</span></div>
+<div><span class="w-100 max-w-100 test">.max-w-100 (1/1, 100%)</span></div>
+
+
+<hr/>
+<h2>Height: .h-XX</h2>
+<p>Same percent values as in the <code>.w-XX</code>.</p>
+<span style="height: 200px;"><span class="h-auto test">.h-auto</span></span>
+<span style="height: 200px;"><span class="h-0 test">.h-0</span></span>
+<span style="height: 200px;"><span class="h-6 test">.h-6<br/>(1/16)</span></span>
+<span style="height: 200px;"><span class="h-8 test">.h-8<br/>(1/12)</span></span>
+<span style="height: 200px;"><span class="h-12 test">.h-12<br/>(1/8)</span></span>
+<span style="height: 200px;"><span class="h-14 test">.h-14<br/>(1/7)</span></span>
+<span style="height: 200px;"><span class="h-16 test">.h-16<br/>(1/6)</span></span>
+<span style="height: 200px;"><span class="h-20 test">.h-20<br/>(1/5)</span></span>
+<span style="height: 200px;"><span class="h-25 test">.h-25<br/>(1/4)</span></span>
+<span style="height: 200px;"><span class="h-33 test">.h-33<br/>(1/3)</span></span>
+<span style="height: 200px;"><span class="h-40 test">.h-40<br/>(2/5)</span></span>
+<span style="height: 200px;"><span class="h-50 test">.h-50<br/>(1/2)</span></span>
+<span style="height: 200px;"><span class="h-60 test">.h-60<br/>(3/5)</span></span>
+<span style="height: 200px;"><span class="h-66 test">.h-66<br/>(2/3)</span></span>
+<span style="height: 200px;"><span class="h-75 test">.h-75<br/>(3/4)</span></span>
+<span style="height: 200px;"><span class="h-80 test">.h-80<br/>(4/5)</span></span>
+<span style="height: 200px;"><span class="h-100 test">.h-100<br/>(1/1)</span></span>
+
+
+<hr/>
+<h2>Max-height: .max-h-XX</h2>
+<p>Same percent values as in the <code>.w-XX</code>.</p>
+<span style="height: 200px;"><span class="h-100 max-h-none test">.max-h-none</span></span>
+<span style="height: 200px;"><span class="h-100 max-h-0 test">.max-h-0</span></span>
+<span style="height: 200px;"><span class="h-100 max-h-6 test">.max-h-6</span>(1/16)</span>
+<span style="height: 200px;"><span class="h-100 max-h-8 test">.max-h-8<br/>(1/12)</span></span>
+<span style="height: 200px;"><span class="h-100 max-h-12 test">.max-h-12<br/>(1/8)</span></span>
+<span style="height: 200px;"><span class="h-100 max-h-14 test">.max-h-14<br/>(1/7)</span></span>
+<span style="height: 200px;"><span class="h-100 max-h-16 test">.max-h-16<br/>(1/6)</span></span>
+<span style="height: 200px;"><span class="h-100 max-h-20 test">.max-h-20<br/>(1/5)</span></span>
+<span style="height: 200px;"><span class="h-100 max-h-25 test">.max-h-25<br/>(1/4)</span></span>
+<span style="height: 200px;"><span class="h-100 max-h-33 test">.max-h-33<br/>(1/3)</span></span>
+<span style="height: 200px;"><span class="h-100 max-h-40 test">.max-h-40<br/>(2/5)</span></span>
+<span style="height: 200px;"><span class="h-100 max-h-50 test">.max-h-50<br/>(1/2)</span></span>
+<span style="height: 200px;"><span class="h-100 max-h-60 test">.max-h-60<br/>(3/5)</span></span>
+<span style="height: 200px;"><span class="h-100 max-h-66 test">.max-h-66<br/>(2/3)</span></span>
+<span style="height: 200px;"><span class="h-100 max-h-75 test">.max-h-75<br/>(3/4)</span></span>
+<span style="height: 200px;"><span class="h-100 max-h-80 test">.max-h-80<br/>(4/5)</span></span>
+<span style="height: 200px;"><span class="h-100 max-h-100 test">.max-h-100<br/>(1/1)</span></span>
+
+
+<hr/>
+<h2>.clearfix + .float-left</h2>
+
+<div class="clearfix">
+  <div class="w-25 float-left d-inline-block test">.w-25</div>
+  <div class="w-75 float-left d-inline-block test">.w-75</div>
+
+  <div class="w-25 float-left d-inline-block test">.w-25</div>
+  <div class="w-25 float-left d-inline-block test">.w-25</div>
+  <div class="w-50 float-left d-inline-block test">.w-50</div>
+
+  <div class="w-33 float-left d-inline-block test">.w-33</div>
+  <div class="w-66 float-left d-inline-block test">.w-66</div>
+
+  <div class="w-40 float-left d-inline-block test">.w-40</div>
+  <div class="w-60 float-left d-inline-block test">.w-60</div>
+
+  <div class="w-20 float-left d-inline-block test">.w-20</div>
+  <div class="w-80 float-left d-inline-block test">.w-80</div>
+
+  <div class="w-100 float-left d-inline-block test">.w-100</div>
+
+  <div class="w-50 float-left d-inline-block test">.w-50</div>
+  <div class="w-50 float-left d-inline-block test">.w-50</div>
+
+  <div class="w-33 float-left d-inline-block test">.w-33</div>
+  <div class="w-33 float-left d-inline-block test">.w-33</div>
+  <div class="w-33 float-left d-inline-block test">.w-33</div>
+
+  <div class="w-25 float-left d-inline-block test">.w-25</div>
+  <div class="w-25 float-left d-inline-block test">.w-25</div>
+  <div class="w-25 float-left d-inline-block test">.w-25</div>
+  <div class="w-25 float-left d-inline-block test">.w-25</div>
+
+  <div class="w-20 float-left d-inline-block test">.w-20</div>
+  <div class="w-20 float-left d-inline-block test">.w-20</div>
+  <div class="w-20 float-left d-inline-block test">.w-20</div>
+  <div class="w-20 float-left d-inline-block test">.w-20</div>
+  <div class="w-20 float-left d-inline-block test">.w-20</div>
+
+  <div class="w-16 float-left d-inline-block test">.w-16</div>
+  <div class="w-16 float-left d-inline-block test">.w-16</div>
+  <div class="w-16 float-left d-inline-block test">.w-16</div>
+  <div class="w-16 float-left d-inline-block test">.w-16</div>
+  <div class="w-16 float-left d-inline-block test">.w-16</div>
+  <div class="w-16 float-left d-inline-block test">.w-16</div>
+
+  <div class="w-14 float-left d-inline-block test">.w-14</div>
+  <div class="w-14 float-left d-inline-block test">.w-14</div>
+  <div class="w-14 float-left d-inline-block test">.w-14</div>
+  <div class="w-14 float-left d-inline-block test">.w-14</div>
+  <div class="w-14 float-left d-inline-block test">.w-14</div>
+  <div class="w-14 float-left d-inline-block test">.w-14</div>
+  <div class="w-14 float-left d-inline-block test">.w-14</div>
+
+  <div class="w-12 float-left d-inline-block test">.w-12</div>
+  <div class="w-12 float-left d-inline-block test">.w-12</div>
+  <div class="w-12 float-left d-inline-block test">.w-12</div>
+  <div class="w-12 float-left d-inline-block test">.w-12</div>
+  <div class="w-12 float-left d-inline-block test">.w-12</div>
+  <div class="w-12 float-left d-inline-block test">.w-12</div>
+  <div class="w-12 float-left d-inline-block test">.w-12</div>
+  <div class="w-12 float-left d-inline-block test">.w-12</div>
+
+  <div class="w-8 float-left d-inline-block test">.w-8</div>
+  <div class="w-8 float-left d-inline-block test">.w-8</div>
+  <div class="w-8 float-left d-inline-block test">.w-8</div>
+  <div class="w-8 float-left d-inline-block test">.w-8</div>
+  <div class="w-8 float-left d-inline-block test">.w-8</div>
+  <div class="w-8 float-left d-inline-block test">.w-8</div>
+  <div class="w-8 float-left d-inline-block test">.w-8</div>
+  <div class="w-8 float-left d-inline-block test">.w-8</div>
+  <div class="w-8 float-left d-inline-block test">.w-8</div>
+  <div class="w-8 float-left d-inline-block test">.w-8</div>
+  <div class="w-8 float-left d-inline-block test">.w-8</div>
+  <div class="w-8 float-left d-inline-block test">.w-8</div>
+
+  <div class="w-6 float-left d-inline-block test">.w-6</div>
+  <div class="w-6 float-left d-inline-block test">.w-6</div>
+  <div class="w-6 float-left d-inline-block test">.w-6</div>
+  <div class="w-6 float-left d-inline-block test">.w-6</div>
+  <div class="w-6 float-left d-inline-block test">.w-6</div>
+  <div class="w-6 float-left d-inline-block test">.w-6</div>
+  <div class="w-6 float-left d-inline-block test">.w-6</div>
+  <div class="w-6 float-left d-inline-block test">.w-6</div>
+  <div class="w-6 float-left d-inline-block test">.w-6</div>
+  <div class="w-6 float-left d-inline-block test">.w-6</div>
+  <div class="w-6 float-left d-inline-block test">.w-6</div>
+  <div class="w-6 float-left d-inline-block test">.w-6</div>
+  <div class="w-6 float-left d-inline-block test">.w-6</div>
+  <div class="w-6 float-left d-inline-block test">.w-6</div>
+  <div class="w-6 float-left d-inline-block test">.w-6</div>
+  <div class="w-6 float-left d-inline-block test">.w-6</div>
+</div>
+
+
+<hr/>
+<h2>.clearfix + .float-right</h2>
+
+<div class="clearfix">
+  <div class="w-25 float-right d-inline-block test">.w-25</div>
+  <div class="w-75 float-right d-inline-block test">.w-75</div>
+
+  <div class="w-25 float-right d-inline-block test">.w-25</div>
+  <div class="w-25 float-right d-inline-block test">.w-25</div>
+  <div class="w-50 float-right d-inline-block test">.w-50</div>
+
+  <div class="w-33 float-right d-inline-block test">.w-33</div>
+  <div class="w-66 float-right d-inline-block test">.w-66</div>
+
+  <div class="w-40 float-right d-inline-block test">.w-40</div>
+  <div class="w-60 float-right d-inline-block test">.w-60</div>
+
+  <div class="w-20 float-right d-inline-block test">.w-20</div>
+  <div class="w-80 float-right d-inline-block test">.w-80</div>
+
+  <div class="w-100 float-right d-inline-block test">.w-100</div>
+
+  <div class="w-50 float-right d-inline-block test">.w-50</div>
+  <div class="w-50 float-right d-inline-block test">.w-50</div>
+
+  <div class="w-33 float-right d-inline-block test">.w-33</div>
+  <div class="w-33 float-right d-inline-block test">.w-33</div>
+  <div class="w-33 float-right d-inline-block test">.w-33</div>
+
+  <div class="w-25 float-right d-inline-block test">.w-25</div>
+  <div class="w-25 float-right d-inline-block test">.w-25</div>
+  <div class="w-25 float-right d-inline-block test">.w-25</div>
+  <div class="w-25 float-right d-inline-block test">.w-25</div>
+
+  <div class="w-20 float-right d-inline-block test">.w-20</div>
+  <div class="w-20 float-right d-inline-block test">.w-20</div>
+  <div class="w-20 float-right d-inline-block test">.w-20</div>
+  <div class="w-20 float-right d-inline-block test">.w-20</div>
+  <div class="w-20 float-right d-inline-block test">.w-20</div>
+
+  <div class="w-16 float-right d-inline-block test">.w-16</div>
+  <div class="w-16 float-right d-inline-block test">.w-16</div>
+  <div class="w-16 float-right d-inline-block test">.w-16</div>
+  <div class="w-16 float-right d-inline-block test">.w-16</div>
+  <div class="w-16 float-right d-inline-block test">.w-16</div>
+  <div class="w-16 float-right d-inline-block test">.w-16</div>
+
+  <div class="w-14 float-right d-inline-block test">.w-14</div>
+  <div class="w-14 float-right d-inline-block test">.w-14</div>
+  <div class="w-14 float-right d-inline-block test">.w-14</div>
+  <div class="w-14 float-right d-inline-block test">.w-14</div>
+  <div class="w-14 float-right d-inline-block test">.w-14</div>
+  <div class="w-14 float-right d-inline-block test">.w-14</div>
+  <div class="w-14 float-right d-inline-block test">.w-14</div>
+
+  <div class="w-12 float-right d-inline-block test">.w-12</div>
+  <div class="w-12 float-right d-inline-block test">.w-12</div>
+  <div class="w-12 float-right d-inline-block test">.w-12</div>
+  <div class="w-12 float-right d-inline-block test">.w-12</div>
+  <div class="w-12 float-right d-inline-block test">.w-12</div>
+  <div class="w-12 float-right d-inline-block test">.w-12</div>
+  <div class="w-12 float-right d-inline-block test">.w-12</div>
+  <div class="w-12 float-right d-inline-block test">.w-12</div>
+
+  <div class="w-8 float-right d-inline-block test">.w-8</div>
+  <div class="w-8 float-right d-inline-block test">.w-8</div>
+  <div class="w-8 float-right d-inline-block test">.w-8</div>
+  <div class="w-8 float-right d-inline-block test">.w-8</div>
+  <div class="w-8 float-right d-inline-block test">.w-8</div>
+  <div class="w-8 float-right d-inline-block test">.w-8</div>
+  <div class="w-8 float-right d-inline-block test">.w-8</div>
+  <div class="w-8 float-right d-inline-block test">.w-8</div>
+  <div class="w-8 float-right d-inline-block test">.w-8</div>
+  <div class="w-8 float-right d-inline-block test">.w-8</div>
+  <div class="w-8 float-right d-inline-block test">.w-8</div>
+  <div class="w-8 float-right d-inline-block test">.w-8</div>
+
+  <div class="w-6 float-right d-inline-block test">.w-6</div>
+  <div class="w-6 float-right d-inline-block test">.w-6</div>
+  <div class="w-6 float-right d-inline-block test">.w-6</div>
+  <div class="w-6 float-right d-inline-block test">.w-6</div>
+  <div class="w-6 float-right d-inline-block test">.w-6</div>
+  <div class="w-6 float-right d-inline-block test">.w-6</div>
+  <div class="w-6 float-right d-inline-block test">.w-6</div>
+  <div class="w-6 float-right d-inline-block test">.w-6</div>
+  <div class="w-6 float-right d-inline-block test">.w-6</div>
+  <div class="w-6 float-right d-inline-block test">.w-6</div>
+  <div class="w-6 float-right d-inline-block test">.w-6</div>
+  <div class="w-6 float-right d-inline-block test">.w-6</div>
+  <div class="w-6 float-right d-inline-block test">.w-6</div>
+  <div class="w-6 float-right d-inline-block test">.w-6</div>
+  <div class="w-6 float-right d-inline-block test">.w-6</div>
+  <div class="w-6 float-right d-inline-block test">.w-6</div>
+</div>
+
+</div> <!-- /container 1 -->
+
+
+<div class="container-sm">
+  <hr/>
+  <h2><code>.container-sm</code></h2>
+  <p><code>.flex</code></p>
+  <div class="flex">
+    <div class="flex-f-1">.flex-f-1</div>
+    <div class="flex-f-3">.flex-f-3</div>
+  </div>
+</div>
+
+
+<div class="container-md">
+  <hr/>
+  <h2><code>.container-md</code></h2>
+  <p><code>.flex</code></p>
+  <div class="flex">
+    <div class="flex-f-1">.flex-f-1</div>
+    <div class="flex-f-3">.flex-f-3</div>
+  </div>
+</div>
+
+
+<div class="container-lg">
+  <hr/>
+  <h2><code>.container-lg</code></h2>
+  <p><code>.flex</code></p>
+  <div class="flex">
+    <div class="flex-f-1">.flex-f-1</div>
+    <div class="flex-f-3">.flex-f-3</div>
+  </div>
+</div>
+
+
+<div class="container-xl">
+  <hr/>
+  <h2><code>.container-xl</code></h2>
+  <p><code>.flex</code></p>
+  <div class="flex">
+    <div class="flex-f-1">.flex-f-1</div>
+    <div class="flex-f-3">.flex-f-3</div>
+  </div>
+</div>
+
+
+<div class="container">
+  <hr/>
+  <h2><code>.container</code></h2>
+  <p><code>.flex</code></p>
+  <div class="flex">
+    <div class="flex-f-1">.flex-f-1</div>
+    <div class="flex-f-3">.flex-f-3</div>
+  </div>
+</div>
+
+
+<div class="container-float">
+  <hr/>
+  <h2><code>.container-float</code></h2>
+  <p><code>.flex</code></p>
+  <div class="flex">
+    <div class="flex-f-1">.flex-f-1</div>
+    <div class="flex-f-3">.flex-f-3</div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <hr/>
+  <h2><code>.container-fluid</code></h2>
+  <p><code>.flex</code></p>
+  <div class="flex">
+    <div class="flex-f-1">.flex-f-1</div>
+    <div class="flex-f-3">.flex-f-3</div>
+  </div>
+</div>
+
+
+<div class="container"> <!-- container 2 -->
+
+<hr/>
+<h2>.hide-XX</h2>
+<p><code>.flex</code></p>
+<div class="flex">
+  <div class="flex-f-2">.flex-f-2 hide-on-mobile test</div>
+  <div class="flex-f-5 hide-on-mobile test">.flex-f-5 .hide-on-mobile</div>
+</div>
+<div class="flex">
+  <div class="flex-f-2">.flex-f-2 hide-on-desktop test</div>
+  <div class="flex-f-5 hide-on-desktop test">.flex-f-5 .hide-on-desktop</div>
+</div>
+<div class="flex">
+  <div class="flex-f-2">.flex-f-2 hide-xs test</div>
+  <div class="flex-f-5 hide-xs test">.flex-f-5 .hide-xs</div>
+</div>
+<div class="flex">
+  <div class="flex-f-2">.flex-f-2 hide-sm test</div>
+  <div class="flex-f-5 hide-sm test">.flex-f-5 .hide-sm</div>
+</div>
+<div class="flex">
+  <div class="flex-f-2">.flex-f-2 hide-md test</div>
+  <div class="flex-f-5 hide-md test">.flex-f-5 .hide-md</div>
+</div>
+<div class="flex">
+  <div class="flex-f-2">.flex-f-2 hide-lg test</div>
+  <div class="flex-f-5 hide-lg test">.flex-f-5 .hide-lg</div>
+</div>
+<div class="flex">
+  <div class="flex-f-2">.flex-f-2 hide-xl test</div>
+  <div class="flex-f-5 hide-xl test">.flex-f-5 .hide-xl</div>
+</div>
+<div class="flex">
+  <div class="flex-f-2">.flex-f-2 hide test</div>
+  <div class="flex-f-5 hide test">.flex-f-5 .hide</div>
+</div>
+
+
+<hr/>
+<h2>.flex-XX</h2>
+<p><code>.flex-xs .nogap .nopadding</code></p>
+<div class="flex-xs nogap nopadding">
+  <div class="flex-f-3">.flex-f-3</div>
+  <div class="flex-f-7">.flex-f-7</div>
+  <div class="flex-f-10">.flex-f-10</div>
+  <div class="flex-w-100">.flex-w-100</div>
+  <div class="flex-w-66">.flex-w-66</div>
+  <div class="flex-w-33">.flex-w-33</div>
+</div>
+<p><code>.flex-sm .nogap .nopadding</code></p>
+<div class="flex-sm nogap nopadding">
+  <div class="flex-f-3">.flex-f-3</div>
+  <div class="flex-f-7">.flex-f-7</div>
+  <div class="flex-f-10">.flex-f-10</div>
+  <div class="flex-w-100">.flex-w-100</div>
+  <div class="flex-w-66">.flex-w-66</div>
+  <div class="flex-w-33">.flex-w-33</div>
+</div>
+<p><code>.flex-md .nogap .nopadding</code></p>
+<div class="flex-md nogap nopadding">
+  <div class="flex-f-3">.flex-f-3</div>
+  <div class="flex-f-7">.flex-f-7</div>
+  <div class="flex-f-10">.flex-f-10</div>
+  <div class="flex-w-100">.flex-w-100</div>
+  <div class="flex-w-66">.flex-w-66</div>
+  <div class="flex-w-33">.flex-w-33</div>
+</div>
+<p><code>.flex .nogap .nopadding</code></p>
+<div class="flex nogap nopadding">
+  <div class="flex-f-3">.flex-f-3</div>
+  <div class="flex-f-7">.flex-f-7</div>
+  <div class="flex-f-10">.flex-f-10</div>
+  <div class="flex-w-100">.flex-w-100</div>
+  <div class="flex-w-66">.flex-w-66</div>
+  <div class="flex-w-33">.flex-w-33</div>
+</div>
+<p><code>.flex-lg .nogap .nopadding</code></p>
+<div class="flex-lg nogap nopadding">
+  <div class="flex-f-3">.flex-f-3</div>
+  <div class="flex-f-7">.flex-f-7</div>
+  <div class="flex-f-10">.flex-f-10</div>
+  <div class="flex-w-100">.flex-w-100</div>
+  <div class="flex-w-66">.flex-w-66</div>
+  <div class="flex-w-33">.flex-w-33</div>
+</div>
+<p><code>.flex-xl .nogap .nopadding</code></p>
+<div class="flex-xl nogap nopadding">
+  <div class="flex-f-3">.flex-f-3</div>
+  <div class="flex-f-7">.flex-f-7</div>
+  <div class="flex-f-10">.flex-f-10</div>
+  <div class="flex-w-100">.flex-w-100</div>
+  <div class="flex-w-66">.flex-w-66</div>
+  <div class="flex-w-33">.flex-w-33</div>
+</div>
+
+
+<hr/>
+<h2>.inline-flex-XX</h2>
+<p><code>.inline-flex-xs .nogap .nopadding</code></p>
+<div>
+  <span class="test" style="width: 45%;">span 45%</span>
+  <div class="inline-flex-xs nogap nopadding" style="width: 45%;">
+    <div class="flex-f-3">.flex-f-3</div>
+    <div class="flex-f-7">.flex-f-7</div>
+    <div class="flex-f-10">.flex-f-10</div>
+    <div class="flex-w-100">.flex-w-100</div>
+    <div class="flex-w-66">.flex-w-66</div>
+    <div class="flex-w-33">.flex-w-33</div>
+  </div>
+</div>
+<p><code>.inline-flex-sm .nogap .nopadding</code></p>
+<div>
+  <span class="test" style="width: 45%;">span 45%</span>
+  <div class="inline-flex-sm nogap nopadding" style="width: 45%;">
+    <div class="flex-f-3">.flex-f-3</div>
+    <div class="flex-f-7">.flex-f-7</div>
+    <div class="flex-f-10">.flex-f-10</div>
+    <div class="flex-w-100">.flex-w-100</div>
+    <div class="flex-w-66">.flex-w-66</div>
+    <div class="flex-w-33">.flex-w-33</div>
+  </div>
+</div>
+<p><code>.inline-flex-md .nogap .nopadding</code></p>
+<div>
+  <span class="test" style="width: 45%;">span 45%</span>
+  <div class="inline-flex-md nogap nopadding" style="width: 45%;">
+    <div class="flex-f-3">.flex-f-3</div>
+    <div class="flex-f-7">.flex-f-7</div>
+    <div class="flex-f-10">.flex-f-10</div>
+    <div class="flex-w-100">.flex-w-100</div>
+    <div class="flex-w-66">.flex-w-66</div>
+    <div class="flex-w-33">.flex-w-33</div>
+  </div>
+</div>
+<p><code>.inline-flex .nogap .nopadding</code></p>
+<div>
+  <span class="test" style="width: 45%;">span 45%</span>
+  <div class="inline-flex nogap nopadding" style="width: 45%;">
+    <div class="flex-f-3">.flex-f-3</div>
+    <div class="flex-f-7">.flex-f-7</div>
+    <div class="flex-f-10">.flex-f-10</div>
+    <div class="flex-w-100">.flex-w-100</div>
+    <div class="flex-w-66">.flex-w-66</div>
+    <div class="flex-w-33">.flex-w-33</div>
+  </div>
+</div>
+<p><code>.inline-flex-lg .nogap .nopadding</code></p>
+<div>
+  <span class="test" style="width: 45%;">span 45%</span>
+  <div class="inline-flex-lg nogap nopadding" style="width: 45%;">
+    <div class="flex-f-3">.flex-f-3</div>
+    <div class="flex-f-7">.flex-f-7</div>
+    <div class="flex-f-10">.flex-f-10</div>
+    <div class="flex-w-100">.flex-w-100</div>
+    <div class="flex-w-66">.flex-w-66</div>
+    <div class="flex-w-33">.flex-w-33</div>
+  </div>
+</div>
+<p><code>.inline-flex-xl .nogap .nopadding</code></p>
+<div>
+  <span class="test" style="width: 45%;">span 45%</span>
+  <div class="inline-flex-xl nogap nopadding" style="width: 45%;">
+    <div class="flex-f-3">.flex-f-3</div>
+    <div class="flex-f-7">.flex-f-7</div>
+    <div class="flex-f-10">.flex-f-10</div>
+    <div class="flex-w-100">.flex-w-100</div>
+    <div class="flex-w-66">.flex-w-66</div>
+    <div class="flex-w-33">.flex-w-33</div>
+  </div>
+</div>
+
+
+<hr/>
+<h2>.inline-flex</h2>
+
+<div class="margin-top margin-bottom">
+  <p><code>.inline-flex</code></p>
+  <div>
+    <span class="test" style="width: 45%;">span 45%</span>
+    <div class="inline-flex" style="width: 45%;">
+      <div class="flex-f-3">.flex-f-3</div>
+      <div class="flex-f-1">.flex-f-1</div>
+      <div class="flex-f-2">.flex-f-2</div>
+    </div>
+  </div>
+</div>
+
+<div class="margin-top margin-bottom">
+  <p><code>.inline-flex .nogap</code></p>
+  <div>
+    <span class="test" style="width: 45%;">span 45%</span>
+    <div class="inline-flex nogap" style="width: 45%;">
+      <div class="flex-f-3">.flex-f-3</div>
+      <div class="flex-f-1">.flex-f-1</div>
+      <div class="flex-f-2">.flex-f-2</div>
+    </div>
+  </div>
+</div>
+
+<div class="margin-top margin-bottom">
+  <p><code>.inline-flex .nogap .nopadding</code></p>
+  <div>
+    <span class="test" style="width: 45%;">span 45%</span>
+    <div class="inline-flex nogap nopadding" style="width: 45%;">
+      <div class="flex-f-3">.flex-f-3</div>
+      <div class="flex-f-1">.flex-f-1</div>
+      <div class="flex-f-2">.flex-f-2</div>
+    </div>
+  </div>
+</div>
+
+<div class="margin-top margin-bottom">
+  <p><code>.inline-flex .nogap-row</code></p>
+  <div>
+    <span class="test" style="width: 45%;">span 45%</span>
+    <div class="inline-flex nogap-row" style="width: 45%;">
+      <div class="flex-f-3">.flex-f-3</div>
+      <div class="flex-f-1">.flex-f-1</div>
+      <div class="flex-f-2">.flex-f-2</div>
+    </div>
+  </div>
+</div>
+
+<div class="margin-top margin-bottom">
+  <p><code>.inline-flex .nogap-row .nopadding</code></p>
+  <div>
+    <span class="test" style="width: 45%;">span 45%</span>
+    <div class="inline-flex nogap-row nopadding" style="width: 45%;">
+      <div class="flex-f-3">.flex-f-3</div>
+      <div class="flex-f-1">.flex-f-1</div>
+      <div class="flex-f-2">.flex-f-2</div>
+    </div>
+  </div>
+</div>
+
+<div class="margin-top margin-bottom">
+  <p><code>.inline-flex .nogap-col</code></p>
+  <div>
+    <span class="test" style="width: 45%;">span 45%</span>
+    <div class="inline-flex nogap-col" style="width: 45%;">
+      <div class="flex-f-3">.flex-f-3</div>
+      <div class="flex-f-1">.flex-f-1</div>
+      <div class="flex-f-2">.flex-f-2</div>
+    </div>
+  </div>
+</div>
+
+<div class="margin-top margin-bottom">
+  <p><code>.inline-flex .nogap-col .nopadding</code></p>
+  <div>
+    <span class="test" style="width: 45%;">span 45%</span>
+    <div class="inline-flex nogap-col nopadding" style="width: 45%;">
+      <div class="flex-f-3">.flex-f-3</div>
+      <div class="flex-f-1">.flex-f-1</div>
+      <div class="flex-f-2">.flex-f-2</div>
+    </div>
+  </div>
+</div>
+
+
+<hr/>
+<h2>.flex-w-xs-XX</h2>
+<p><code>.flex-xs</code></p>
+<div class="flex-xs">
+  <div class="flex-w-xs-5">.flex-w-xs-5</div>
+  <div class="flex-w-xs-6">.flex-w-xs-6</div>
+  <div class="flex-w-xs-8">.flex-w-xs-8</div>
+  <div class="flex-w-xs-10">.flex-w-xs-10</div>
+  <div class="flex-w-xs-12">.flex-w-xs-12</div>
+  <div class="flex-w-xs-14">.flex-w-xs-14</div>
+  <div class="flex-w-xs-15">.flex-w-xs-15</div>
+  <div class="flex-w-xs-16">.flex-w-xs-16</div>
+  <div class="flex-w-xs-20">.flex-w-xs-20</div>
+  <div class="flex-w-xs-25">.flex-w-xs-25</div>
+  <div class="flex-w-xs-30">.flex-w-xs-30</div>
+  <div class="flex-w-xs-33">.flex-w-xs-33</div>
+  <div class="flex-w-xs-30">.flex-w-xs-35</div>
+  <div class="flex-w-xs-40">.flex-w-xs-40</div>
+  <div class="flex-w-xs-45">.flex-w-xs-45</div>
+  <div class="flex-w-xs-50">.flex-w-xs-50</div>
+  <div class="flex-w-xs-55">.flex-w-xs-55</div>
+  <div class="flex-w-xs-60">.flex-w-xs-65</div>
+  <div class="flex-w-xs-66">.flex-w-xs-66</div>
+  <div class="flex-w-xs-70">.flex-w-xs-70</div>
+  <div class="flex-w-xs-75">.flex-w-xs-75</div>
+  <div class="flex-w-xs-80">.flex-w-xs-80</div>
+  <div class="flex-w-xs-85">.flex-w-xs-85</div>
+  <div class="flex-w-xs-90">.flex-w-xs-90</div>
+  <div class="flex-w-xs-95">.flex-w-xs-95</div>
+  <div class="flex-w-xs-100">.flex-w-xs-100</div>
+</div>
+
+
+<hr/>
+<h2>.flex-w-sm-XX</h2>
+<p><code>.flex-xs</code></p>
+<div class="flex-xs">
+  <div class="flex-w-sm-5">.flex-w-sm-5</div>
+  <div class="flex-w-sm-6">.flex-w-sm-6</div>
+  <div class="flex-w-sm-8">.flex-w-sm-8</div>
+  <div class="flex-w-sm-10">.flex-w-sm-10</div>
+  <div class="flex-w-sm-12">.flex-w-sm-12</div>
+  <div class="flex-w-sm-14">.flex-w-sm-14</div>
+  <div class="flex-w-sm-15">.flex-w-sm-15</div>
+  <div class="flex-w-sm-16">.flex-w-sm-16</div>
+  <div class="flex-w-sm-20">.flex-w-sm-20</div>
+  <div class="flex-w-sm-25">.flex-w-sm-25</div>
+  <div class="flex-w-sm-30">.flex-w-sm-30</div>
+  <div class="flex-w-sm-33">.flex-w-sm-33</div>
+  <div class="flex-w-sm-30">.flex-w-sm-35</div>
+  <div class="flex-w-sm-40">.flex-w-sm-40</div>
+  <div class="flex-w-sm-45">.flex-w-sm-45</div>
+  <div class="flex-w-sm-50">.flex-w-sm-50</div>
+  <div class="flex-w-sm-55">.flex-w-sm-55</div>
+  <div class="flex-w-sm-60">.flex-w-sm-65</div>
+  <div class="flex-w-sm-66">.flex-w-sm-66</div>
+  <div class="flex-w-sm-70">.flex-w-sm-70</div>
+  <div class="flex-w-sm-75">.flex-w-sm-75</div>
+  <div class="flex-w-sm-80">.flex-w-sm-80</div>
+  <div class="flex-w-sm-85">.flex-w-sm-85</div>
+  <div class="flex-w-sm-90">.flex-w-sm-90</div>
+  <div class="flex-w-sm-95">.flex-w-sm-95</div>
+  <div class="flex-w-sm-100">.flex-w-sm-100</div>
+</div>
+
+
+<hr/>
+<h2>.flex-w-md-XX</h2>
+<p><code>.flex-xs</code></p>
+<div class="flex-xs">
+  <div class="flex-w-md-5">.flex-w-md-5</div>
+  <div class="flex-w-md-6">.flex-w-md-6</div>
+  <div class="flex-w-md-8">.flex-w-md-8</div>
+  <div class="flex-w-md-10">.flex-w-md-10</div>
+  <div class="flex-w-md-12">.flex-w-md-12</div>
+  <div class="flex-w-md-14">.flex-w-md-14</div>
+  <div class="flex-w-md-15">.flex-w-md-15</div>
+  <div class="flex-w-md-16">.flex-w-md-16</div>
+  <div class="flex-w-md-20">.flex-w-md-20</div>
+  <div class="flex-w-md-25">.flex-w-md-25</div>
+  <div class="flex-w-md-30">.flex-w-md-30</div>
+  <div class="flex-w-md-33">.flex-w-md-33</div>
+  <div class="flex-w-md-30">.flex-w-md-35</div>
+  <div class="flex-w-md-40">.flex-w-md-40</div>
+  <div class="flex-w-md-45">.flex-w-md-45</div>
+  <div class="flex-w-md-50">.flex-w-md-50</div>
+  <div class="flex-w-md-55">.flex-w-md-55</div>
+  <div class="flex-w-md-60">.flex-w-md-65</div>
+  <div class="flex-w-md-66">.flex-w-md-66</div>
+  <div class="flex-w-md-70">.flex-w-md-70</div>
+  <div class="flex-w-md-75">.flex-w-md-75</div>
+  <div class="flex-w-md-80">.flex-w-md-80</div>
+  <div class="flex-w-md-85">.flex-w-md-85</div>
+  <div class="flex-w-md-90">.flex-w-md-90</div>
+  <div class="flex-w-md-95">.flex-w-md-95</div>
+  <div class="flex-w-md-100">.flex-w-md-100</div>
+</div>
+
+
+<hr/>
+<h2>.flex-w-lg-XX</h2>
+<p><code>.flex-xs</code></p>
+<div class="flex-xs">
+  <div class="flex-w-lg-5">.flex-w-lg-5</div>
+  <div class="flex-w-lg-6">.flex-w-lg-6</div>
+  <div class="flex-w-lg-8">.flex-w-lg-8</div>
+  <div class="flex-w-lg-10">.flex-w-lg-10</div>
+  <div class="flex-w-lg-12">.flex-w-lg-12</div>
+  <div class="flex-w-lg-14">.flex-w-lg-14</div>
+  <div class="flex-w-lg-15">.flex-w-lg-15</div>
+  <div class="flex-w-lg-16">.flex-w-lg-16</div>
+  <div class="flex-w-lg-20">.flex-w-lg-20</div>
+  <div class="flex-w-lg-25">.flex-w-lg-25</div>
+  <div class="flex-w-lg-30">.flex-w-lg-30</div>
+  <div class="flex-w-lg-33">.flex-w-lg-33</div>
+  <div class="flex-w-lg-30">.flex-w-lg-35</div>
+  <div class="flex-w-lg-40">.flex-w-lg-40</div>
+  <div class="flex-w-lg-45">.flex-w-lg-45</div>
+  <div class="flex-w-lg-50">.flex-w-lg-50</div>
+  <div class="flex-w-lg-55">.flex-w-lg-55</div>
+  <div class="flex-w-lg-60">.flex-w-lg-65</div>
+  <div class="flex-w-lg-66">.flex-w-lg-66</div>
+  <div class="flex-w-lg-70">.flex-w-lg-70</div>
+  <div class="flex-w-lg-75">.flex-w-lg-75</div>
+  <div class="flex-w-lg-80">.flex-w-lg-80</div>
+  <div class="flex-w-lg-85">.flex-w-lg-85</div>
+  <div class="flex-w-lg-90">.flex-w-lg-90</div>
+  <div class="flex-w-lg-95">.flex-w-lg-95</div>
+  <div class="flex-w-lg-100">.flex-w-lg-100</div>
+</div>
+
+
+<hr/>
+<h2>.flex-w-xl-XX</h2>
+<p><code>.flex-xs</code></p>
+<div class="flex-xs">
+  <div class="flex-w-xl-5">.flex-w-xl-5</div>
+  <div class="flex-w-xl-6">.flex-w-xl-6</div>
+  <div class="flex-w-xl-8">.flex-w-xl-8</div>
+  <div class="flex-w-xl-10">.flex-w-xl-10</div>
+  <div class="flex-w-xl-12">.flex-w-xl-12</div>
+  <div class="flex-w-xl-14">.flex-w-xl-14</div>
+  <div class="flex-w-xl-15">.flex-w-xl-15</div>
+  <div class="flex-w-xl-16">.flex-w-xl-16</div>
+  <div class="flex-w-xl-20">.flex-w-xl-20</div>
+  <div class="flex-w-xl-25">.flex-w-xl-25</div>
+  <div class="flex-w-xl-30">.flex-w-xl-30</div>
+  <div class="flex-w-xl-33">.flex-w-xl-33</div>
+  <div class="flex-w-xl-30">.flex-w-xl-35</div>
+  <div class="flex-w-xl-40">.flex-w-xl-40</div>
+  <div class="flex-w-xl-45">.flex-w-xl-45</div>
+  <div class="flex-w-xl-50">.flex-w-xl-50</div>
+  <div class="flex-w-xl-55">.flex-w-xl-55</div>
+  <div class="flex-w-xl-60">.flex-w-xl-65</div>
+  <div class="flex-w-xl-66">.flex-w-xl-66</div>
+  <div class="flex-w-xl-70">.flex-w-xl-70</div>
+  <div class="flex-w-xl-75">.flex-w-xl-75</div>
+  <div class="flex-w-xl-80">.flex-w-xl-80</div>
+  <div class="flex-w-xl-85">.flex-w-xl-85</div>
+  <div class="flex-w-xl-90">.flex-w-xl-90</div>
+  <div class="flex-w-xl-95">.flex-w-xl-95</div>
+  <div class="flex-w-xl-100">.flex-w-xl-100</div>
+</div>
+
+<hr/>
+<h2>.flex</h2>
+
+<p><code>.flex</code></p>
+<div class="flex">
+  <div class="flex-f-1">.flex-f-1</div>
+</div>
+
+<p><code>.flex .nogap .nopadding</code></p>
+<div class="flex nogap nopadding">
+  <div class="flex-f-1">.flex-f-1</div>
+</div>
+
+<p><code>.flex</code></p>
+<div class="flex">
+  <div class="flex-f-12">.flex-f-12</div>
+</div>
+
+<p><code>.flex .nogap .nopadding</code></p>
+<div class="flex nogap nopadding">
+  <div class="flex-f-12">.flex-f-12</div>
+</div>
+
+<p><code>.flex</code></p>
+<div class="flex">
+  <div class="flex-w-100">.flex-w-100</div>
+</div>
+
+<p><code>.flex .nogap .nopadding</code></p>
+<div class="flex nogap nopadding">
+  <div class="flex-w-100">.flex-w-100</div>
+</div>
+
+<p><code>.flex</code></p>
+<div class="flex">
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+</div>
+
+<p><code>.flex .nopadding</code></p>
+<div class="flex nopadding">
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+</div>
+
+<p><code>.flex .nogap</code></p>
+<div class="flex nogap">
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+</div>
+
+<p><code>.flex .nogap .nopadding</code></p>
+<div class="flex nogap nopadding">
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+</div>
+
+<p><code>.flex .nogap-row</code></p>
+<div class="flex nogap-row">
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+</div>
+
+<p><code>.flex .nogap-row .nopadding</code></p>
+<div class="flex nogap-row nopadding">
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+</div>
+
+<p><code>.flex .nogap-col</code></p>
+<div class="flex nogap-col">
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+</div>
+
+<p><code>.flex .nogap-col .nopadding</code></p>
+<div class="flex nogap-col nopadding">
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+</div>
+
+<p><code>.flex</code></p>
+
+<div class="flex">
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+</div>
+
+<div class="flex">
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+</div>
+
+<div class="flex">
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+</div>
+
+<div class="flex">
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+</div>
+
+<div class="flex">
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+</div>
+
+<div class="flex">
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-1">.flex-f-1</div>
+</div>
+
+<div class="flex">
+  <div class="flex-f-3" style="flex: 0 0 200px;">.flex-f-3 style="flex: 0 0 200px;"</div>
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-3" style="flex: 0 0 300px;">.flex-f-3 style="flex: 0 0 300px;"</div>
+</div>
+
+<div class="flex">
+  <div class="flex-f-3" style="flex: 0 0 20%;">.flex-f-3 style="flex: 0 0 20%;"</div>
+  <div class="flex-f-1">.flex-f-1</div>
+  <div class="flex-f-3" style="flex: 0 0 33.3333%;">.flex-f-3 style="flex: 0 0 33.3333%;"</div>
+</div>
+
+<div class="flex nopadding">
+  <div class="flex-f-3 nomargin">.flex-f-3</div>
+  <div class="flex-f-6 nomargin">.flex-f-6</div>
+  <div class="flex-f-3 nomargin">.flex-f-3</div>
+</div>
+
+<div class="flex">
+  <div class="flex-f-2">.flex-f-2</div>
+  <div class="flex-f-6">.flex-f-6</div>
+  <div class="flex-f-4">.flex-f-4</div>
+</div>
+
+<div class="flex">
+  <div class="flex-f-2">.flex-f-2</div>
+  <div class="flex-f-12">.flex-f-12</div>
+  <div class="flex-f-4">.flex-f-4</div>
+</div>
+
+<div class="flex">
+  <div class="flex-f-2">.flex-f-2</div>
+  <div class="flex-f-5">.flex-f-5</div>
+  <div class="flex-f-12">.flex-f-12</div>
+</div>
+
+<div class="flex">
+  <div class="flex-f-2">.flex-f-2</div>
+  <div class="flex-f-5">.flex-f-5</div>
+  <div class="flex-f-5">.flex-f-5</div>
+</div>
+
+<div class="flex">
+  <div class="flex-f-2">.flex-f-2</div>
+  <div class="flex-f-5">.flex-f-5</div>
+</div>
+
+<p><code>.flex</code></p>
+<div class="flex">
+  <div class="flex-w-100">.flex-w-100</div>
+  <div class="flex-w-50">.flex-w-50</div>
+  <div class="flex-w-50">.flex-w-50</div>
+  <div class="flex-w-33">.flex-w-33</div>
+  <div class="flex-w-33">.flex-w-33</div>
+  <div class="flex-w-33">.flex-w-33</div>
+  <div class="flex-w-25">.flex-w-25</div>
+  <div class="flex-w-25">.flex-w-25</div>
+  <div class="flex-w-25">.flex-w-25</div>
+  <div class="flex-w-25">.flex-w-25</div>
+  <div class="flex-w-20">.flex-w-20</div>
+  <div class="flex-w-20">.flex-w-20</div>
+  <div class="flex-w-20">.flex-w-20</div>
+  <div class="flex-w-20">.flex-w-20</div>
+  <div class="flex-w-20">.flex-w-20</div>
+  <div class="flex-w-16">.flex-w-16</div>
+  <div class="flex-w-16">.flex-w-16</div>
+  <div class="flex-w-16">.flex-w-16</div>
+  <div class="flex-w-16">.flex-w-16</div>
+  <div class="flex-w-16">.flex-w-16</div>
+  <div class="flex-w-16">.flex-w-16</div>
+  <div class="flex-w-14">.flex-w-14</div>
+  <div class="flex-w-14">.flex-w-14</div>
+  <div class="flex-w-14">.flex-w-14</div>
+  <div class="flex-w-14">.flex-w-14</div>
+  <div class="flex-w-14">.flex-w-14</div>
+  <div class="flex-w-14">.flex-w-14</div>
+  <div class="flex-w-14">.flex-w-14</div>
+  <div class="flex-w-12">.flex-w-12</div>
+  <div class="flex-w-12">.flex-w-12</div>
+  <div class="flex-w-12">.flex-w-12</div>
+  <div class="flex-w-12">.flex-w-12</div>
+  <div class="flex-w-12">.flex-w-12</div>
+  <div class="flex-w-12">.flex-w-12</div>
+  <div class="flex-w-12">.flex-w-12</div>
+  <div class="flex-w-12">.flex-w-12</div>
+  <div class="flex-w-33">.flex-w-33</div>
+  <div class="flex-w-66">.flex-w-66</div>
+  <div class="flex-w-25">.flex-w-25</div>
+  <div class="flex-w-75">.flex-w-75</div>
+</div>
+
+<p><code>.flex .nogap .nopadding</code></p>
+<div class="flex nogap nopadding">
+  <div class="flex-w-100">.flex-w-100</div>
+  <div class="flex-w-50">.flex-w-50</div>
+  <div class="flex-w-50">.flex-w-50</div>
+  <div class="flex-w-33">.flex-w-33</div>
+  <div class="flex-w-33">.flex-w-33</div>
+  <div class="flex-w-33">.flex-w-33</div>
+  <div class="flex-w-25">.flex-w-25</div>
+  <div class="flex-w-25">.flex-w-25</div>
+  <div class="flex-w-25">.flex-w-25</div>
+  <div class="flex-w-25">.flex-w-25</div>
+  <div class="flex-w-20">.flex-w-20</div>
+  <div class="flex-w-20">.flex-w-20</div>
+  <div class="flex-w-20">.flex-w-20</div>
+  <div class="flex-w-20">.flex-w-20</div>
+  <div class="flex-w-20">.flex-w-20</div>
+  <div class="flex-w-16">.flex-w-16</div>
+  <div class="flex-w-16">.flex-w-16</div>
+  <div class="flex-w-16">.flex-w-16</div>
+  <div class="flex-w-16">.flex-w-16</div>
+  <div class="flex-w-16">.flex-w-16</div>
+  <div class="flex-w-16">.flex-w-16</div>
+  <div class="flex-w-14">.flex-w-14</div>
+  <div class="flex-w-14">.flex-w-14</div>
+  <div class="flex-w-14">.flex-w-14</div>
+  <div class="flex-w-14">.flex-w-14</div>
+  <div class="flex-w-14">.flex-w-14</div>
+  <div class="flex-w-14">.flex-w-14</div>
+  <div class="flex-w-14">.flex-w-14</div>
+  <div class="flex-w-12">.flex-w-12</div>
+  <div class="flex-w-12">.flex-w-12</div>
+  <div class="flex-w-12">.flex-w-12</div>
+  <div class="flex-w-12">.flex-w-12</div>
+  <div class="flex-w-12">.flex-w-12</div>
+  <div class="flex-w-12">.flex-w-12</div>
+  <div class="flex-w-12">.flex-w-12</div>
+  <div class="flex-w-12">.flex-w-12</div>
+  <div class="flex-w-33">.flex-w-33</div>
+  <div class="flex-w-66">.flex-w-66</div>
+  <div class="flex-w-25">.flex-w-25</div>
+  <div class="flex-w-75">.flex-w-75</div>
+</div>
+
+<p><code>.flex .nopadding</code></p>
+<div class="flex nopadding">
+  <div class="flex-w-100 nomargin">.flex-w-100 .nomargin</div>
+  <div class="flex-w-50 nomargin">.flex-w-50 .nomargin</div>
+  <div class="flex-w-50 nomargin">.flex-w-50 .nomargin</div>
+  <div class="flex-w-33 nomargin">.flex-w-33 .nomargin</div>
+  <div class="flex-w-33 nomargin">.flex-w-33 .nomargin</div>
+  <div class="flex-w-33 nomargin">.flex-w-33 .nomargin</div>
+  <div class="flex-w-25 nomargin">.flex-w-25 .nomargin</div>
+  <div class="flex-w-25 nomargin">.flex-w-25 .nomargin</div>
+  <div class="flex-w-25 nomargin">.flex-w-25 .nomargin</div>
+  <div class="flex-w-25 nomargin">.flex-w-25 .nomargin</div>
+  <div class="flex-w-20 nomargin">.flex-w-20 .nomargin</div>
+  <div class="flex-w-20 nomargin">.flex-w-20 .nomargin</div>
+  <div class="flex-w-20 nomargin">.flex-w-20 .nomargin</div>
+  <div class="flex-w-20 nomargin">.flex-w-20 .nomargin</div>
+  <div class="flex-w-20 nomargin">.flex-w-20 .nomargin</div>
+  <div class="flex-w-16 nomargin">.flex-w-16 .nomargin</div>
+  <div class="flex-w-16 nomargin">.flex-w-16 .nomargin</div>
+  <div class="flex-w-16 nomargin">.flex-w-16 .nomargin</div>
+  <div class="flex-w-16 nomargin">.flex-w-16 .nomargin</div>
+  <div class="flex-w-16 nomargin">.flex-w-16 .nomargin</div>
+  <div class="flex-w-16 nomargin">.flex-w-16 .nomargin</div>
+  <div class="flex-w-14 nomargin">.flex-w-14 .nomargin</div>
+  <div class="flex-w-14 nomargin">.flex-w-14 .nomargin</div>
+  <div class="flex-w-14 nomargin">.flex-w-14 .nomargin</div>
+  <div class="flex-w-14 nomargin">.flex-w-14 .nomargin</div>
+  <div class="flex-w-14 nomargin">.flex-w-14 .nomargin</div>
+  <div class="flex-w-14 nomargin">.flex-w-14 .nomargin</div>
+  <div class="flex-w-14 nomargin">.flex-w-14 .nomargin</div>
+  <div class="flex-w-12 nomargin">.flex-w-12 .nomargin</div>
+  <div class="flex-w-12 nomargin">.flex-w-12 .nomargin</div>
+  <div class="flex-w-12 nomargin">.flex-w-12 .nomargin</div>
+  <div class="flex-w-12 nomargin">.flex-w-12 .nomargin</div>
+  <div class="flex-w-12 nomargin">.flex-w-12 .nomargin</div>
+  <div class="flex-w-12 nomargin">.flex-w-12 .nomargin</div>
+  <div class="flex-w-12 nomargin">.flex-w-12 .nomargin</div>
+  <div class="flex-w-12 nomargin">.flex-w-12 .nomargin</div>
+  <div class="flex-w-33 nomargin">.flex-w-33 .nomargin</div>
+  <div class="flex-w-66 nomargin">.flex-w-66 .nomargin</div>
+  <div class="flex-w-25 nomargin">.flex-w-25 .nomargin</div>
+  <div class="flex-w-75 nomargin">.flex-w-75 .nomargin</div>
+</div>
+
+<p><code>.flex</code></p>
+<div class="flex">
+  <div class="flex-w-5">.flex-w-5</div>
+  <div class="flex-w-6">.flex-w-6</div>
+  <div class="flex-w-8">.flex-w-8</div>
+  <div class="flex-w-10">.flex-w-10</div>
+  <div class="flex-w-12">.flex-w-12</div>
+  <div class="flex-w-14">.flex-w-14</div>
+  <div class="flex-w-15">.flex-w-15</div>
+  <div class="flex-w-16">.flex-w-16</div>
+  <div class="flex-w-20">.flex-w-20</div>
+  <div class="flex-w-25">.flex-w-25</div>
+  <div class="flex-w-30">.flex-w-30</div>
+  <div class="flex-w-33">.flex-w-33</div>
+  <div class="flex-w-30">.flex-w-35</div>
+  <div class="flex-w-40">.flex-w-40</div>
+  <div class="flex-w-45">.flex-w-45</div>
+  <div class="flex-w-50">.flex-w-50</div>
+  <div class="flex-w-55">.flex-w-55</div>
+  <div class="flex-w-60">.flex-w-65</div>
+  <div class="flex-w-66">.flex-w-66</div>
+  <div class="flex-w-70">.flex-w-70</div>
+  <div class="flex-w-75">.flex-w-75</div>
+  <div class="flex-w-80">.flex-w-80</div>
+  <div class="flex-w-85">.flex-w-85</div>
+  <div class="flex-w-90">.flex-w-90</div>
+  <div class="flex-w-95">.flex-w-95</div>
+  <div class="flex-w-100">.flex-w-100</div>
+</div>
+
+<p><code>.flex .nogap .nopadding</code></p>
+<div class="flex nogap nopadding">
+  <div class="flex-w-5">.flex-w-5</div>
+  <div class="flex-w-6">.flex-w-6</div>
+  <div class="flex-w-8">.flex-w-8</div>
+  <div class="flex-w-10">.flex-w-10</div>
+  <div class="flex-w-12">.flex-w-12</div>
+  <div class="flex-w-14">.flex-w-14</div>
+  <div class="flex-w-15">.flex-w-15</div>
+  <div class="flex-w-16">.flex-w-16</div>
+  <div class="flex-w-20">.flex-w-20</div>
+  <div class="flex-w-25">.flex-w-25</div>
+  <div class="flex-w-30">.flex-w-30</div>
+  <div class="flex-w-33">.flex-w-33</div>
+  <div class="flex-w-30">.flex-w-35</div>
+  <div class="flex-w-40">.flex-w-40</div>
+  <div class="flex-w-45">.flex-w-45</div>
+  <div class="flex-w-50">.flex-w-50</div>
+  <div class="flex-w-55">.flex-w-55</div>
+  <div class="flex-w-60">.flex-w-65</div>
+  <div class="flex-w-66">.flex-w-66</div>
+  <div class="flex-w-70">.flex-w-70</div>
+  <div class="flex-w-75">.flex-w-75</div>
+  <div class="flex-w-80">.flex-w-80</div>
+  <div class="flex-w-85">.flex-w-85</div>
+  <div class="flex-w-90">.flex-w-90</div>
+  <div class="flex-w-95">.flex-w-95</div>
+  <div class="flex-w-100">.flex-w-100</div>
+</div>
+
+</div> <!-- /container 2 -->
+
+
+<div class="container"> <!-- container 3 -->
+  <hr/>
+  <h2>CSS GRID custom <span class="text-red smallcaps">(experimental, don't use in production)</span></h2>
+
+<style>
+.sample-grid {
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: 1fr 2fr 3fr 4fr;
+  grid-template: 1fr / 1fr 2fr 3fr 4fr;
+}
+</style>
+
+<pre>.sample-grid {
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: 1fr 2fr 3fr 4fr;
+  grid-template: 1fr / 1fr 2fr 3fr 4fr;
+}
+</pre>
+
+  <p>Make a new class with grid settings and use one of these classes:</p>
+  <ul>
+    <li><code>.grid</code></li>
+    <li><code>.inline-grid</code></li>
+  </ul>
+
+  <p><code>.grid .sample-grid</code></p>
+  <p>without <code>.ms-cell-start-col-XX</code></p>
+  <div class="grid sample-grid">
+    <div class="cell">1fr</div>
+    <div class="cell">2fr</div>
+    <div class="cell">3fr</div>
+    <div class="cell">4fr</div>
+  </div>
+
+  <p><code>.grid .sample-grid</code></p>
+  <div class="grid sample-grid">
+    <div class="cell ms-cell-start-col-1">1fr</div>
+    <div class="cell ms-cell-start-col-2">2fr</div>
+    <div class="cell ms-cell-start-col-3">3fr</div>
+    <div class="cell ms-cell-start-col-4">4fr</div>
+  </div>
+
+  <p><code>.grid .sample-grid .nogap</code></p>
+  <div class="grid sample-grid nogap">
+    <div class="cell ms-cell-start-col-1">1fr</div>
+    <div class="cell ms-cell-start-col-2">2fr</div>
+    <div class="cell ms-cell-start-col-3">3fr</div>
+    <div class="cell ms-cell-start-col-4">4fr</div>
+  </div>
+
+  <p><code>.grid .sample-grid .nogap-col</code></p>
+  <div class="grid sample-grid nogap-col">
+    <div class="cell ms-cell-start-col-1">1fr</div>
+    <div class="cell ms-cell-start-col-2">2fr</div>
+    <div class="cell ms-cell-start-col-3">3fr</div>
+    <div class="cell ms-cell-start-col-4">4fr</div>
+  </div>
+
+  <p><code>.grid .sample-grid .nogap .nopadding</code></p>
+  <div class="grid sample-grid nogap nopadding">
+    <div class="cell ms-cell-start-col-1">1fr</div>
+    <div class="cell ms-cell-start-col-2">2fr</div>
+    <div class="cell ms-cell-start-col-3">3fr</div>
+    <div class="cell ms-cell-start-col-4">4fr</div>
+  </div>
+
+  <p><code>.inline-grid .sample-grid</code></p>
+  <p>without <code>.ms-cell-start-col-XX</code></p>
+  <div>
+    <span class="test" style="width: 45%;">span 45%</span>
+    <div class="inline-grid sample-grid" style="width: 45%;">
+      <div class="cell">1fr</div>
+      <div class="cell">2fr</div>
+      <div class="cell">3fr</div>
+      <div class="cell">4fr</div>
+    </div>
+  </div>
+
+  <p><code>.inline-grid .sample-grid</code></p>
+  <div>
+    <span class="test" style="width: 45%;">span 45%</span>
+    <div class="inline-grid sample-grid" style="width: 45%;">
+      <div class="cell ms-cell-start-col-1">1fr</div>
+      <div class="cell ms-cell-start-col-2">2fr</div>
+      <div class="cell ms-cell-start-col-3">3fr</div>
+      <div class="cell ms-cell-start-col-4">4fr</div>
+    </div>
+  </div>
+
+  <p><code>.inline-grid .sample-grid .nogap</code></p>
+  <div>
+    <span class="test" style="width: 45%;">span 45%</span>
+    <div class="inline-grid sample-grid nogap" style="width: 45%;">
+      <div class="cell ms-cell-start-col-1">1fr</div>
+      <div class="cell ms-cell-start-col-2">2fr</div>
+      <div class="cell ms-cell-start-col-3">3fr</div>
+      <div class="cell ms-cell-start-col-4">4fr</div>
+    </div>
+  </div>
+
+  <p><code>.inline-grid .sample-grid .nogap-col</code></p>
+  <div>
+    <span class="test" style="width: 45%;">span 45%</span>
+    <div class="inline-grid sample-grid nogap-col" style="width: 45%;">
+      <div class="cell ms-cell-start-col-1">1fr</div>
+      <div class="cell ms-cell-start-col-2">2fr</div>
+      <div class="cell ms-cell-start-col-3">3fr</div>
+      <div class="cell ms-cell-start-col-4">4fr</div>
+    </div>
+  </div>
+
+  <p><code>.inline-grid .sample-grid .nogap .nopadding</code></p>
+  <div>
+    <span class="test" style="width: 45%;">span 45%</span>
+    <div class="inline-grid sample-grid nogap nopadding" style="width: 45%;">
+      <div class="cell ms-cell-start-col-1">1fr</div>
+      <div class="cell ms-cell-start-col-2">2fr</div>
+      <div class="cell ms-cell-start-col-3">3fr</div>
+      <div class="cell ms-cell-start-col-4">4fr</div>
+    </div>
+  </div>
+
+
+  <hr/>
+  <h2>CSS GRID <span class="text-red smallcaps">(experimental, don't use in production)</span></h2>
+
+  <p><b>Explicit Grid</b></p>
+  <p><code>.grid .grid-cols-1</code></p>
+  <div class="grid grid-cols-1">
+    <div class="cell cell-rows-1 ms-cell-1 ms-cell-start-col-1">.cell  .cell-cols-1</div>
+  </div>
+
+  <p><b>Explicit Grid</b></p>
+  <p><code>.grid .grid-cols-1 .nogap .nopadding</code></p>
+  <div class="grid grid-cols-1 nogap nopadding">
+    <div class="cell cell-cols-1 ms-cell-1 ms-cell-start-col-1">.cell .cell-cols-1</div>
+  </div>
+
+  <p><b>Explicit Grid</b></p>
+  <p><code>.grid .grid-cols-10</code></p>
+  <p><b>.cell .cell-cols-XX without .ms-cell-start-row-XX and .ms-cell-start-col-XX</b></p>
+  <div class="grid grid-cols-10">
+    <div class="cell cell-cols-1">.cell .cell-cols-1</div>
+    <div class="cell cell-cols-2">.cell .cell-cols-2</div>
+    <div class="cell cell-cols-3">.cell .cell-cols-3</div>
+    <div class="cell cell-cols-4">.cell .cell-cols-4</div>
+  </div>
+
+  <p><b>Explicit Grid</b></p>
+  <p><code>.grid .grid-cols-10</code></p>
+  <div class="grid grid-cols-10">
+    <div class="cell cell-cols-1 ms-cell-start-row-1 ms-cell-start-col-1">.cell .cell-cols-1 .ms-cell-start-row-1 .ms-cell-start-col-1</div>
+    <div class="cell cell-cols-2 ms-cell-start-row-1 ms-cell-start-col-2">.cell .cell-cols-2 .ms-cell-start-row-1 .ms-cell-start-col-2</div>
+    <div class="cell cell-cols-3 ms-cell-start-row-1 ms-cell-start-col-4">.cell .cell-cols-3 .ms-cell-start-row-1 .ms-cell-start-col-4</div>
+    <div class="cell cell-cols-4 ms-cell-start-row-1 ms-cell-start-col-7">. cell .cell-cols-4 .ms-cell-start-row-1 .ms-cell-start-col-7</div>
+  </div>
+
+  <p><b>Explicit Grid</b></p>
+  <p><code>.grid .grid-cols-10 .nogap .nopadding</code></p>
+  <div class="grid grid-cols-10 nogap nopadding">
+    <div class="cell cell-cols-1 ms-cell-start-row-1 ms-cell-start-col-1">. cell .cell-cols-1 .ms-cell-start-row-1 .ms-cell-start-col-1</div>
+    <div class="cell cell-cols-2 ms-cell-start-row-1 ms-cell-start-col-2">.cell .cell-cols-2 .ms-cell-start-row-1 .ms-cell-start-col-2</div>
+    <div class="cell cell-cols-3 ms-cell-start-row-1 ms-cell-start-col-4">.cell .cell-cols-3 .ms-cell-start-row-1 .ms-cell-start-col-4</div>
+    <div class="cell cell-cols-4 ms-cell-start-row-1 ms-cell-start-col-7">.cell .cell-cols-4 .ms-cell-start-row-1 .ms-cell-start-col-7</div>
+  </div>
+
+  <p><b>Explicit Grid</b></p>
+  <p><code>.grid .grid-rows-4 .grid-cols-10</code></p>
+  <p><b>.cell .cell-cols-XX without .ms-cell-start-row-XX and .ms-cell-start-col-XX</b></p>
+  <div class="grid grid-rows-2 grid-cols-10">
+    <div class="cell cell-cols-1">.cell .cell-cols-1</div>
+    <div class="cell cell-cols-2">.cell .cell-cols-2</div>
+    <div class="cell cell-cols-3">.cell .cell-cols-3</div>
+    <div class="cell cell-cols-4">.cell .cell-cols-4</div>
+    <div class="cell cell-cols-3">.cell .cell-cols-3</div>
+    <div class="cell cell-cols-1">.cell .cell-cols-1</div>
+    <div class="cell cell-cols-4">.cell .cell-cols-4</div>
+    <div class="cell cell-cols-2">.cell .cell-cols-2</div>
+    <div class="cell cell-cols-5">.cell .cell-cols-5</div>
+    <div class="cell cell-cols-5">.cell .cell-cols-5</div>
+    <div class="cell cell-cols-6">.cell .cell-cols-6</div>
+    <div class="cell cell-cols-4">.cell .cell-cols-4</div>
+  </div>
+
+  <p><b>Explicit Grid</b></p>
+  <p><code>.grid .grid-rows-4 .grid-cols-10</code></p>
+  <div class="grid grid-rows-2 grid-cols-10">
+    <div class="cell cell-cols-1 ms-cell-start-row-1 ms-cell-start-col-1">.cell .cell-cols-1 .ms-cell-start-row-1 .ms-cell-start-col-1</div>
+    <div class="cell cell-cols-2 ms-cell-start-row-1 ms-cell-start-col-2">.cell .cell-cols-2 .ms-cell-start-row-1 .ms-cell-start-col-2</div>
+    <div class="cell cell-cols-3 ms-cell-start-row-1 ms-cell-start-col-4">.cell .cell-cols-3 .ms-cell-start-row-1 .ms-cell-start-col-4</div>
+    <div class="cell cell-cols-4 ms-cell-start-row-1 ms-cell-start-col-7">.cell .cell-cols-4 .ms-cell-start-row-1 .ms-cell-start-col-7</div>
+    <div class="cell cell-cols-3 ms-cell-start-row-2 ms-cell-start-col-1">.cell .cell-cols-3 .ms-cell-start-row-2 .ms-cell-start-col-1</div>
+    <div class="cell cell-cols-1 ms-cell-start-row-2 ms-cell-start-col-4">.cell .cell-cols-1 .ms-cell-start-row-2 .ms-cell-start-col-4</div>
+    <div class="cell cell-cols-4 ms-cell-start-row-2 ms-cell-start-col-5">.cell .cell-cols-4 .ms-cell-start-row-2 .ms-cell-start-col-5</div>
+    <div class="cell cell-cols-2 ms-cell-start-row-2 ms-cell-start-col-9">.cell .cell-cols-2 .ms-cell-start-row-2 .ms-cell-start-col-9</div>
+    <div class="cell cell-cols-5 ms-cell-start-row-3 ms-cell-start-col-1">.cell .cell-cols-5 .ms-cell-start-row-3 .ms-cell-start-col-1</div>
+    <div class="cell cell-cols-5 ms-cell-start-row-3 ms-cell-start-col-6">.cell .cell-cols-5 .ms-cell-start-row-3 .ms-cell-start-col-6</div>
+    <div class="cell cell-cols-6 ms-cell-start-row-4 ms-cell-start-col-1">.cell .cell-cols-6 .ms-cell-start-row-4 .ms-cell-start-col-1</div>
+    <div class="cell cell-cols-4 ms-cell-start-row-4 ms-cell-start-col-7">.cell .cell-cols-4 .ms-cell-start-row-4 .ms-cell-start-col-7</div>
+  </div>
+
+  <p><b>Explicit Grid</b></p>
+  <p><code>.grid .grid-rows-4 .grid-cols-10 .nogap .nopadding</code></p>
+  <div class="grid grid-rows-4 grid-cols-10 nogap nopadding">
+    <div class="cell cell-cols-1 ms-cell-start-row-1 ms-cell-start-col-1">.cell .cell-cols-1 .ms-cell-start-row-1 .ms-cell-start-col-1</div>
+    <div class="cell cell-cols-2 ms-cell-start-row-1 ms-cell-start-col-2">.cell .cell-cols-2 .ms-cell-start-row-1 .ms-cell-start-col-2</div>
+    <div class="cell cell-cols-3 ms-cell-start-row-1 ms-cell-start-col-4">.cell .cell-cols-3 .ms-cell-start-row-1 .ms-cell-start-col-4</div>
+    <div class="cell cell-cols-4 ms-cell-start-row-1 ms-cell-start-col-7">.cell .cell-cols-4 .ms-cell-start-row-1 .ms-cell-start-col-7</div>
+    <div class="cell cell-cols-3 ms-cell-start-row-2 ms-cell-start-col-1">.cell .cell-cols-3 .ms-cell-start-row-2 .ms-cell-start-col-1</div>
+    <div class="cell cell-cols-1 ms-cell-start-row-2 ms-cell-start-col-4">.cell .cell-cols-1 .ms-cell-start-row-2 .ms-cell-start-col-4</div>
+    <div class="cell cell-cols-4 ms-cell-start-row-2 ms-cell-start-col-5">.cell .cell-cols-4 .ms-cell-start-row-2 .ms-cell-start-col-5</div>
+    <div class="cell cell-cols-2 ms-cell-start-row-2 ms-cell-start-col-9">.cell .cell-cols-2 .ms-cell-start-row-2 .ms-cell-start-col-9</div>
+    <div class="cell cell-cols-5 ms-cell-start-row-3 ms-cell-start-col-1">.cell .cell-cols-5 .ms-cell-start-row-3 .ms-cell-start-col-1</div>
+    <div class="cell cell-cols-5 ms-cell-start-row-3 ms-cell-start-col-6">.cell .cell-cols-5 .ms-cell-start-row-3 .ms-cell-start-col-6</div>
+    <div class="cell cell-cols-6 ms-cell-start-row-4 ms-cell-start-col-1">.cell .cell-cols-6 .ms-cell-start-row-4 .ms-cell-start-col-1</div>
+    <div class="cell cell-cols-4 ms-cell-start-row-4 ms-cell-start-col-7">.cell .cell-cols-4 .ms-cell-start-row-4 .ms-cell-start-col-7</div>
+  </div>
+
+  <p><b>Explicit Grid - flex based</b></p>
+  <p><code>.flex .nogap .nopadding</code></p>
+  <div class="flex nogap nopadding">
+    <div class="flex-w-10">.flex-w-10</div>
+    <div class="flex-w-20">.flex-w-20</div>
+    <div class="flex-w-30">.flex-w-30</div>
+    <div class="flex-w-40">.flex-w-40</div>
+    <div class="flex-w-30">.flex-w-30</div>
+    <div class="flex-w-10">.flex-w-10</div>
+    <div class="flex-w-40">.flex-w-40</div>
+    <div class="flex-w-20">.flex-w-20</div>
+    <div class="flex-w-50">.flex-w-50</div>
+    <div class="flex-w-50">.flex-w-50</div>
+    <div class="flex-w-60">.flex-w-60</div>
+    <div class="flex-w-40">.flex-w-40</div>
+  </div>
+
+  <p><b>Explicit Grid - flex based</b></p>
+  <p><code>.flex .nogap .nopadding .flexbox-row-reverse</code></p>
+  <div class="flex nogap nopadding flexbox-row-reverse">
+    <div class="flex-w-10">.flex-w-10</div>
+    <div class="flex-w-20">.flex-w-20</div>
+    <div class="flex-w-30">.flex-w-30</div>
+    <div class="flex-w-40">.flex-w-40</div>
+    <div class="flex-w-30">.flex-w-30</div>
+    <div class="flex-w-10">.flex-w-10</div>
+    <div class="flex-w-40">.flex-w-40</div>
+    <div class="flex-w-20">.flex-w-20</div>
+    <div class="flex-w-50">.flex-w-50</div>
+    <div class="flex-w-50">.flex-w-50</div>
+    <div class="flex-w-60">.flex-w-60</div>
+    <div class="flex-w-40">.flex-w-40</div>
+  </div>
+
+
+  <hr/>
+  <p><b>Explicit Grid</b></p>
+  <p><code>.grid .grid-rows-2 .grid-cols-2 .nogap .nopadding</code></p>
+  <div class="grid grid-rows-2 grid-cols-2 nogap nopadding">
+    <div class="cell cell-cols-1 ms-cell-start-row-1 ms-cell-start-col-1">.cell .cell-cols-1 .ms-cell-start-row-1 .ms-cell-start-col-1</div>
+    <div class="cell cell-cols-1 ms-cell-start-row-1 ms-cell-start-col-2">.cell .cell-cols-1 .ms-cell-start-row-1 .ms-cell-start-col-2</div>
+    <div class="cell cell-cols-1 ms-cell-start-row-2 ms-cell-start-col-1">.cell .cell-cols-1 .ms-cell-start-row-2 .ms-cell-start-col-1</div>
+    <div class="cell cell-cols-1 ms-cell-start-row-2 ms-cell-start-col-2">.cell .cell-cols-1 .ms-cell-start-row-2 .ms-cell-start-col-2</div>
+  </div>
+
+  <p><b>Explicit Grid</b></p>
+  <p><code>.flex .nogap .nopadding</code></p>
+  <div class="flex nogap nopadding">
+    <div class="flex-w-50">.flex-w-50</div>
+    <div class="flex-w-50">.flex-w-50</div>
+    <div class="flex-w-50">.flex-w-50</div>
+    <div class="flex-w-50">.flex-w-50</div>
+  </div>
+
+  <p><b>Explicit Grid with break</b></p>
+  <p><code>.flex .nogap .nopadding</code></p>
+  <p><b>2x </b><code>.flex-f-1</code></p>
+  <p><b>1x </b><code>.flex-w-100 .nomargin .nopadding .noborder</code></p>
+  <p><b>2x </b><code>.flex-f-1</code></p>
+  <div class="flex nogap nopadding">
+    <div class="flex-f-1">.flex-f-1</div>
+    <div class="flex-f-1">.flex-f-1</div>
+    <div class="flex-w-100 nomargin nopadding noborder"></div>
+    <div class="flex-f-1">.flex-f-1</div>
+    <div class="flex-f-1">.flex-f-1</div>
+  </div>
+
+  <p><b>Explicit Grid</b></p>
+  <p><b>2x </b><code>.flex .nogap .nopadding</code></p>
+  <div class="flex nogap nopadding">
+    <div class="flex-f-1 nomargin">.flex-f-1 .nomargin</div>
+    <div class="flex-f-1 nomargin">.flex-f-1 .nomargin</div>
+  </div>
+  <div class="flex nogap nopadding">
+    <div class="flex-f-1 nomargin">.flex-f-1 .nomargin</div>
+    <div class="flex-f-1 nomargin">.flex-f-1 .nomargin</div>
+  </div>
+
+
+  <hr/>
+
+  <p><b>Explicit Grid - auto placement test</b></p>
+  <p><code>.grid .grid-rows-auto .grid-cols-3</code></p>
+  <div class="grid grid-rows-auto grid-cols-3">
+    <div class="cell cell-cols-1 ms-cell-start-row-1 ms-cell-start-col-1">.cell .cell-cols-1 .ms-cell-start-row-1 .ms-cell-start-col-1</div>
+    <div class="cell cell-cols-1 ms-cell-start-row-1 ms-cell-start-col-2">.cell .cell-cols-1 .ms-cell-start-row-1 .ms-cell-start-col-2</div>
+    <div class="cell cell-cols-1 ms-cell-start-row-1 ms-cell-start-col-3">.cell .cell-cols-1 .ms-cell-start-row-1 .ms-cell-start-col-3</div>
+    <div class="cell cell-cols-1 ms-cell-start-row-2 ms-cell-start-col-1">.cell .cell-cols-1 .ms-cell-start-row-2 .ms-cell-start-col-1</div>
+    <div class="cell cell-cols-1 ms-cell-start-row-2 ms-cell-start-col-2">.cell .cell-cols-1 .ms-cell-start-row-2 .ms-cell-start-col-2</div>
+    <div class="cell cell-cols-1 ms-cell-start-row-2 ms-cell-start-col-3">.cell .cell-cols-1 .ms-cell-start-row-2 .ms-cell-start-col-3</div>
+    <div class="cell cell-cols-1 ms-cell-start-row-3 ms-cell-start-col-1">.cell .cell-cols-1 .ms-cell-start-row-3 .ms-cell-start-col-1</div>
+  </div>
+
+  <p><b>Explicit Grid - auto placement test with .nogap and .nopadding</b></p>
+  <p><code>.grid .grid-rows-auto .grid-cols-3 .nogap .nopadding</code></p>
+  <div class="grid grid-rows-auto grid-cols-3 nogap nopadding">
+    <div class="cell cell-cols-1 ms-cell-start-row-1 ms-cell-start-col-1">.cell .cell-cols-1 .ms-cell-start-row-1 .ms-cell-start-col-1</div>
+    <div class="cell cell-cols-1 ms-cell-start-row-1 ms-cell-start-col-2">.cell .cell-cols-1 .ms-cell-start-row-1 .ms-cell-start-col-2</div>
+    <div class="cell cell-cols-1 ms-cell-start-row-1 ms-cell-start-col-3">.cell .cell-cols-1 .ms-cell-start-row-1 .ms-cell-start-col-3</div>
+    <div class="cell cell-cols-1 ms-cell-start-row-2 ms-cell-start-col-1">.cell .cell-cols-1 .ms-cell-start-row-2 .ms-cell-start-col-1</div>
+    <div class="cell cell-cols-1 ms-cell-start-row-2 ms-cell-start-col-2">.cell .cell-cols-1 .ms-cell-start-row-2 .ms-cell-start-col-2</div>
+    <div class="cell cell-cols-1 ms-cell-start-row-2 ms-cell-start-col-3">.cell .cell-cols-1 .ms-cell-start-row-2 .ms-cell-start-col-3</div>
+    <div class="cell cell-cols-1 ms-cell-start-row-3 ms-cell-start-col-1">.cell .cell-cols-1 .ms-cell-start-row-3 .ms-cell-start-col-1</div>
+  </div>
+
+  <p><b>Explicit Grid with flex - auto placement test</b></p>
+  <p><code>.flex .nopadding</code></p>
+  <div class="flex nopadding">
+    <div class="flex-w-33 nomargin">.flex-w-33 .nomargin</div>
+    <div class="flex-w-33 nomargin">.flex-w-33 .nomargin</div>
+    <div class="flex-w-33 nomargin">.flex-w-33 .nomargin</div>
+    <div class="flex-w-33 nomargin">.flex-w-33 .nomargin</div>
+    <div class="flex-w-33 nomargin">.flex-w-33 .nomargin</div>
+    <div class="flex-w-33 nomargin">.flex-w-33 .nomargin</div>
+    <div class="flex-w-33 nomargin">.flex-w-33 .nomargin</div>
+  </div>
+
+  <p><b>Explicit Grid with flex - auto placement test</b></p>
+  <p><code>.flex .justify-content-around</code> <b>(space-around)</b></p>
+  <div class="flex justify-content-around nopadding">
+    <div class="flex-w-33 nomargin">.flex-w-33 .nomargin</div>
+    <div class="flex-w-33 nomargin">.flex-w-33 .nomargin</div>
+    <div class="flex-w-33 nomargin">.flex-w-33 .nomargin</div>
+    <div class="flex-w-33 nomargin">.flex-w-33 .nomargin</div>
+    <div class="flex-w-33 nomargin">.flex-w-33 .nomargin</div>
+    <div class="flex-w-33 nomargin">.flex-w-33 .nomargin</div>
+    <div class="flex-w-33 nomargin">.flex-w-33 .nomargin</div>
+  </div>
+
+
+  <hr/>
+
+  <p><b>Implicit Grid</b></p>
+  <p><code>.grid .grid-rows-4 .grid-cols-6</code></p>
+  <div class="grid grid-rows-4 grid-cols-6">
+    <div class="cell cell-start-row-1 cell-start-col-1 cell-end-row-2 cell-end-col-2">1</div>
+    <div class="cell cell-start-row-1 cell-start-col-2 cell-end-row-4 cell-end-col-4">2</div>
+    <div class="cell cell-start-row-1 cell-start-col-4 cell-end-row-1 cell-end-col-6">3</div>
+    <div class="cell cell-start-row-1 cell-start-col-6 cell-end-row-1 cell-end-col-7">4</div>
+    <div class="cell cell-start-row-2 cell-start-col-1 cell-end-row-4 cell-end-col-2">5</div>
+    <div class="cell cell-start-row-2 cell-start-col-4 cell-end-row-4 cell-end-col-6">6</div>
+    <div class="cell cell-start-row-4 cell-start-col-1 cell-end-row-5 cell-end-col-2">7</div>
+    <div class="cell cell-start-row-2 cell-start-col-6 cell-end-row-5 cell-end-col-7">8</div>
+    <div class="cell cell-start-row-4 cell-start-col-2 cell-end-row-5 cell-end-col-6">9</div>
+  </div>
+
+  <p><b>Implicit Grid</b></p>
+  <p><code>.grid .grid-rows-4 .grid-cols-6 .nogap .nopadding</code></p>
+  <div class="grid grid-rows-4 grid-cols-6 nogap nopadding">
+    <div class="cell cell-start-row-1 cell-start-col-1 cell-end-row-2 cell-end-col-2">1</div>
+    <div class="cell cell-start-row-1 cell-start-col-2 cell-end-row-4 cell-end-col-4">2</div>
+    <div class="cell cell-start-row-1 cell-start-col-4 cell-end-row-1 cell-end-col-6">3</div>
+    <div class="cell cell-start-row-1 cell-start-col-6 cell-end-row-1 cell-end-col-7">4</div>
+    <div class="cell cell-start-row-2 cell-start-col-1 cell-end-row-4 cell-end-col-2">5</div>
+    <div class="cell cell-start-row-2 cell-start-col-4 cell-end-row-4 cell-end-col-6">6</div>
+    <div class="cell cell-start-row-4 cell-start-col-1 cell-end-row-5 cell-end-col-2">7</div>
+    <div class="cell cell-start-row-2 cell-start-col-6 cell-end-row-5 cell-end-col-7">8</div>
+    <div class="cell cell-start-row-4 cell-start-col-2 cell-end-row-5 cell-end-col-6">9</div>
+  </div>
+  <ol>
+    <li><code>.cell .cell-start-row-1 .cell-start-col-1 .cell-end-row-2 .cell-end-col-2</code></li>
+    <li><code>.cell .cell-start-row-1 .cell-start-col-2 .cell-end-row-4 .cell-end-col-4</code></li>
+    <li><code>.cell .cell-start-row-1 .cell-start-col-4 .cell-end-row-1 .cell-end-col-6</code></li>
+    <li><code>.cell .cell-start-row-1 .cell-start-col-6 .cell-end-row-1 .cell-end-col-7</code></li>
+    <li><code>.cell .cell-start-row-2 .cell-start-col-1 .cell-end-row-4 .cell-end-col-2</code></li>
+    <li><code>.cell .cell-start-row-2 .cell-start-col-4 .cell-end-row-4 .cell-end-col-6</code></li>
+    <li><code>.cell .cell-start-row-4 .cell-start-col-1 .cell-end-row-5 .cell-end-col-2</code></li>
+    <li><code>.cell .cell-start-row-2 .cell-start-col-6 .cell-end-row-5 .cell-end-col-7</code></li>
+    <li><code>.cell .cell-start-row-4 .cell-start-col-2 .cell-end-row-5 .cell-end-col-6</code></li>
+  </ol>
+
+  <p><b>Implicit Grid (-ms- compatible)</b></p>
+  <p><code>.grid .grid-rows-4 .grid-cols-6</code></p>
+  <div class="grid grid-rows-4 grid-cols-6">
+    <div class="cell cell-start-row-1 cell-start-col-1 cell-end-row-2 cell-end-col-2">1</div>
+    <div class="cell cell-start-row-1 cell-start-col-2 cell-end-row-4 cell-end-col-4 ms-cell-rows-3 ms-cell-cols-2">2</div>
+    <div class="cell cell-start-row-1 cell-start-col-4 cell-end-row-1 cell-end-col-6 ms-cell-cols-2">3</div>
+    <div class="cell cell-start-row-1 cell-start-col-6 cell-end-row-1 cell-end-col-7">4</div>
+    <div class="cell cell-start-row-2 cell-start-col-1 cell-end-row-4 cell-end-col-2 ms-cell-rows-2">5</div>
+    <div class="cell cell-start-row-2 cell-start-col-4 cell-end-row-4 cell-end-col-6 ms-cell-rows-2 ms-cell-cols-2">6</div>
+    <div class="cell cell-start-row-4 cell-start-col-1 cell-end-row-5 cell-end-col-2">7</div>
+    <div class="cell cell-start-row-2 cell-start-col-6 cell-end-row-5 cell-end-col-7 ms-cell-rows-3">8</div>
+    <div class="cell cell-start-row-4 cell-start-col-2 cell-end-row-5 cell-end-col-6 ms-cell-cols-4">9</div>
+  </div>
+  <ol>
+    <li><code>.cell .cell-start-row-1 .cell-start-col-1 .cell-end-row-2 .cell-end-col-2</code></li>
+    <li><code>.cell .cell-start-row-1 .cell-start-col-2 .cell-end-row-4 .cell-end-col-4 .ms-cell-rows-3 .ms-cell-cols-2</code></li>
+    <li><code>.cell .cell-start-row-1 .cell-start-col-4 .cell-end-row-1 .cell-end-col-6 .ms-cell-cols-2</code></li>
+    <li><code>.cell .cell-start-row-1 .cell-start-col-6 .cell-end-row-1 .cell-end-col-7</code></li>
+    <li><code>.cell .cell-start-row-2 .cell-start-col-1 .cell-end-row-4 .cell-end-col-2 .ms-cell-rows-2</code></li>
+    <li><code>.cell .cell-start-row-2 .cell-start-col-4 .cell-end-row-4 .cell-end-col-6 .ms-cell-rows-2 .ms-cell-cols-2</code></li>
+    <li><code>.cell .cell-start-row-4 .cell-start-col-1 .cell-end-row-5 .cell-end-col-2</code></li>
+    <li><code>.cell .cell-start-row-2 .cell-start-col-6 .cell-end-row-5 .cell-end-col-7 .ms-cell-rows-3</code></li>
+    <li><code>.cell .cell-start-row-4 .cell-start-col-2 .cell-end-row-5 .cell-end-col-6 .ms-cell-cols-4</code></li>
+  </ol>
+
+
+  <hr/>
+  <h2>Nested grids</h2>
+
+  <p><b>.flex within .flex</b></p>
+  <p>Outer: <code>.flex .nogap .nopadding</code></p>
+  <p>Outer 2nd item: <code>.flex-f-2 .nopadding-top .nopadding-bottom</code></p>
+  <p>Inner: <code>.flex .nogap .nopadding</code></p>
+  <div class="flex nogap nopadding">
+    <div class="flex-f-1">.flex-f-1</div>
+    <div class="flex-f-2 nopadding-top nopadding-bottom">
+      <div class="flex nogap nopadding">
+        <div class="flex-f-2">.flex-f-2</div>
+        <div class="flex-f-3">.flex-f-3</div>
+        <div class="flex-f-1">.flex-f-1</div>
+      </div>
+    </div>
+    <div class="flex-f-1">.flex-f-1</div>
+  </div>
+
+  <p><b>.grid within .flex</b></p>
+  <p>Outer: <code>.flex .nogap .nopadding</code></p>
+  <p>Outer 2nd item: <code>.flex-f-2 .nopadding-top .nopadding-bottom</code></p>
+  <p>Inner: <code>.grid grid-cols-6 .nogap .nopadding</code></p>
+  <div class="flex nogap nopadding">
+    <div class="flex-f-1">.flex-f-1</div>
+    <div class="flex-f-2 nopadding-top nopadding-bottom">
+      <div class="grid grid-cols-6 nogap nopadding">
+        <div class="cell cell-cols-2 ms-cell-start-col-1">.cell .cell-cols-2 .ms-cell-start-col-1</div>
+        <div class="cell cell-cols-3 ms-cell-start-col-3">.cell .cell-cols-3 .ms-cell-start-col-3</div>
+        <div class="cell cell-cols-1 ms-cell-start-col-6">.cell .cell-cols-1 .ms-cell-start-col-6</div>
+      </div>
+    </div>
+    <div class="flex-f-1">.flex-f-1</div>
+  </div>
+
+  <p><b>.grid within .grid</b></p>
+  <p>Outer: <code>.grid .grid-cols-4 .nogap .nopadding</code></p>
+  <p>Outer 2nd item: <code>.cell .cell-cols-2 .ms-cell-start-col-2 .nopadding-top .nopadding-bottom</code></p>
+  <p>Inner: <code>.grid .grid-cols-6 .nogap nopadding</code></p>
+  <div class="grid grid-cols-4 nogap nopadding">
+    <div class="cell cell-cols-1 ms-cell-start-col-1">.cell .cell-cols-1 .ms-cell-start-col-1</div>
+    <div class="cell cell-cols-2 ms-cell-start-col-2 nopadding-top nopadding-bottom">
+      <div class="grid grid-cols-6 nogap nopadding">
+        <div class="cell cell-cols-2 ms-cell-start-col-1">.cell .cell-cols-2 .ms-cell-start-col-1</div>
+        <div class="cell cell-cols-3 ms-cell-start-col-3">.cell .cell-cols-3 .ms-cell-start-col-3</div>
+        <div class="cell cell-cols-1 ms-cell-start-col-6">.cell .cell-cols-1 .ms-cell-start-col-6</div>
+      </div>
+    </div>
+    <div class="cell cell-cols-1 ms-cell-start-col-4">.cell .cell-cols-1 .ms-cell-start-col-4</div>
+  </div>
+
+  <p><b>.flex within .grid</b></p>
+  <p>Outer: <code>.grid .grid-cols-4 .nogap .nopadding</code></p>
+  <p>Outer 2nd item: <code>.cell .cell-cols-2 .ms-cell-start-col-2 .nopadding-top .nopadding-bottom</code></p>
+  <p>Inner: <code>.flex .nogap .nopadding</code></p>
+  <div class="grid grid-cols-4 nogap nopadding">
+    <div class="cell cell-cols-1 ms-cell-start-col-1">.cell .cell-cols-1 .ms-cell-start-col-1</div>
+    <div class="cell cell-cols-2 ms-cell-start-col-2 nopadding-top nopadding-bottom">
+      <div class="flex nogap nopadding">
+        <div class="flex-f-2">.flex-f-2</div>
+        <div class="flex-f-3">.flex-f-3</div>
+        <div class="flex-f-1">.flex-f-1</div>
+      </div>
+    </div>
+    <div class="cell cell-cols-1 ms-cell-start-col-4">.cell .cell-cols-1 .ms-cell-start-col-4</div>
+  </div>
+
+
+  <hr/>
+  <h2>.grid-XX</h2>
+
+  <p><code>.grid-xs</code> - <code>min-width: 0px</code></p>
+  <div class="grid-xs grid-cols-6">
+    <div class="cell cell-cols-3 ms-cell-start-col-1">.cell .cell-cols-3</div>
+    <div class="cell cell-cols-1 ms-cell-start-col-4">.cell .cell-cols-1</div>
+    <div class="cell cell-cols-2 ms-cell-start-col-5">.cell .cell-cols-2</div>
+  </div>
+
+  <p><code>.grid-sm</code> - <code>min-width: 576px</code></p>
+  <div class="grid-sm grid-cols-6">
+    <div class="cell cell-cols-3 ms-cell-start-col-1">.cell .cell-cols-3</div>
+    <div class="cell cell-cols-1 ms-cell-start-col-4">.cell .cell-cols-1</div>
+    <div class="cell cell-cols-2 ms-cell-start-col-5">.cell .cell-cols-2</div>
+  </div>
+
+  <p><code>.grid-md</code> - <code>min-width: 768px</code></p>
+  <div class="grid-md grid-cols-6">
+    <div class="cell cell-cols-3 ms-cell-start-col-1">.cell .cell-cols-3</div>
+    <div class="cell cell-cols-1 ms-cell-start-col-4">.cell .cell-cols-1</div>
+    <div class="cell cell-cols-2 ms-cell-start-col-5">.cell .cell-cols-2</div>
+  </div>
+
+  <p><code>.grid</code> - <code>min-width: 768px</code></p>
+  <div class="grid grid-cols-6">
+    <div class="cell cell-cols-3 ms-cell-start-col-1">.cell .cell-cols-3</div>
+    <div class="cell cell-cols-1 ms-cell-start-col-4">.cell .cell-cols-1</div>
+    <div class="cell cell-cols-2 ms-cell-start-col-5">.cell .cell-cols-2</div>
+  </div>
+
+  <p><code>.grid-lg</code> - <code>min-width: 992px</code></p>
+  <div class="grid-lg grid-cols-6">
+    <div class="cell cell-cols-3 ms-cell-start-col-1">.cell .cell-cols-3</div>
+    <div class="cell cell-cols-1 ms-cell-start-col-4">.cell .cell-cols-1</div>
+    <div class="cell cell-cols-2 ms-cell-start-col-5">.cell .cell-cols-2</div>
+  </div>
+
+  <p><code>.grid-xl</code> - <code>min-width: 1200px</code></p>
+  <div class="grid-xl grid-cols-6">
+    <div class="cell cell-cols-3 ms-cell-start-col-1">.cell .cell-cols-3</div>
+    <div class="cell cell-cols-1 ms-cell-start-col-4">.cell .cell-cols-1</div>
+    <div class="cell cell-cols-2 ms-cell-start-col-5">.cell .cell-cols-2</div>
+  </div>
+
+
+  <hr/>
+  <h2>.inline-grid-XX</h2>
+
+  <p><code>.inline-grid-xs</code> - <code>min-width: 0px</code></p>
+  <div>
+    <span class="test" style="width: 45%;">span 45%</span>
+    <div class="inline-grid-xs grid-cols-6" style="width: 45%;">
+      <div class="cell cell-cols-3 ms-cell-start-col-1">.cell .cell-cols-3</div>
+      <div class="cell cell-cols-1 ms-cell-start-col-4">.cell .cell-cols-1</div>
+      <div class="cell cell-cols-2 ms-cell-start-col-5">.cell .cell-cols-2</div>
+    </div>
+  </div>
+
+  <p><code>.inline-grid-sm</code> - <code>min-width: 576px</code></p>
+  <div>
+    <span class="test" style="width: 45%;">span 45%</span>
+    <div class="inline-grid-sm grid-cols-6" style="width: 45%;">
+      <div class="cell cell-cols-3 ms-cell-start-col-1">.cell .cell-cols-3</div>
+      <div class="cell cell-cols-1 ms-cell-start-col-4">.cell .cell-cols-1</div>
+      <div class="cell cell-cols-2 ms-cell-start-col-5">.cell .cell-cols-2</div>
+    </div>
+  </div>
+
+  <p><code>.inline-grid-md</code> - <code>min-width: 768px</code></p>
+  <div>
+    <span class="test" style="width: 45%;">span 45%</span>
+    <div class="inline-grid-md grid-cols-6" style="width: 45%;">
+      <div class="cell cell-cols-3 ms-cell-start-col-1">.cell .cell-cols-3</div>
+      <div class="cell cell-cols-1 ms-cell-start-col-4">.cell .cell-cols-1</div>
+      <div class="cell cell-cols-2 ms-cell-start-col-5">.cell .cell-cols-2</div>
+    </div>
+  </div>
+
+  <p><code>.inline-grid</code> - <code>min-width: 768px</code></p>
+  <div>
+    <span class="test" style="width: 45%;">span 45%</span>
+    <div class="inline-grid grid-cols-6" style="width: 45%;">
+      <div class="cell cell-cols-3 ms-cell-start-col-1">.cell .cell-cols-3</div>
+      <div class="cell cell-cols-1 ms-cell-start-col-4">.cell .cell-cols-1</div>
+      <div class="cell cell-cols-2 ms-cell-start-col-5">.cell .cell-cols-2</div>
+    </div>
+  </div>
+
+  <p><code>.inline-grid-lg</code> - <code>min-width: 992px</code></p>
+  <div>
+    <span class="test" style="width: 45%;">span 45%</span>
+    <div class="inline-grid-lg grid-cols-6" style="width: 45%;">
+      <div class="cell cell-cols-3 ms-cell-start-col-1">.cell .cell-cols-3</div>
+      <div class="cell cell-cols-1 ms-cell-start-col-4">.cell .cell-cols-1</div>
+      <div class="cell cell-cols-2 ms-cell-start-col-5">.cell .cell-cols-2</div>
+    </div>
+  </div>
+
+  <p><code>.inline-grid-xl</code> - <code>min-width: 1200px</code></p>
+  <div>
+    <span class="test" style="width: 45%;">span 45%</span>
+    <div class="inline-grid-xl grid-cols-6" style="width: 45%;">
+      <div class="cell cell-cols-3 ms-cell-start-col-1">.cell .cell-cols-3</div>
+      <div class="cell cell-cols-1 ms-cell-start-col-4">.cell .cell-cols-1</div>
+      <div class="cell cell-cols-2 ms-cell-start-col-5">.cell .cell-cols-2</div>
+    </div>
+  </div>
+
+
+  <hr/>
+  <h2>.flex-w-YY-XX responsive sizes (masonry)</h2>
+  <pre>.flex-xs .nogap .nopadding</pre>
+  <p>items: <code>.flex-w-xs-100 .flex-w-sm-50 .flex-w-md-33 .flex-w-lg-25 .flex-w-xl-20</code></p>
+  <div class="flex-xs nogap nopadding">
+    <div class="flex-w-xs-100 flex-w-sm-50 flex-w-md-33 flex-w-lg-25 flex-w-xl-20">item</div>
+    <div class="flex-w-xs-100 flex-w-sm-50 flex-w-md-33 flex-w-lg-25 flex-w-xl-20">item</div>
+    <div class="flex-w-xs-100 flex-w-sm-50 flex-w-md-33 flex-w-lg-25 flex-w-xl-20">item</div>
+    <div class="flex-w-xs-100 flex-w-sm-50 flex-w-md-33 flex-w-lg-25 flex-w-xl-20">item</div>
+    <div class="flex-w-xs-100 flex-w-sm-50 flex-w-md-33 flex-w-lg-25 flex-w-xl-20">item</div>
+    <div class="flex-w-xs-100 flex-w-sm-50 flex-w-md-33 flex-w-lg-25 flex-w-xl-20">item</div>
+    <div class="flex-w-xs-100 flex-w-sm-50 flex-w-md-33 flex-w-lg-25 flex-w-xl-20">item</div>
+    <div class="flex-w-xs-100 flex-w-sm-50 flex-w-md-33 flex-w-lg-25 flex-w-xl-20">item</div>
+    <div class="flex-w-xs-100 flex-w-sm-50 flex-w-md-33 flex-w-lg-25 flex-w-xl-20">item</div>
+    <div class="flex-w-xs-100 flex-w-sm-50 flex-w-md-33 flex-w-lg-25 flex-w-xl-20">item</div>
+    <div class="flex-w-xs-100 flex-w-sm-50 flex-w-md-33 flex-w-lg-25 flex-w-xl-20">item</div>
+    <div class="flex-w-xs-100 flex-w-sm-50 flex-w-md-33 flex-w-lg-25 flex-w-xl-20">item</div>
+  </div>
+
+
+  <hr/>
+  <h2>.grid-rows-YY-XX and .grid-cols-YY-XX responsive sizes (masonry)</h2>
+  <pre>.grid-xs
+.grid-rows-xs-1
+.grid-cols-xs-1 .grid-cols-sm-2 .grid-cols-md-3 .grid-cols-lg-4 .grid-cols-xl-5</pre>
+  <p>cells: <code>.cell .cell-rows-1 .cell-cols-1</code></p>
+  <div class="grid-xs grid-rows-xs-1 grid-cols-xs-1 grid-cols-sm-2 grid-cols-md-3 grid-cols-lg-4 grid-cols-xl-5">
+    <div class="cell cell-rows-1 cell-cols-1">cell 1</div>
+    <div class="cell cell-rows-1 cell-cols-1">cell 2</div>
+    <div class="cell cell-rows-1 cell-cols-1">cell 3</div>
+    <div class="cell cell-rows-1 cell-cols-1">cell 4</div>
+    <div class="cell cell-rows-1 cell-cols-1">cell 5</div>
+    <div class="cell cell-rows-1 cell-cols-1">cell 6</div>
+    <div class="cell cell-rows-1 cell-cols-1">cell 7</div>
+    <div class="cell cell-rows-1 cell-cols-1">cell 8</div>
+    <div class="cell cell-rows-1 cell-cols-1">cell 9</div>
+    <div class="cell cell-rows-1 cell-cols-1">cell 10</div>
+    <div class="cell cell-rows-1 cell-cols-1">cell 11</div>
+    <div class="cell cell-rows-1 cell-cols-1">cell 12</div>
+  </div>
+
+
+  <hr/>
+  <h2>.cell-rows-YY-XX and .cell-cols-YY-XX responsive sizes</h2>
+  <pre>.grid-xs .grid-rows-5 .grid-cols-11</pre>
+  <p>cell 1: <code>.cell .cell-rows-xs-1 .cell-cols-xs-2<br/>.cell-rows-sm-2 .cell-cols-sm-4<br/>.cell-rows-md-3 .cell-cols-md-6<br/>.cell-rows-lg-4 .cell-cols-lg-8<br/>.cell-rows-xl-5 .cell-cols-xl-10</code></p>
+  <p>cell 2: <code>.cell .cell-rows-1 .cell-cols-1</code></p>
+  <div class="grid-xs grid-rows-5 grid-cols-11">
+    <div class="cell cell-rows-xs-1 cell-cols-xs-2 cell-rows-sm-2 cell-cols-sm-4 cell-rows-md-3 cell-cols-md-6 cell-rows-lg-4 cell-cols-lg-8 cell-rows-xl-5 cell-cols-xl-10">cell 1</div>
+    <div class="cell cell-rows-1 cell-cols-1">cell 2</div>
+  </div>
+
+
+  <hr/>
+  <h2>Padding in the flex items</h2>
+  <pre>.flex .nopadding .nogap</pre>
+  <p>items: <code>.flex-w-16</code></p>
+  <div class="flex nopadding nogap">
+    <div class="flex-w-16">reftext <h1>h1</h1> <div class="h1">.h1</div></div>
+    <div class="flex-w-16">reftext <h2>h2</h2> <div class="h2">.h2</div></div>
+    <div class="flex-w-16">reftext <h3>h3</h3> <div class="h3">.h3</div></div>
+    <div class="flex-w-16">reftext <h4>h4</h4> <div class="h4">.h4</div></div>
+    <div class="flex-w-16">reftext <h5>h5</h5> <div class="h5">.h5</div></div>
+    <div class="flex-w-16">reftext <h6>h6</h6> <div class="h6">.h6</div></div>
+    <div class="flex-w-16">reftext <div class="ha">.ha</div></div>
+    <div class="flex-w-16">reftext <div class="hb">.hb</div></div>
+    <div class="flex-w-16">reftext <div class="hc">.hc</div></div>
+    <div class="flex-w-16">reftext <div class="hd">.hd</div></div>
+    <div class="flex-w-16">reftext <p>paragraph</p> <div class=".p">.p</div></div>
+  </div>
+
+
+  <hr/>
+  <h2>Padding in the css grid cells</h2>
+  <pre>.grid .grid-cols-6 .nopadding .nogap</pre>
+  <p>cells: <code>.cell .cell-cols-1</code></p>
+  <div class="grid grid-cols-6 nopadding nogap">
+    <div class="cell cell-cols-1">reftext <h1>h1</h1> <div class="h1">.h1</div></div>
+    <div class="cell cell-cols-1">reftext <h2>h2</h2> <div class="h2">.h2</div></div>
+    <div class="cell cell-cols-1">reftext <h3>h3</h3> <div class="h3">.h3</div></div>
+    <div class="cell cell-cols-1">reftext <h4>h4</h4> <div class="h4">.h4</div></div>
+    <div class="cell cell-cols-1">reftext <h5>h5</h5> <div class="h5">.h5</div></div>
+    <div class="cell cell-cols-1">reftext <h6>h6</h6> <div class="h6">.h6</div></div>
+    <div class="cell cell-cols-1">reftext <div class="ha">.ha</div></div>
+    <div class="cell cell-cols-1">reftext <div class="hb">.hb</div></div>
+    <div class="cell cell-cols-1">reftext <div class="hc">.hc</div></div>
+    <div class="cell cell-cols-1">reftext <div class="hd">.hd</div></div>
+    <div class="cell cell-cols-1">reftext <p>paragraph</p> <div class=".p">.p</div></div>
+  </div>
+
+</div> <!-- /container 3 -->
+
+
+<div class="container">
+  <hr/>
+  <h2 id="license">License</h2>
+  <p><a href="https://opensource.org/licenses/MIT" target="_blank">https://opensource.org/licenses/MIT</a></p>
+  <h3>MIT License</h3>
+  <p><b>SPDX short identifier: MIT</b></p>
+  <p>Copyright (c) 2018 Ferenc Czigler</p>
+  <p>Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:</p>
+  <p>The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.</p>
+  <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.</p>
+</div>
+
+<footer id="footer" class="container center small">
+  <hr/>
+  <p>
+    <a href="#footer">Contact</a>
+    &nbsp;//&nbsp;
+    <a href="#" onclick=" _.importStyle('u87-0.9.16-dark.css'); "><i>Dark</i></a>
+    &nbsp;/&nbsp;
+    <a href="#" onclick=" _.importStyle('u87-0.9.16-blue.css'); "><i>Blue</i></a>
+    &nbsp;/&nbsp;
+    <a href="#" onclick=" _.importStyle('u87-0.9.16-light.css'); "><i>Light</i></a>
+  </p>
+  <p>&copy; Copyright 2018 Ferenc Czigler</p>
+</footer>
+
+</body>
+
+</html>
