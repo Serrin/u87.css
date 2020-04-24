@@ -19,7 +19,7 @@ For a demo page please check the testpages of the versions and the [Celestra](ht
 - New design.
 
 ### u87.css v0.9.11
-- _(flex grid v0.9.0)_
+- _flex grid v0.9.0_
 - New themes (blue, dark, light).
 - New flexbox based grid.
 
@@ -66,6 +66,14 @@ For a demo page please check the testpages of the versions and the [Celestra](ht
 - New scrollbar classes: `scrollbar-auto`, `.scrollbar-thin`, `.scrollbar-none`, `.scrollbar-dark`, `.scrollbar-blue`, `.scrollbar-light`
 - New font classes: `.font-fantasy`, `.font-cursive`, `.font-italic`, `.font-more-bolder`, `.font-hairline`, `.font-100`, `.font-200`, `.font-300`, `.font-400`, `.font-500`, `.font-600`, `.font-700`, `.font-800`, `.font-900`, `.font-950`, `.font-1000`
 - Removed classes: `.heading-a`, `.heading-b`, `.heading-c`, `.heading-d`
+
+### u87.css v0.9.17 (Cython - u87.next)
+- _grid v0.9.6, flex grid v0.9.7, css grid v0.9.0_
+- _The IE11 and and Edge 12-18 has been removed from the supported browsers._
+- Added a new map file: __u87-0.9.17-map.md__ 
+- The __u87.css__ and __u87-cssgrid.css__ files have been merged.
+- All of the `.ms-*` classes and `-ms-*` properties have been removed in the __css grid__.
+
 
 
 ## License
