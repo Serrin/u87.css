@@ -70,7 +70,7 @@ For a demo page please check the testpages of the versions and the [Celestra](ht
 ### u87.css v0.9.17 (Cython)
 - _grid v0.9.6, flex grid v0.9.7, css grid v0.9.0_
 - _The IE11 and and Edge 12-18 has been removed from the supported browsers._
-- Added a new map file: __u87-0.9.17-map.md__ 
+- Added new files: __u87-0.9.17-map.md__, __u87-0.9.17.min.css__, __u87-0.9.17.min.html__
 - The __u87.css__ and __u87-cssgrid.css__ files have been merged.
 - All of the `.ms-*` classes and `-ms-*` properties have been removed in the __css grid__.
 
