@@ -74,6 +74,11 @@ For a demo page please check the testpages of the versions and the [Celestra](ht
 - The __u87.css__ and __u87-cssgrid.css__ files have been merged.
 - All of the `.ms-*` classes and `-ms-*` properties have been removed in the __css grid__.
 
+### u87.css v0.9.18
+- _grid v0.9.6, flex grid v0.9.7, css grid v0.9.0_
+- Fixes under the hood.
+- Renamed classes: `.header` to `.jumbotron`
+- New classes: `.header`, `.scrollbar-transparent`, `.notextselect`,`.w-25vw`, `.w-50vw`, `.w-75vw`, `.w-100vw`, `.h-25vh`, `.h-50vh`, `.h-75vh`, `.h-100vh`, `.hover-opacity-0`, `.hover-opacity-25`, `.hover-opacity-50`, `.hover-opacity-75`, `.hover-opacity-100`
 
 
 ## License
