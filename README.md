@@ -80,6 +80,17 @@ For a demo page please check the testpages of the versions and the [Celestra](ht
 - Renamed classes: `.header` to `.jumbotron`
 - New classes: `.header`, `.scrollbar-transparent`, `.notextselect`,`.w-25vw`, `.w-50vw`, `.w-75vw`, `.w-100vw`, `.h-25vh`, `.h-50vh`, `.h-75vh`, `.h-100vh`, `.hover-opacity-0`, `.hover-opacity-25`, `.hover-opacity-50`, `.hover-opacity-75`, `.hover-opacity-100`
 
+### u87.css v0.9.19
+- _grid v0.9.7, flex grid v0.9.8, css grid v0.9.1_
+- _Celestra v3.6.0_
+- Fixes under the hood.
+- From this version the css grid module is in the __u87-0.9.19-cssgrid.css__ file.
+- Added a new breakpoint: __XXL >1400px__
+- The grid container sizes have been changed. Please check the new values in the cheatsheets!
+- New default font sizes and the `.ha` -> `.hd` scale has been extended with the new `.he` class
+- New classes: `.he`, `.container-xxl`, `.hide-xxl`, `flex-xxl`, `inline-flex-xxl`, `.flex-w-xxl-XX` _(percent)_, `grid-xxl`, `inline-grid-xxl`, `.grid-rows-xxl-XX` (1-24), `.grid-cols-xxl-XX` (1-24), `.cell-rows-xxl-XX` (1-24), `.cell-cols-xxl-XX` (1-24), `.table-responsive-xxl`
+- Removed classes: `.container-float`
+
 
 ## License
 
