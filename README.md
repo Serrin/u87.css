@@ -91,6 +91,12 @@ For a demo page please check the testpages of the versions and the [Celestra](ht
 - New classes: `.he`, `.container-xxl`, `.hide-xxl`, `flex-xxl`, `inline-flex-xxl`, `.flex-w-xxl-XX` _(percent)_, `grid-xxl`, `inline-grid-xxl`, `.grid-rows-xxl-XX` (1-24), `.grid-cols-xxl-XX` (1-24), `.cell-rows-xxl-XX` (1-24), `.cell-cols-xxl-XX` (1-24), `.table-responsive-xxl`
 - Removed classes: `.container-float`
 
+### u87.css v0.9.19 update 1
+- _grid v0.9.7, flex grid v0.9.8, css grid v0.9.1_
+- _Celestra v4.4.1_
+Added two files: __u87-0.9.19-blue-darkmode.css__ and __u87-0.9.19-dark-darkmode.css__
+These can be set the blue and dark themes, when the browser/OS is in dark mode.
+
 
 ## License
 
