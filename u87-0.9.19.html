@@ -63,11 +63,11 @@
     <nav><b>
       <a href="#footer">Contact</a>
       &nbsp;//&nbsp;
-      <a href="#" onclick=" _.importStyle('u87-0.9.19-dark.css'); "><i>Dark</i></a>
+      <a href="#" onclick=" CEL.importStyle('u87-0.9.19-dark.css'); "><i>Dark</i></a>
       &nbsp;/&nbsp;
-      <a href="#" onclick=" _.importStyle('u87-0.9.19-blue.css'); "><i>Blue</i></a>
+      <a href="#" onclick=" CEL.importStyle('u87-0.9.19-blue.css'); "><i>Blue</i></a>
       &nbsp;/&nbsp;
-      <a href="#" onclick=" _.importStyle('u87-0.9.19-light.css'); "><i>Light</i></a>
+      <a href="#" onclick=" CEL.importStyle('u87-0.9.19-light.css'); "><i>Light</i></a>
     </b></nav>
     <span class="font-xx-small">.jumbotron</span>
   </header>
@@ -209,22 +209,22 @@
         id="range1"
         type="range" min="0" max="100" value="85"
         oninput="
-          _.qs('#rangeLabel').innerHTML=this.value;
-          _.qs('#progress1').value=this.value;
-          _.qs('#meter1').value=this.value/100;
+          CEL.qs('#rangeLabel').innerHTML=this.value;
+          CEL.qs('#progress1').value=this.value;
+          CEL.qs('#meter1').value=this.value/100;
         "
         onchange="
-          _.qs('#rangeLabel').innerHTML=this.value;
-          _.qs('#progress1').value=this.value;
-          _.qs('#meter1').value=this.value/100;
+          CEL.qs('#rangeLabel').innerHTML=this.value;
+          CEL.qs('#progress1').value=this.value;
+          CEL.qs('#meter1').value=this.value/100;
         "
       > <!-- oninput = standard, onchange = IE11 -->
       <br/>
       <label id="rangeLabel"></label>
       <script>
-        _.qs('#rangeLabel').innerHTML=_.qs('#range1').value;
-        _.qs('#progress1').value=_.qs('#range1').value;
-        _.qs('#meter1').value=_.qs('#range1').value/100;
+        CEL.qs('#rangeLabel').innerHTML=CEL.qs('#range1').value;
+        CEL.qs('#progress1').value=CEL.qs('#range1').value;
+        CEL.qs('#meter1').value=CEL.qs('#range1').value/100;
       </script>
       <br/>
       url:
@@ -249,11 +249,11 @@
       <br/>
       dialog:
       <br/>
-      <p onclick="_.domShow(_.qs('#dialog1'));"><b>SHOW</b></p>
+      <p onclick="CEL.domShow(CEL.qs('#dialog1'));"><b>SHOW</b></p>
       <br/>
       <dialog open id="dialog1">
         <p>Dialog...</p>
-        <p class="center" onclick="_.domHide(_.qs('#dialog1'));"><b>HIDE</b></p>
+        <p class="center" onclick="CEL.domHide(CEL.qs('#dialog1'));"><b>HIDE</b></p>
       </dialog>
       <br/>
       details + summary + details:
@@ -3854,11 +3854,11 @@ line 3</div>
   <p>
     <a href="#footer">Contact</a>
     &nbsp;//&nbsp;
-    <a href="#" onclick=" _.importStyle('u87-0.9.19-dark.css'); "><i>Dark</i></a>
+    <a href="#" onclick=" CEL.importStyle('u87-0.9.19-dark.css'); "><i>Dark</i></a>
     &nbsp;/&nbsp;
-    <a href="#" onclick=" _.importStyle('u87-0.9.19-blue.css'); "><i>Blue</i></a>
+    <a href="#" onclick=" CEL.importStyle('u87-0.9.19-blue.css'); "><i>Blue</i></a>
     &nbsp;/&nbsp;
-    <a href="#" onclick=" _.importStyle('u87-0.9.19-light.css'); "><i>Light</i></a>
+    <a href="#" onclick=" CEL.importStyle('u87-0.9.19-light.css'); "><i>Light</i></a>
   </p>
   <p>&copy; Copyright 2018 Ferenc Czigler</p>
 </footer>
