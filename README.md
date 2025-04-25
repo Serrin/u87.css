@@ -100,6 +100,9 @@ For a demo page please check the testpages of the versions and the [Celestra](ht
 - _grid v0.9.7, flex grid v0.9.8, css grid v0.9.1_
 - _Celestra v5.0.0_
 
+### u87.css v0.9.19 update 3
+- _grid v0.9.7, flex grid v0.9.8, css grid v0.9.1_
+- _Celestra v5.6.3_
 
 ## License
 

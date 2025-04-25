@@ -1,0 +1,451 @@
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference */
+
+
+/*
+@charset
+@import
+@supports
+@-ms-viewport { width: device-width; }
+
+var()
+url()
+min()
+max()
+clamp()
+attr()
+calc()
+
+minmax() - in CSS Grid
+fit-content() - in CSS Grid
+place-items shorthand - in CSS Grid
+
+font shorthands
+
+vw vh vmin vmax
+
+currentcolor
+initial
+unset
+all
+
+rgb()
+rgba()
+#RRGGBBAA
+hsl()
+hsla()
+*/
+
+
+/*
+You can (and often need to) combine min() and max() values,
+or use max() within a clamp() or calc() function.
+*/
+
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/@charset */
+/*
+- must be double-quoted
+- following exactly one space character (U+0020)
+- immediately terminated with a semicolon.
+*/
+@charset "<charset>";
+@charset "utf-8";
+@charset "UTF-8";
+@charset "iso-8859-15";
+@charset 'iso-8859-15'; /* Invalid, wrong quoting style used */
+@charset  "UTF-8"; /* Invalid, more than one space */
+ @charset "UTF-8"; /* Invalid, there is a character (a space) before the at-rule */
+@charset UTF-8; /* Invalid, without ' or ", the charset is not a CSS <string> */
+/* works in all browsers */
+
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/@import */
+/* These rules must precede all other types of rules, except @charset rules. */
+@charset "UTF-8";
+@import url;
+@import url list-of-media-queries;
+@import url supports( supports-query );
+@import url supports( supports-query ) list-of-media-queries;
+/* samples */
+@import url("chrome://communicator/skin/");
+@import url("fineprint.css") print;
+@import url("bluish.css") speech;
+@import 'custom.css';
+@import "common.css" screen;
+@import url('landscape.css') screen and (orientation:landscape);
+/* works in all browsers */
+
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/@supports */
+@supports (display: grid) { div { display: grid; } }
+@supports not (display: grid) { div { float: right; } }
+/*
+Chrome: 28, Edge: 12, IE NO, FF 22, Safari 9
+Android Chrome 28, Android FF 22, Safari iOS 9
+*/
+
+
+@-ms-viewport { width: device-width; }
+
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/var
+/*
+var( <custom-property-name> , <declaration-value>? )
+*/
+:root { --main-bg-color: pink; }
+body { background-color: var(--main-bg-color, blue); }
+/* In the larger application’s style: */
+.component { --text-color: #080; }
+/*
+Inline variables:
+<div class="DIRG" style="--grid-number: 3; --grid-gutter: 1rem;">
+*/
+/*
+Chrome 49, Edge 15, FF 31, IE NO, Safari 9.1
+Android Chrome 49, Android FF 31, Safari iOS 7, Samsung 5.0
+*/
+
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/url#The_url()_functional_notation */
+/*
+<a_css_property>: url("http://mysite.example.com/mycursor.png")
+<a_css_property>: url('http://mysite.example.com/mycursor.png')
+<a_css_property>: url(http://mysite.example.com/mycursor.png)
+*/
+.topbanner { background: url("topbanner.png") #00D no-repeat fixed; }
+ul { list-style: square url(http://www.example.com/redball.png); }
+/* works in all browsers */
+
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/min */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/max */
+.logo {
+  /* property: min(expression [, expression]) */
+  width: min(10vw, 4em, 80px);
+  /* property: max(expression [, expression]) */
+  height: max(10vh, 4em, 80px);
+}
+/*
+Chrome/Edge: 79, FF75, Safari 11.1
+Android Chrome 79, Safari iOS 11.3
+*/
+
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/clamp */
+/* clamp(MIN, VAL, MAX) is resolved as max(MIN, min(VAL, MAX)) */
+.logo {
+  /* property: clamp(expression{3}) */
+  width: clamp(10px, 4em, 80px);
+}
+p { font-size: clamp(1rem, 2.5vw, 1.5rem); }
+p { font-size: max(1rem, min(2.5vw, 1.5rem)); }
+/*
+If 2.5vw is less than 1rem, the font-size will be 1rem.
+If 2.5vw is greater than 1.5rem, the font-size will be 1.5rem.
+Otherwise, it will be 2.5vw.
+*/
+/*
+Chrome/Edge: 79, FF75, Safari 11.1
+Android Chrome 79, Safari iOS NO
+*/
+
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/attr */
+.background[data-background] {
+  background-color: attr(data-background color, red);
+}
+/* Simple usage */
+attr(data-count);
+attr(title);
+/* With type */
+attr(src url);
+attr(data-count number);
+attr(data-width px);
+/* With fallback */
+attr(data-count number, 0);
+attr(src url, "");
+attr(data-width px, inherit);
+attr(data-something, "default");
+/*
+<p data-foo="hello">world</p>
+[data-foo]::before {
+  content: attr(data-foo) " ";
+}
+---------->
+hello world
+*/
+/* works in all browsers */
+
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/calc */
+/* property: calc(expression) */
+/*
++ Addition.
+- Subtraction.
+* Multiplication. At least one of the arguments must be a <number>.
+/ Division. The right-hand side must be a <number>.
+*/
+.element { width: calc(100% - 80px); }
+.foo {
+  --widthA: 100px;
+  --widthB: calc(var(--widthA) / 2);
+  --widthC: calc(var(--widthB) / 2);
+  width: var(--widthC);
+}
+/*
+Accessibility concerns
+When calc() is used for controlling text size,
+be sure that one of the values includes a relative length unit, for example:
+*/
+h1 { font-size: calc(1.5rem + 3vw); }
+/*
+Chrome 26, Edge 12, FF 16, IE 9, Safari 7
+Android Chrome 28, Android FF 16, Safari iOS 7, Samsung 1.5
+Safari 6: -webkit-calc()
+FF before 54: -moz-calc()
+*/
+/*
+const el = document.querySelector(":root");
+// get the value
+const padding = el.style.getPropertyValue("--primary-padding");
+// set the value
+el.style.setProperty("--primary-padding", "3rem");
+*/
+
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/minmax */
+/* <inflexible-breadth>, <track-breadth> values */
+minmax(200px, 1fr)
+minmax(400px, 50%)
+minmax(30%, 300px)
+minmax(100px, max-content)
+minmax(min-content, 400px)
+minmax(max-content, auto)
+minmax(auto, 300px)
+minmax(min-content, auto)
+/* <fixed-breadth>, <track-breadth> values */
+minmax(200px, 1fr)
+minmax(30%, 300px)
+minmax(400px, 50%)
+minmax(50%, min-content)
+minmax(300px, max-content)
+minmax(200px, auto)
+/* <inflexible-breadth>, <fixed-breadth> values */
+minmax(400px, 50%)
+minmax(30%, 300px)
+minmax(min-content, 200px)
+minmax(max-content, 200px)
+minmax(auto, 300px)
+/* auto: As a maximum, identical to max-content.
+As a minimum it represents the largest minimum size
+(as specified by min-width/min-height)
+of the grid items occupying the grid track. */
+/* compatibility: CSS Grid */
+
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content */
+/* same as min(maximum size, max(minimum size, argument)); */
+#container {
+  display: grid;
+  grid-template-columns: fit-content(300px) fit-content(300px) 1fr;
+}
+/* <length> values */
+fit-content(200px)
+fit-content(5cm)
+fit-content(30vw)
+fit-content(100ch)
+/* <percentage> value */
+fit-content(40%)
+/* compatibility: CSS Grid */
+
+
+/* place-items shorthand - in CSS Grid */
+/*
+https://developer.mozilla.org/en-US/docs/Web/CSS/place-items
+The CSS place-items shorthand property sets the align-items and justify-items properties, respectively. If the second value is not set, the first value is also used for it.
+*/
+/* FLEX and GRID: NO IE, No old Edge, FF 45+, Safari 11+ */
+/* Keyword values */
+place-items: <'align-items'> <'justify-items'>?;
+place-items: <'same value'>;
+place-items: auto center;
+place-items: normal start;
+/* Positional alignment */
+place-items: center normal;
+place-items: start auto;
+place-items: end normal;
+place-items: self-start auto;
+place-items: self-start auto;
+place-items: self-end normal;
+place-items: flex-start auto;
+place-items: flex-end normal;
+place-items: left auto;
+place-items: right normal;
+/* Baseline alignment */
+place-items: baseline normal;
+place-items: first baseline auto;
+place-items: last baseline normal;
+place-items: stretch auto;
+/* Global values */
+place-items: inherit;
+place-items: initial;
+place-items: unset;
+
+
+/* font shorthands */
+.font-monospace { font-family: monospace; }
+.font-serif { font-family: serif; }
+.font-sans-serif { font-family: Verdana, Arial, Helvetica, sans-serif; }
+.font-sans-serif { font-family: sans-serif; }
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/font */
+font: 1.2em "Fira Sans", sans-serif;
+font: italic 1.2em "Fira Sans", serif;
+font: italic small-caps bold 16px/2 cursive;
+font: small-caps bold 24px/1 sans-serif;
+font: caption;
+
+
+/*
+vw vh vmin vmax
+1vw = 1% of viewport width - IE9+
+  "width: 100vw; max-width: 100%;" -> fix the horizontal scrollbar overflow
+1vh = 1% of viewport height - IE9+
+1vmin = 1vw or 1vh, whichever is smaller - IE10+
+1vmax = 1vw or 1vh, whichever is larger - NO IE
+*/
+
+
+/*
+The currentcolor keyword represents the value of an element's color property.
+This lets you use the color value on properties that do not receive it by default.
+If currentcolor is used as the value of the color property,
+it instead takes its value from the inherited value of the color property.
+*/
+/*
+<div style="color:blue; border: 1px dashed currentcolor;">
+  The color of this text is blue.
+  <div style="background:currentcolor; height:9px;"></div>
+  This block is surrounded by a blue border.
+</div>
+*/
+/* all browsers */
+
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/initial */
+/* The initial CSS keyword applies the initial (or default) value of a property to an element.
+This initial value is set by the browser. It can be applied to any CSS property. */
+/*
+p { color: red; }
+em { color: -moz-initial; color: initial; }
+
+<p>
+  <span>This text is red.</span> <!-- red -->
+  <em>This text is in the initial color (typically black).</em> <!-- black -->
+  <span>This is red again.</span> <!-- red -->
+</p>
+*/
+/* All browsers, IE NO, Edge 13 */
+
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/unset */
+/* The unset CSS keyword resets a property to its inherited value if it inherits from its parent,
+and to its initial value if not.
+In other words, it behaves like the inherit keyword in the first case,
+and like the initial keyword in the second case.
+It can be applied to any CSS property, including the CSS shorthand all. */
+/*
+.foo { color: blue; }
+.bar { color: green; }
+p { color: red; }
+.bar p { color: unset; }
+
+<p>This text is red.</p>
+<div class="foo">
+  <p>This text is also red.</p>
+</div>
+<div class="bar">
+  <p>This text is green (default inherited value).</p>
+</div>
+*/
+/* All browsers, IE NO, Edge 13 */
+
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/all */
+/* The all shorthand CSS property resets all of an element's properties
+ (except unicode-bidi and direction).
+It can set properties to their initial or inherited values,
+or to the values specified in another stylesheet origin. */
+/* Global values */
+all: initial;
+all: inherit;
+all: unset;
+/* Chrome 37, Edge 79, FF 27, IE NO, Safari 9.1
+Android Chrome 37, Android FF 27, iOS Safari 9.3, Samsung Internet 3.0  */
+/* CSS Cascading and Inheritance Level 4 */
+all: revert;
+/* Chrome NO, Edge NO, FF 67, IE NO, Safari 9.1
+Android Chrome NO, Android FF 67, iOS Safari 9.3, Samsung Internet NO  */
+
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#rgb() */
+/*
+color-property: rgb(<red>,<green>,<blue>);
+color-property: rgba(<red>,<green>,<blue>,<opacity>);
+<red>,<green>,<blue> values from 0 to 255 or percentage (100% === 255)
+opacity values from 0 to 1, example: 0.5 means 50%
+*/
+/* Functional syntax */
+rgb(255,0,153)
+rgb(255, 0, 153)
+rgb(255, 0, 153.0)
+rgb(100%,0%,60%)
+rgb(100%, 0%, 60%)
+rgb(100%, 0, 60%) /* ERROR! Don't mix numbers and percentages. */
+rgb(255 0 153)
+rgba(51, 170, 51, .1)    /*  10% opaque green */
+rgba(51, 170, 51, .4)    /*  40% opaque green */
+rgba(51, 170, 51, .7)    /*  70% opaque green */
+rgba(51, 170, 51,  1)    /* full opaque green */
+
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/color_value */
+/* likes the rgba() */
+#RRGGBBAA
+/*
+R (red),
+G (green),
+B (blue),
+A (alpha) are hexadecimal characters (0–9, A–F).
+*/
+#ff0099ff
+#FF0099FF
+/* need CSS4 compatbility */
+
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#hsl() */
+/*
+color-property: hsl(<deg>,<rad>,<grad>);
+color-property: hsla(<deg>,<rad>,<grad>,<opacity>);
+*/
+/* These examples all specify the same color: a lavender. */
+hsl(270,60%,70%)
+hsl(270, 60%, 70%)
+hsl(270 60% 70%)
+hsl(270deg, 60%, 70%)
+hsl(4.71239rad, 60%, 70%)
+hsl(.75turn, 60%, 70%)
+/* These examples all specify the same color: a lavender that is 15% opaque. */
+hsl(270, 60%, 50%, .15)
+hsl(270, 60%, 50%, 15%)
+hsl(270 60% 50% / .15)
+hsl(270 60% 50% / 15%)
+hsla(240, 100%, 50%, .05)     /*   5% opaque blue */
+hsla(240, 100%, 50%, .4)      /*  40% opaque blue */
+hsla(240, 100%, 50%, .7)      /*  70% opaque blue */
+hsla(240, 100%, 50%, 1)       /* full opaque blue */
+/* Whitespace syntax */
+hsla(240 100% 50% / .05)      /*   5% opaque blue */
+/* Percentage value for alpha */
+hsla(240 100% 50% / 5%)       /*   5% opaque blue */
+
